@@ -1,0 +1,10 @@
+2024-04-10 13:25:23.024 [main] INFO  stepDefinitions.BaseDefine - Bearer token is generated
+2024-04-10 13:25:24.010 [main] INFO  stepDefinitions.BaseDefine - POST request performed
+2024-04-10 13:25:24.010 [main] INFO  stepDefinitions.BaseDefine - Request body sent: {"firstName":"Wtiyslcs","lastName":"Ksmtkhye","locationId":"5","middleName":"Gmesviaf","employeeId":"4437","joinedDate":"2024-06-20"}
+2024-04-10 13:25:24.013 [main] INFO  stepDefinitions.BaseDefine - Response status code is 201
+2024-04-10 13:25:24.023 [main] ERROR stepDefinitions.BaseDefine - Response body field value mismatch for: firstName. Expected: '<dynamic_firstName>', Actual: 'Wtiyslcs'
+2024-04-10 13:25:24.024 [main] ERROR stepDefinitions.BaseDefine - Response body field value mismatch for: middleName. Expected: '<dynamic_middleName>', Actual: 'Gmesviaf'
+2024-04-10 13:25:24.024 [main] ERROR stepDefinitions.BaseDefine - Response body field value mismatch for: lastName. Expected: '<dynamic_lastName>', Actual: 'Ksmtkhye'
+2024-04-10 13:25:24.024 [main] ERROR stepDefinitions.BaseDefine - Response body field value mismatch for: employeeId. Expected: '<dynamic_employeeId>', Actual: '4437'
+2024-04-10 13:25:24.024 [main] ERROR stepDefinitions.BaseDefine - Response body field value mismatch for: locationId. Expected: '<dynamic_locationId>', Actual: '5'
+2024-04-10 13:25:24.024 [main] ERROR stepDefinitions.BaseDefine - Response body field value mismatch for: joinedDate. Expected: '<dynamic_joinedDate>', Actual: ''

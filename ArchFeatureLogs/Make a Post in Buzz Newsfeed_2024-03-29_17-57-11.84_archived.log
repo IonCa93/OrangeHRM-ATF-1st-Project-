@@ -1,0 +1,7 @@
+2024-03-29 17:57:14.129 [main] INFO  stepDefinitions.BaseDefine - Opened OrangeHRM home page
+2024-03-29 17:57:14.823 [main] INFO  stepDefinitions.BaseDefine - Entered username and password from config file
+2024-03-29 17:57:15.950 [main] INFO  stepDefinitions.BaseDefine - Clicked on the login button
+2024-03-29 17:57:16.501 [main] INFO  stepDefinitions.BaseDefine - Dashboard tab is displayed
+2024-03-29 17:57:17.273 [main] INFO  stepDefinitions.BaseDefine - Buzz tab is displayed
+2024-03-29 17:57:17.982 [main] INFO  stepDefinitions.BaseDefine - Random post text added: Facere error et possimus et.
+2024-03-29 17:57:18.375 [main] INFO  stepDefinitions.BaseDefine - Post button clicked

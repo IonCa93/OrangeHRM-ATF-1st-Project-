@@ -1,0 +1,8 @@
+2024-05-07 14:34:54.200 [main] INFO  stepDefinitions.UILoginSteps - Opened OrangeHRM home page
+2024-05-07 14:34:55.339 [main] INFO  stepDefinitions.UILoginSteps - Entered username and password from config file
+2024-05-07 14:34:56.584 [main] INFO  stepDefinitions.UILoginSteps - Clicked on the login button
+2024-05-07 14:34:57.138 [main] INFO  stepDefinitions.UILoginSteps - Dashboard tab is displayed
+2024-05-07 14:34:58.478 [main] INFO  stepDefinitions.BuzzPageSteps - Buzz tab is displayed
+2024-05-07 14:34:59.880 [main] INFO  stepDefinitions.BuzzPageSteps - Random post text added: Aliquam temporibus ut et cumque ipsa et.
+2024-05-07 14:35:00.188 [main] INFO  stepDefinitions.BuzzPageSteps - Post button clicked
+2024-05-07 14:35:00.714 [main] INFO  stepDefinitions.BuzzPageSteps - New Post is present on the page

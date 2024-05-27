@@ -1,0 +1,3 @@
+2024-05-21 17:51:47.139 [main] INFO  s.FetchCustomerInfoAPI - Sending GET request to retrieve customer information...
+2024-05-21 17:51:47.712 [main] INFO  s.FetchCustomerInfoAPI - GET request executed
+2024-05-21 17:51:47.712 [main] ERROR s.FetchCustomerInfoAPI - GET request Failed with status code: 401

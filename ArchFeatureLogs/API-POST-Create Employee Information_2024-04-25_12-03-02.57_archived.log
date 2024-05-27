@@ -1,0 +1,2 @@
+2024-04-25 12:03:04.424 [main] INFO  stepDefinitions.BaseDefine - Bearer token is generated
+2024-04-25 12:03:05.223 [main] ERROR stepDefinitions.BaseDefine - POST request failed with status code: 400

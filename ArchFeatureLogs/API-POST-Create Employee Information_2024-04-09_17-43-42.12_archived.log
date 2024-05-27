@@ -1,0 +1,3 @@
+2024-04-09 17:43:43.596 [main] INFO  stepDefinitions.BaseDefine - Bearer token is generated
+2024-04-09 17:43:44.719 [main] INFO  stepDefinitions.BaseDefine - POST request performed
+2024-04-09 17:43:44.720 [main] INFO  stepDefinitions.BaseDefine - Response status code is 201

@@ -1,0 +1,24 @@
+2024-03-29 18:38:01.906 [main] INFO  stepDefinitions.BaseDefine - Opened OrangeHRM home page
+2024-03-29 18:38:01.910 [main] INFO  stepDefinitions.BaseDefine - Taking screenshot for scenario: Verify Post functionality
+2024-03-29 18:38:02.001 [main] INFO  stepDefinitions.BaseDefine - Screenshot taken for passed scenario: Verify Post functionality
+2024-03-29 18:38:02.686 [main] INFO  stepDefinitions.BaseDefine - Entered username and password from config file
+2024-03-29 18:38:02.687 [main] INFO  stepDefinitions.BaseDefine - Taking screenshot for scenario: Verify Post functionality
+2024-03-29 18:38:02.751 [main] INFO  stepDefinitions.BaseDefine - Screenshot taken for passed scenario: Verify Post functionality
+2024-03-29 18:38:04.009 [main] INFO  stepDefinitions.BaseDefine - Clicked on the login button
+2024-03-29 18:38:04.009 [main] INFO  stepDefinitions.BaseDefine - Taking screenshot for scenario: Verify Post functionality
+2024-03-29 18:38:04.047 [main] INFO  stepDefinitions.BaseDefine - Screenshot taken for passed scenario: Verify Post functionality
+2024-03-29 18:38:04.592 [main] INFO  stepDefinitions.BaseDefine - Dashboard tab is displayed
+2024-03-29 18:38:04.592 [main] INFO  stepDefinitions.BaseDefine - Taking screenshot for scenario: Verify Post functionality
+2024-03-29 18:38:04.702 [main] INFO  stepDefinitions.BaseDefine - Screenshot taken for passed scenario: Verify Post functionality
+2024-03-29 18:38:05.283 [main] INFO  stepDefinitions.BaseDefine - Buzz tab is displayed
+2024-03-29 18:38:05.283 [main] INFO  stepDefinitions.BaseDefine - Taking screenshot for scenario: Verify Post functionality
+2024-03-29 18:38:05.330 [main] INFO  stepDefinitions.BaseDefine - Screenshot taken for passed scenario: Verify Post functionality
+2024-03-29 18:38:06.071 [main] INFO  stepDefinitions.BaseDefine - Random post text added: Ab molestiae non atque est repellendus inventore neque.
+2024-03-29 18:38:06.087 [main] INFO  stepDefinitions.BaseDefine - Taking screenshot for scenario: Verify Post functionality
+2024-03-29 18:38:06.228 [main] INFO  stepDefinitions.BaseDefine - Screenshot taken for passed scenario: Verify Post functionality
+2024-03-29 18:38:06.496 [main] INFO  stepDefinitions.BaseDefine - Post button clicked
+2024-03-29 18:38:06.496 [main] INFO  stepDefinitions.BaseDefine - Taking screenshot for scenario: Verify Post functionality
+2024-03-29 18:38:06.575 [main] INFO  stepDefinitions.BaseDefine - Screenshot taken for passed scenario: Verify Post functionality
+2024-03-29 18:38:07.112 [main] INFO  stepDefinitions.BaseDefine - New Post is present on the page
+2024-03-29 18:38:07.112 [main] INFO  stepDefinitions.BaseDefine - Taking screenshot for scenario: Verify Post functionality
+2024-03-29 18:38:07.206 [main] INFO  stepDefinitions.BaseDefine - Screenshot taken for passed scenario: Verify Post functionality

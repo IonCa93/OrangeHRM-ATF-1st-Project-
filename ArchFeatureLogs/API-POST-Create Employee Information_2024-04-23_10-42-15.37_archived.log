@@ -1,0 +1,11 @@
+2024-04-23 10:42:16.314 [main] INFO  stepDefinitions.BaseDefine - Bearer token is generated
+2024-04-23 10:42:17.312 [main] INFO  stepDefinitions.BaseDefine - POST request performed successfully
+2024-04-23 10:42:17.312 [main] INFO  stepDefinitions.BaseDefine - Request body sent: {"firstName":"Johnny","lastName":"Cash","locationId":"1","middleName":"Dorian","employeeId":"5313","joinedDate":"2024-12-05"}
+2024-04-23 10:42:17.312 [main] INFO  stepDefinitions.BaseDefine - Response status code is 201
+2024-04-23 10:42:17.312 [main] INFO  stepDefinitions.BaseDefine - All parameters in the response body match the parameters in the request body:
+2024-04-23 10:42:17.327 [main] INFO  stepDefinitions.BaseDefine - firstName: Johnny
+2024-04-23 10:42:17.327 [main] INFO  stepDefinitions.BaseDefine - lastName: Cash
+2024-04-23 10:42:17.327 [main] INFO  stepDefinitions.BaseDefine - locationId: 1
+2024-04-23 10:42:17.327 [main] INFO  stepDefinitions.BaseDefine - middleName: Dorian
+2024-04-23 10:42:17.327 [main] INFO  stepDefinitions.BaseDefine - employeeId: 5313
+2024-04-23 10:42:17.327 [main] INFO  stepDefinitions.BaseDefine - joinedDate: 2024-12-05

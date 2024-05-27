@@ -1,0 +1,2 @@
+2024-04-03 10:22:38.040 [main] INFO  stepDefinitions.BaseDefine - Opened OrangeHRM home page
+2024-04-03 10:22:38.071 [main] INFO  stepDefinitions.BaseDefine - Taking screenshot before closing the browser for scenario: User is logged in successfully

@@ -1,0 +1,10 @@
+2024-04-01 17:15:03.866 [main] INFO  stepDefinitions.BaseDefine - Opened OrangeHRM home page
+2024-04-01 17:15:04.562 [main] INFO  stepDefinitions.BaseDefine - Entered username and password from config file
+2024-04-01 17:15:05.664 [main] INFO  stepDefinitions.BaseDefine - Clicked on the login button
+2024-04-01 17:15:06.276 [main] INFO  stepDefinitions.BaseDefine - Dashboard tab is displayed
+2024-04-01 17:15:07.159 [main] INFO  stepDefinitions.BaseDefine - Buzz tab is displayed
+2024-04-01 17:15:07.949 [main] INFO  stepDefinitions.BaseDefine - Random post text added: Consectetur sunt cupiditate pariatur.
+2024-04-01 17:15:08.215 [main] INFO  stepDefinitions.BaseDefine - Post button clicked
+2024-04-01 17:15:28.723 [main] INFO  stepDefinitions.BaseDefine - Taking screenshot before closing the browser for scenario: Verify Post functionality
+2024-04-01 17:15:28.833 [main] INFO  stepDefinitions.BaseDefine - UI test failed. Attempting to take a screenshot...
+2024-04-01 17:15:28.833 [main] INFO  stepDefinitions.BaseDefine - Screenshot taken for failed scenario: Verify Post functionality

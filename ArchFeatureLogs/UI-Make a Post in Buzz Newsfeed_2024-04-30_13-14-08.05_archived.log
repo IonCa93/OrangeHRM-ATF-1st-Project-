@@ -1,0 +1,10 @@
+2024-04-30 13:14:09.504 [main] INFO  stepDefinitions.BaseDefine - Opened OrangeHRM home page
+2024-04-30 13:14:10.175 [main] INFO  stepDefinitions.BaseDefine - Entered username and password from config file
+2024-04-30 13:14:11.327 [main] INFO  stepDefinitions.BaseDefine - Clicked on the login button
+2024-04-30 13:14:11.869 [main] INFO  stepDefinitions.BaseDefine - Dashboard tab is displayed
+2024-04-30 13:14:12.686 [main] INFO  stepDefinitions.BaseDefine - Buzz tab is displayed
+2024-04-30 13:14:14.193 [main] INFO  stepDefinitions.BaseDefine - Random post text added: Ullam cumque quam consequuntur suscipit inventore.
+2024-04-30 13:14:14.538 [main] INFO  stepDefinitions.BaseDefine - Post button clicked
+2024-04-30 13:14:15.072 [main] INFO  stepDefinitions.BaseDefine - New Post is present on the page
+2024-04-30 13:14:15.072 [main] INFO  stepDefinitions.BaseDefine - Taking screenshot before closing the browser for scenario: Verify Post functionality
+2024-04-30 13:14:15.213 [main] INFO  stepDefinitions.BaseDefine - Screenshot taken for passed scenario: Verify Post functionality

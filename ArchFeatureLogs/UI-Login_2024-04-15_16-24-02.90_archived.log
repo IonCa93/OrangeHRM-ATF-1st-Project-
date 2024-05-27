@@ -1,0 +1,6 @@
+2024-04-15 16:24:09.142 [main] INFO  stepDefinitions.BaseDefine - Opened OrangeHRM home page
+2024-04-15 16:24:10.067 [main] INFO  stepDefinitions.BaseDefine - Entered username and password from config file
+2024-04-15 16:24:10.161 [main] INFO  stepDefinitions.BaseDefine - Clicked on the login button
+2024-04-15 16:24:11.630 [main] INFO  stepDefinitions.BaseDefine - Dashboard tab is displayed
+2024-04-15 16:24:11.631 [main] INFO  stepDefinitions.BaseDefine - Taking screenshot before closing the browser for scenario: User is logged in successfully
+2024-04-15 16:24:11.719 [main] INFO  stepDefinitions.BaseDefine - Screenshot taken for passed scenario: User is logged in successfully

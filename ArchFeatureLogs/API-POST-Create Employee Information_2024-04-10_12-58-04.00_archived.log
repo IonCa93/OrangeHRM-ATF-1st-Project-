@@ -1,0 +1,3 @@
+2024-04-10 12:58:05.889 [main] INFO  stepDefinitions.BaseDefine - Bearer token is generated
+2024-04-10 12:58:06.597 [main] INFO  stepDefinitions.BaseDefine - POST request performed
+2024-04-10 12:58:06.598 [main] INFO  stepDefinitions.BaseDefine - Request body sent: {"firstName":"<dynamic_firstName>","lastName":"<dynamic_lastName>","locationId":"<dynamic_locationId>","parameter":"value","middleName":"<dynamic_middleName>","employeeId":"3337","joinedDate":"2024-01-23"}

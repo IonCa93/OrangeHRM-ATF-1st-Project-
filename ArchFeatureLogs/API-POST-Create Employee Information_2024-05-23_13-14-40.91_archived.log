@@ -1,0 +1,10 @@
+2024-05-23 13:14:43.780 [main] INFO  stepDefinitions.CreateEmployeeAPI - POST request performed successfully
+2024-05-23 13:14:43.780 [main] INFO  stepDefinitions.CreateEmployeeAPI - Request body sent: {"firstName":"Johnny","lastName":"Cash","locationId":"2","middleName":"Dorian","employeeId":"1298","joinedDate":"2024-01-12"}
+2024-05-23 13:14:43.780 [main] INFO  stepDefinitions.CreateEmployeeAPI - Response status code is 201
+2024-05-23 13:14:43.780 [main] INFO  stepDefinitions.CreateEmployeeAPI - All parameters in the response body match the parameters in the request body:
+2024-05-23 13:14:43.795 [main] INFO  stepDefinitions.CreateEmployeeAPI - firstName: Johnny
+2024-05-23 13:14:43.795 [main] INFO  stepDefinitions.CreateEmployeeAPI - lastName: Cash
+2024-05-23 13:14:43.795 [main] INFO  stepDefinitions.CreateEmployeeAPI - locationId: 2
+2024-05-23 13:14:43.795 [main] INFO  stepDefinitions.CreateEmployeeAPI - middleName: Dorian
+2024-05-23 13:14:43.795 [main] INFO  stepDefinitions.CreateEmployeeAPI - employeeId: 1298
+2024-05-23 13:14:43.795 [main] INFO  stepDefinitions.CreateEmployeeAPI - joinedDate: 2024-01-12
