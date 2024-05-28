@@ -3,20 +3,15 @@ package pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import utils.BrowserActions;
 import utils.PropertiesUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.time.Duration;
 
-public class LoginPage {
-
-    private final WebDriver driver;
-    private final BrowserActions browserActions;
+public class LoginPage extends BasePage {
     private static final Logger LOGGER = LoggerFactory.getLogger(LoginPage.class); // Logger
 
     @FindBy(name = "username")
@@ -35,10 +30,7 @@ public class LoginPage {
     private WebElement errorMessage;
 
     public LoginPage(WebDriver driver) {
-        this.driver = driver;
-        // This method initializes the WebElements declared in the class (those with the @FindBy annotations).
-        this.browserActions = new BrowserActions(driver);
-        PageFactory.initElements(driver, this);
+        super(driver);
     }
 
     public void navigateToLoginPage() {
@@ -47,21 +39,11 @@ public class LoginPage {
         LOGGER.info("Navigated to the login page");
     }
 
-    public void enterCredentials(String username, String password) {
-        browserActions.inputText(usernameField, username);
-        browserActions.inputText(passwordField, password); //TODO - add click , LoginWithCreds
-        LOGGER.info("Entered credentials");
-    }
-
-    public void enterCredentialsFromExamples(String username, String password) {
+    public void LogInWithCredentials(String username, String password) {
         browserActions.inputText(usernameField, username);
         browserActions.inputText(passwordField, password);
-        LOGGER.info("Entered credentials from Examples table");
-    }
-
-    public void clickLoginButton() {
         browserActions.clickElement(loginButton);
-        LOGGER.info("Clicked on the login button");
+        LOGGER.info("Logged with credentials");
     }
 
     public boolean isDefaultTabDisplayed() {

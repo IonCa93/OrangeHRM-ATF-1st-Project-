@@ -9,12 +9,8 @@ import pages.BuzzPage;
 import utils.DriverManager;
 import utils.ScenarioContext;
 import utils.ScenarioContextKeys;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 public class BuzzPageSteps {
 
-    private static final Logger logger = LoggerFactory.getLogger(BuzzPageSteps.class);
     private final BuzzPage buzzPage = new BuzzPage(DriverManager.getDriver());
     private final Faker faker = new Faker();
     private final ScenarioContext scenarioContext = ScenarioContext.getInstance(); // Initialize ScenarioContext
@@ -28,8 +24,6 @@ public class BuzzPageSteps {
     public void whatSOnYourMindFieldIsPopulatedWithRandomText() {
         String randomText = faker.lorem().sentence(); // Generate random text using Java Faker
         buzzPage.populateWhatsOnYourMindField(randomText); // Populate the field with random text
-        // Log the random text
-        logger.info("Random post text added: {}", randomText);
         // Store the random text in the scenario context
         scenarioContext.saveValueToScenarioContext(ScenarioContextKeys.ScenarioContextKey.RANDOM_POST_TEXT, randomText);
     }

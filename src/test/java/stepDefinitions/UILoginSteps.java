@@ -22,8 +22,7 @@ public class UILoginSteps {
     public void initiateLoginProcess() {
         String username = PropertiesUtil.getProperty("username");
         String password = PropertiesUtil.getProperty("password");
-        loginPage.enterCredentials(username, password);
-        loginPage.clickLoginButton();
+        loginPage.LogInWithCredentials(username, password);
     }
 
     @Then("the [Default] tab is displayed")
@@ -33,8 +32,7 @@ public class UILoginSteps {
 
     @When("the user initiates the login process with invalid credentials {string} and {string}")
     public void initiateLoginProcessWithInvalidCredentials(String user, String pass) {
-        loginPage.enterCredentialsFromExamples(user, pass);
-        loginPage.clickLoginButton();
+        loginPage.LogInWithCredentials(user, pass);
     }
 
 
@@ -53,7 +51,6 @@ public class UILoginSteps {
         loginPage.navigateToLoginPage();
         String username = PropertiesUtil.getProperty("username");
         String password = PropertiesUtil.getProperty("password");
-        loginPage.enterCredentials(username, password);
-        loginPage.clickLoginButton();
+        loginPage.LogInWithCredentials(username, password);
     }
 }

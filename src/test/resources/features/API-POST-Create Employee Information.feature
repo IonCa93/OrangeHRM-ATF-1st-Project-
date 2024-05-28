@@ -7,8 +7,8 @@ Feature: Create Employee Information
     Given Bearer token is generated
 
     When A POST request is performed with following request body:
-      | firstName  | Johnny               |
-      | middleName | Dorian               |
+      | firstName  | Jo                   |
+      | middleName | Doe                  |
       | lastName   | Cash                 |
       | employeeId | <dynamic_employeeId> |
       | locationId | <dynamic_locationId> |
