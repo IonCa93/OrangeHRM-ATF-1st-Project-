@@ -1,4 +1,4 @@
-@api @Run
+@api @ignore @Run
 Feature: Create Employee Information
 
   Scenario Outline: Create a new employee

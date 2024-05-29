@@ -1,0 +1,11 @@
+2024-05-29 17:48:33.726 [main] INFO  s.UpdateHolidayCalendarAPI - POST request performed successfully
+2024-05-29 17:48:33.728 [main] INFO  s.UpdateHolidayCalendarAPI - Request body sent: {"date":"2024-04-19","operational_country_id":1,"length":0,"description":"celebration celebration","location":[1],"adjustLeave":true}
+2024-05-29 17:48:33.731 [main] INFO  s.UpdateHolidayCalendarAPI - Response status code is 200
+2024-05-29 17:48:33.735 [main] INFO  s.UpdateHolidayCalendarAPI - Request body for comparison: {"date":"2024-04-19","operational_country_id":1,"length":0,"description":"celebration celebration","location":[1],"adjustLeave":true}
+2024-05-29 17:48:33.743 [main] INFO  s.UpdateHolidayCalendarAPI - Response body parameters match the request body:
+2024-05-29 17:48:33.743 [main] INFO  s.UpdateHolidayCalendarAPI - date: 2024-04-19 (Request), 2024-04-19 (Response)
+2024-05-29 17:48:33.743 [main] INFO  s.UpdateHolidayCalendarAPI - operational_country_id: 1 (Request), 1 (Response)
+2024-05-29 17:48:33.743 [main] INFO  s.UpdateHolidayCalendarAPI - length: 0 (Request), 0 (Response)
+2024-05-29 17:48:33.743 [main] INFO  s.UpdateHolidayCalendarAPI - description: celebration celebration (Request), celebration celebration (Response)
+2024-05-29 17:48:33.743 [main] INFO  s.UpdateHolidayCalendarAPI - location: [1] (Request), mapped with location_id: 1 (Response)
+2024-05-29 17:48:33.743 [main] INFO  s.UpdateHolidayCalendarAPI - adjustLeave: true (Request), mapped with editable: true (Response)
