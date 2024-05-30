@@ -31,19 +31,13 @@ public class LoginPage extends BasePage {
 
     public LoginPage(WebDriver driver) {
         super(driver);
-    }
-
-    public void navigateToLoginPage() {
-        String baseUrl = PropertiesUtil.getProperty("baseUrl");
-        driver.get(baseUrl);
-        LOGGER.info("Navigated to the login page");
-    }
+    } //intialize constructor of parent class
 
     public void LogInWithCredentials(String username, String password) {
-        browserActions.inputText(usernameField, username);
-        browserActions.inputText(passwordField, password);
+        browserActions.inputText(usernameField, username, "Username");
+        browserActions.inputText(passwordField, password, "Password");
         browserActions.clickElement(loginButton);
-        LOGGER.info("Logged with credentials");
+        LOGGER.info("Logged in with credentials");
     }
 
     public boolean isDefaultTabDisplayed() {

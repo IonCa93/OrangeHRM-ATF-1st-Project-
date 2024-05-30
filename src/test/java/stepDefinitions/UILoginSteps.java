@@ -1,6 +1,8 @@
 package stepDefinitions;
 
 import org.openqa.selenium.WebElement;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import pages.LoginPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -12,10 +14,10 @@ import static org.junit.Assert.assertTrue;
 
 public class UILoginSteps {
     LoginPage loginPage = new LoginPage(DriverManager.getDriver());
+    private static final Logger LOGGER = LoggerFactory.getLogger(LoginPage.class); // Logger
 
     @Given("the OrangeHRM home page is opened")
     public void openOrangeHRMHomePage() {
-        loginPage.navigateToLoginPage();
     }
 
     @When("the user initiates the login process")
@@ -48,7 +50,6 @@ public class UILoginSteps {
     // Custom GIVEN step as pre-req for Feature #2
     @Given("user is logged in OrangeHRM system")
     public void userLogsInToOrangeHRMSystem () {
-        loginPage.navigateToLoginPage();
         String username = PropertiesUtil.getProperty("username");
         String password = PropertiesUtil.getProperty("password");
         loginPage.LogInWithCredentials(username, password);

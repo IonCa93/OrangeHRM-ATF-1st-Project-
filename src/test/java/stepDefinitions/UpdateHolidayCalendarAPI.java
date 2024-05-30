@@ -115,7 +115,7 @@ public class UpdateHolidayCalendarAPI {
     }
 
 
-    @Then("The status code received in the response is {int}")
+    @Then("the status code received in the response is {int}")
     public void checkStatusCode(int expectedStatusCode) throws Exception {
         if (lastResponse == null) {
             throw new Exception("No previous response to verify status code");
@@ -127,7 +127,7 @@ public class UpdateHolidayCalendarAPI {
         logger.info("Response status code is {}", expectedStatusCode);
     }
 
-    @And("The response body parameters match the request body")
+    @And("the response body parameters match the request body")
     public void verifyResponseBodyMatchesRequest() throws Exception {
         if (lastResponse == null || lastResponse.getEntity() == null) {
             throw new Exception("Response body is null or empty");

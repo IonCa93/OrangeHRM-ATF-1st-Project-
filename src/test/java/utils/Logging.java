@@ -1,4 +1,4 @@
-package Hooks;
+package utils;
 
 import ch.qos.logback.classic.Level;
 import ch.qos.logback.classic.Logger;
@@ -17,7 +17,7 @@ import java.nio.file.Paths;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class LoggingHook {
+public class Logging {
     // File appenders for logging to feature-specific and archive log files (one for the current execution and one for archive).
     private FileAppender<ILoggingEvent> featureLogAppender;
     private FileAppender<ILoggingEvent> archiveLogAppender;

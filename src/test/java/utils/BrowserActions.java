@@ -21,9 +21,10 @@ public class BrowserActions {
         wait.until(ExpectedConditions.elementToBeClickable(element)).click();
     }
 
-    public void inputText(WebElement element, String text) {
+    public void inputText(WebElement element, String text, String fieldName) {
         wait.until(ExpectedConditions.elementToBeClickable(element)).clear();
         element.sendKeys(text);
+        LOGGER.info("Entering text '{}' into element '{}' with field name '{}'", text, element, fieldName);
     }
 
     public void inputTextWithRetry(WebElement element, String text) {

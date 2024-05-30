@@ -1,4 +1,4 @@
-@api @Run
+@api @run
 Feature: Update holiday calendar
 
   Scenario Outline: Create a new holiday
@@ -13,5 +13,5 @@ Feature: Update holiday calendar
       | operational_country_id | 1                     |
       | location               | [1]                   |
       | adjustLeave            | true                  |
-    Then The status code received in the response is 200
-    And The response body parameters match the request body
+    Then the status code received in the response is 200
+    And the response body parameters match the request body

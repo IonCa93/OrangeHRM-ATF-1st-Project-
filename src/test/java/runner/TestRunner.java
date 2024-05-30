@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = {"stepDefinitions", "Hooks"},
         monochrome = true,
-        tags = "@ui or @api and not @ignore",
+        tags = "@ui or @sdsad and not @ignore",
         plugin = {
                 "pretty",
                 "html:target/reports/Reports.html",

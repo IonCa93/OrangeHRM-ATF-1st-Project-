@@ -31,7 +31,7 @@ public class DriverManager {
             boolean headless = isHeadless();
 
             switch (browserType) {
-                case "CHROME":
+                case "CHROME": //TODO each case sep. methods
                     ChromeOptions chromeOptions = new ChromeOptions();
                     if (headless) {
                         chromeOptions.addArguments("--headless");
@@ -53,7 +53,7 @@ public class DriverManager {
             }
 
             // Maximize window
-            driver.manage().window().maximize();
+            driver.manage().window().maximize();//TODO move into hook
         }
         return driver;
     }
