@@ -7,3 +7,7 @@ V4.0
 5. Login - moved OpenHomePage into Hooks class;
 6. Background step for UI-Login feature (To be revised)
 
+v4.1
+
+1. DriverManager class refator - separate methods for BrowserType
+2. Hooks class refactor - moved Maximize browser window from DriverManager class
