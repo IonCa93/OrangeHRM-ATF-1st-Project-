@@ -6,3 +6,4 @@ V4.0
 4. BrowserActions - detailed logging with specification of fieldName+value inserted;
 5. Login - moved OpenHomePage into Hooks class;
 6. Background step for UI-Login feature (To be revised)
+

@@ -19,15 +19,16 @@ public class Hooks {
     public void setUp() {
         LOGGER.info("Initializing WebDriver for UI testing");
         String baseUrl = PropertiesUtil.getProperty("baseUrl"); // Get the base URL first
+        WebDriver driver = DriverManager.getDriver();
+        driver.manage().window().maximize(); // Maximize the browser window
         DriverManager.getDriver(); // Selenium will handle any exceptions during driver initialization
-        LOGGER.info("WebDriver initialized successfully");
-        Hooks.navigateToLoginPage(baseUrl); // Pass the base URL to navigateToLoginPage
+        LOGGER.info("WebDriver initialized and browser window maximized successfully");
+        navigateToLoginPage(driver, baseUrl); // Pass the driver instance
     }
 
-    public static void navigateToLoginPage(String baseUrl) {
-        WebDriver driver = DriverManager.getDriver();
+    public static void navigateToLoginPage(WebDriver driver, String baseUrl) {
         driver.get(baseUrl);
-        String currentUrl = driver.getCurrentUrl(); // Get the current URL after navigating
+        String currentUrl = driver.getCurrentUrl();
         LOGGER.info("Navigated to the login page. Current URL: {}", currentUrl);
     }
 

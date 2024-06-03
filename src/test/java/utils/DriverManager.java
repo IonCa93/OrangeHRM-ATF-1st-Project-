@@ -25,35 +25,40 @@ public class DriverManager {
         return Boolean.parseBoolean(PropertiesUtil.getProperty("browser.headless"));
     }
 
+    private static WebDriver initChromeDriver(boolean headless) {
+        ChromeOptions options = new ChromeOptions();
+        if (headless) {
+            options.addArguments("--headless");
+        }
+        logger.info("Starting Chrome browser");
+        return new ChromeDriver(options);
+    }
+
+    private static WebDriver initFirefoxDriver(boolean headless) {
+        FirefoxOptions options = new FirefoxOptions();
+        if (headless) {
+            options.addArguments("--headless");
+        }
+        logger.info("Starting Firefox browser");
+        return new FirefoxDriver(options);
+    }
+
     public static WebDriver getDriver() {
         if (driver == null) {
             String browserType = getBrowserType();
             boolean headless = isHeadless();
 
             switch (browserType) {
-                case "CHROME": //TODO each case sep. methods
-                    ChromeOptions chromeOptions = new ChromeOptions();
-                    if (headless) {
-                        chromeOptions.addArguments("--headless");
-                    }
-                    driver = new ChromeDriver(chromeOptions);
-                    logger.info("Chrome browser started");
+                case "CHROME":
+                    driver = initChromeDriver(headless);
                     break;
                 case "FIREFOX":
-                    FirefoxOptions firefoxOptions = new FirefoxOptions();
-                    if (headless) {
-                        firefoxOptions.addArguments("--headless");
-                    }
-                    driver = new FirefoxDriver(firefoxOptions);
-                    logger.info("Firefox browser started");
+                    driver = initFirefoxDriver(headless);
                     break;
                 default:
                     logger.error("Unsupported browser type: {}", browserType);
                     throw new IllegalArgumentException("Unsupported browser type: " + browserType);
             }
-
-            // Maximize window
-            driver.manage().window().maximize();//TODO move into hook
         }
         return driver;
     }
