@@ -1,10 +1,10 @@
 @api @ignore @run
 Feature: Create Employee Information
 
-  Scenario Outline: Create a new employee
-
   Background:
     Given Bearer token is generated
+
+  Scenario: Create a new employee
 
     When A POST request is performed with following request body:
       | firstName  | Jo                   |

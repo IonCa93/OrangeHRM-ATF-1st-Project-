@@ -1,0 +1,7 @@
+2024-06-04 15:16:19.178 [main] INFO  utils.PropertiesUtil - Properties file 'config.properties' loaded successfully.
+2024-06-04 15:16:19.194 [main] INFO  utils.PropertiesUtil - Property key 'token.endpoint' retrieved with value 'https://api-sandbox.orangehrm.com/oauth/issueToken'.
+2024-06-04 15:16:19.194 [main] INFO  utils.PropertiesUtil - Property key 'client.id' retrieved with value 'api-client'.
+2024-06-04 15:16:19.194 [main] INFO  utils.PropertiesUtil - Property key 'client.secret' retrieved with value '942d36a36d6bf422a36f5871f905b6e5'.
+2024-06-04 15:16:19.194 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
+2024-06-04 15:16:19.194 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
+2024-06-04 15:16:21.963 [main] INFO  utils.PropertiesUtil - Property key 'api.holiday.endpoint' retrieved with value 'https://api-sandbox.orangehrm.com/api/holidays'.

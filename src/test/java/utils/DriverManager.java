@@ -9,7 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class DriverManager {
-    private static final Logger logger = LoggerFactory.getLogger(DriverManager.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(DriverManager.class);
     public static WebDriver driver;
 
     // private constructor to prevent instantiation from other classes
@@ -30,7 +30,7 @@ public class DriverManager {
         if (headless) {
             options.addArguments("--headless");
         }
-        logger.info("Starting Chrome browser");
+        LOGGER.info("Starting Chrome browser");
         return new ChromeDriver(options);
     }
 
@@ -39,7 +39,7 @@ public class DriverManager {
         if (headless) {
             options.addArguments("--headless");
         }
-        logger.info("Starting Firefox browser");
+        LOGGER.info("Starting Firefox browser");
         return new FirefoxDriver(options);
     }
 
@@ -56,7 +56,7 @@ public class DriverManager {
                     driver = initFirefoxDriver(headless);
                     break;
                 default:
-                    logger.error("Unsupported browser type: {}", browserType);
+                    LOGGER.error("Unsupported browser type: {}", browserType);
                     throw new IllegalArgumentException("Unsupported browser type: " + browserType);
             }
         }

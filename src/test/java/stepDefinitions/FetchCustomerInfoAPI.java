@@ -1,17 +1,15 @@
 package stepDefinitions;
 
+import exceptions.NoPreviousResponseException;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
 import io.cucumber.datatable.DataTable;
-import org.apache.http.HttpEntity;
-import org.apache.http.HttpResponse;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.HttpClientBuilder;
-import org.apache.http.util.EntityUtils;
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
 import org.json.JSONArray;
 import org.json.JSONObject;
+import org.junit.Assert;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import utils.PropertiesUtil;
@@ -19,79 +17,56 @@ import java.util.List;
 import java.util.Map;
 
 public class FetchCustomerInfoAPI {
-    private static final Logger logger = LoggerFactory.getLogger(FetchCustomerInfoAPI.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(FetchCustomerInfoAPI.class);
 
     private static final String API_ENDPOINT = PropertiesUtil.getProperty("api.customer.endpoint");
-    private HttpResponse lastResponse;
+    private Response lastResponse;
 
-    @When("I send a GET request to retrieve customer information")
-    public void fetchCustomerInfo() throws Exception {
-        logger.info("Sending GET request to retrieve customer information...");
-        HttpClient httpClient = HttpClientBuilder.create().build();
-        HttpGet httpGet = new HttpGet(API_ENDPOINT);
+    @When("user sends a GET request to retrieve customer information")
+    public void fetchCustomerInfo() {
+        LOGGER.info("Sending GET request to retrieve customer information...");
 
         // Retrieve token from CommonSteps class
         String token = CommonSteps.getBearerToken();
 
-        // Set Bearer Token in Authorization header
-        httpGet.setHeader("Authorization", "Bearer " + token);
+        // Send GET request
+        lastResponse = RestAssured
+                .given()
+                .header("Authorization", "Bearer " + token)
+                .get(API_ENDPOINT);
 
-        // Execute the request
-        lastResponse = httpClient.execute(httpGet);
-        logger.info("GET request executed");
-
-        // Handle response
-        int statusCode = lastResponse.getStatusLine().getStatusCode();
-        if (statusCode != 200) {
-            logger.error("GET request Failed with status code: {}", statusCode);
-            throw new Exception("GET Request Failed with status code: " + statusCode);
-        } else {
-            logger.info("GET request successful with status code: {}", statusCode);
-        }
+        LOGGER.info("GET request executed");
     }
 
-    @Then("The response status code should be {int}")
-    public void verifyResponseStatusCode(int expectedStatusCode) throws Exception {
+    @Then("the response status code should be {int}")
+    public void verifyResponseStatusCode(int expectedStatusCode) {
         if (lastResponse == null) {
-            logger.error("No previous response to verify status code");
-            throw new Exception("No previous response to verify status code");
+            LOGGER.error("No previous response to verify status code");
+            throw new NoPreviousResponseException("No previous response to verify status code");
         }
 
-        // Verify response status code
-        int actualStatusCode = lastResponse.getStatusLine().getStatusCode();
-        if (actualStatusCode != expectedStatusCode) {
-            logger.error("Expected status code: {}, Actual status code: {}", expectedStatusCode, actualStatusCode);
-            throw new Exception("Expected status code: " + expectedStatusCode + ", Actual status code: " + actualStatusCode);
-        } else {
-            logger.info("Response status code verified successfully: {}", actualStatusCode);
-        }
+        // Verify response status code using assertion
+        int actualStatusCode = lastResponse.getStatusCode();
+        Assert.assertEquals("Response status code does not match expected", expectedStatusCode, actualStatusCode);
+        LOGGER.info("Response status code verified successfully: {}", actualStatusCode);
     }
 
-    @And("The response body should contain the following customer data:")
-    public void getResponseBody(DataTable dataTable) throws Exception {
+
+    @And("the response body should contain the following customer data:")
+    public void getResponseBody(DataTable dataTable) {
         if (lastResponse == null) {
-            throw new Exception("No previous response to verify");
+            throw new NoPreviousResponseException("No previous response to verify");
         }
 
-        HttpEntity entity = lastResponse.getEntity();
-        if (entity == null) {
-            throw new Exception("Response body is null");
-        }
-
-        String responseBody = EntityUtils.toString(entity);
-        logger.info("Response body received: {}", responseBody);
-
-        // Check if the response body is empty
-        if (responseBody.isEmpty()) {
-            throw new Exception("Response body is empty");
-        }
+        String responseBody = lastResponse.getBody().asString();
+        LOGGER.info("Response body received: {}", responseBody);
 
         // Parse the response body as a JSON object
         JSONObject jsonObject = new JSONObject(responseBody);
 
         // Get the "data" array from the JSON object
         if (!jsonObject.has("data")) {
-            throw new Exception("Response body does not contain any customer data");
+            throw new NoPreviousResponseException("Response body does not contain any customer data");
         }
 
         JSONArray dataArray = jsonObject.getJSONArray("data");
@@ -103,18 +78,18 @@ public class FetchCustomerInfoAPI {
         for (Map<String, String> expectedCustomer : expectedCustomers) {
             boolean found = false;
             // Iterate over each customer object in the response
-            for (int i = 0; i < dataArray.length(); i++) {
-                JSONObject customer = dataArray.getJSONObject(i);
+            for (Object obj : dataArray) {
+                JSONObject customer = (JSONObject) obj;
                 // Check if the customer data matches the expected data
                 if (compareCustomerData(customer, expectedCustomer)) {
                     found = true;
-                    logger.info("Expected customer data found in response: {}", expectedCustomer);
+                    LOGGER.info("Expected customer data found in response: {}", expectedCustomer);
                     break; // Stop searching if a match is found
                 }
             }
             // If no match found for the current expected customer, throw an exception
             if (!found) {
-                throw new Exception("Customer data not found in response: " + expectedCustomer);
+                throw new NoPreviousResponseException("Customer data not found in response: " + expectedCustomer);
             }
         }
     }

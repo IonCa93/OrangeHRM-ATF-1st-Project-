@@ -1,14 +1,13 @@
 @api @run
 Feature: Retrieve Customer Information from OrangeHRM
 
-  Scenario Outline: Fetch client information
-
   Background:
     Given Bearer token is generated
 
-    When I send a GET request to retrieve customer information
-    Then The response status code should be 200
-    And The response body should contain the following customer data:
+  Scenario: Fetch client information
+    When user sends a GET request to retrieve customer information
+    Then the response status code should be 200
+    And the response body should contain the following customer data:
       | customerId | isDeleted | name                                | description                                              |
       | 1          | 0         | 01 Communique Laboratory Inc(OCQLF) | 01 Communique Laboratory Inc(OCQLF) Description          |
       | 2          | 0         | 1 800 Flowers.com Inc(FLWS)         | 1 800 Flowers.com Inc(FLWS) Description                  |

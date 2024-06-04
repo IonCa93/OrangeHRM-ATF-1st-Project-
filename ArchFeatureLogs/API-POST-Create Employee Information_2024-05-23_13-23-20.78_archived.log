@@ -1,10 +1,10 @@
-2024-05-23 13:23:23.649 [main] INFO  stepDefinitions.CreateEmployeeAPI - POST request performed successfully
-2024-05-23 13:23:23.649 [main] INFO  stepDefinitions.CreateEmployeeAPI - Request body sent: {"firstName":"Johnny","lastName":"Cash","locationId":"1","middleName":"Dorian","employeeId":"9085","joinedDate":"2024-07-09"}
-2024-05-23 13:23:23.649 [main] INFO  stepDefinitions.CreateEmployeeAPI - Response status code is 201
-2024-05-23 13:23:23.649 [main] INFO  stepDefinitions.CreateEmployeeAPI - All parameters in the response body match the parameters in the request body:
-2024-05-23 13:23:23.649 [main] INFO  stepDefinitions.CreateEmployeeAPI - firstName: Johnny
-2024-05-23 13:23:23.649 [main] INFO  stepDefinitions.CreateEmployeeAPI - lastName: Cash
-2024-05-23 13:23:23.649 [main] INFO  stepDefinitions.CreateEmployeeAPI - locationId: 1
-2024-05-23 13:23:23.649 [main] INFO  stepDefinitions.CreateEmployeeAPI - middleName: Dorian
-2024-05-23 13:23:23.649 [main] INFO  stepDefinitions.CreateEmployeeAPI - employeeId: 9085
-2024-05-23 13:23:23.649 [main] INFO  stepDefinitions.CreateEmployeeAPI - joinedDate: 2024-07-09
+2024-05-23 13:23:23.649 [main] INFO  stepDefinitions.DEPRECATED_CreateEmployeeAPI - POST request performed successfully
+2024-05-23 13:23:23.649 [main] INFO  stepDefinitions.DEPRECATED_CreateEmployeeAPI - Request body sent: {"firstName":"Johnny","lastName":"Cash","locationId":"1","middleName":"Dorian","employeeId":"9085","joinedDate":"2024-07-09"}
+2024-05-23 13:23:23.649 [main] INFO  stepDefinitions.DEPRECATED_CreateEmployeeAPI - Response status code is 201
+2024-05-23 13:23:23.649 [main] INFO  stepDefinitions.DEPRECATED_CreateEmployeeAPI - All parameters in the response body match the parameters in the request body:
+2024-05-23 13:23:23.649 [main] INFO  stepDefinitions.DEPRECATED_CreateEmployeeAPI - firstName: Johnny
+2024-05-23 13:23:23.649 [main] INFO  stepDefinitions.DEPRECATED_CreateEmployeeAPI - lastName: Cash
+2024-05-23 13:23:23.649 [main] INFO  stepDefinitions.DEPRECATED_CreateEmployeeAPI - locationId: 1
+2024-05-23 13:23:23.649 [main] INFO  stepDefinitions.DEPRECATED_CreateEmployeeAPI - middleName: Dorian
+2024-05-23 13:23:23.649 [main] INFO  stepDefinitions.DEPRECATED_CreateEmployeeAPI - employeeId: 9085
+2024-05-23 13:23:23.649 [main] INFO  stepDefinitions.DEPRECATED_CreateEmployeeAPI - joinedDate: 2024-07-09

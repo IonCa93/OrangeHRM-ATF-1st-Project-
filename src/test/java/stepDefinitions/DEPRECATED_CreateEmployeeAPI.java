@@ -22,10 +22,13 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
+import utils.ContextKey;
+import utils.ScenarioContext;
 
 
-public class CreateEmployeeAPI {
-    private final Logger logger = LoggerFactory.getLogger(CreateEmployeeAPI.class);
+
+public class DEPRECATED_CreateEmployeeAPI {
+    private final Logger LOGGER = LoggerFactory.getLogger(DEPRECATED_CreateEmployeeAPI.class);
     private static final String EMPLOYEE_API_ENDPOINT = PropertiesUtil.getProperty("api.employee.endpoint");
     private String requestBodySent;
     private static HttpResponse lastResponse;
@@ -43,11 +46,11 @@ public class CreateEmployeeAPI {
         performPostRequest(EMPLOYEE_API_ENDPOINT, requestBody.toString());
 
         // Log the request body
-        logger.info("Request body sent: {}", requestBody.toString());
+        LOGGER.info("Request body sent: {}", requestBody.toString());
 
         // Save the request body to Scenario Context
         requestBodySent = requestBody.toString();
-        ScenarioContext.getInstance().saveValueToScenarioContext(ScenarioContextKeys.ScenarioContextKey.REQUEST_BODY_SENT, requestBodySent);
+        ScenarioContext.getInstance().saveValueToScenarioContext(ContextKey.REQUEST_BODY_SENT, requestBodySent);
     }
 
     private JSONObject generateEmployeeRequestBody(Map<String, String> employeeData) {
@@ -90,7 +93,7 @@ public class CreateEmployeeAPI {
         if (actualStatusCode != expectedStatusCode) {
             throw new Exception("Expected status code: " + expectedStatusCode + ", Actual status code: " + actualStatusCode);
         }
-        logger.info("Response status code is {}", expectedStatusCode);
+        LOGGER.info("Response status code is {}", expectedStatusCode);
     }
 
     private Map<String, String> extractValuesFromResponseBody(JSONObject responseData, String requestBody) {
@@ -111,7 +114,7 @@ public class CreateEmployeeAPI {
     @And("The response body parameters should match the request body")
     public void verifyResponseBodyParametersMatchRequest() throws Exception {
         // Retrieve the saved request body from Scenario Context
-        String requestBody = ScenarioContext.getInstance().getValueFromScenarioContext(ScenarioContextKeys.ScenarioContextKey.REQUEST_BODY_SENT);
+        String requestBody = ScenarioContext.getInstance().getValueFromScenarioContext(ContextKey.REQUEST_BODY_SENT);
 
         // Check if the response body is null or empty
         if (lastResponse == null || lastResponse.getEntity() == null) {
@@ -146,22 +149,22 @@ public class CreateEmployeeAPI {
                     String responseValue = extractedValues.get(parameter);
                     if (!requestValue.equals(responseValue)) {
                         allFieldsMatch = false;
-                        logger.error("Response body field value mismatch for: {}. Expected: '{}', Actual: '{}'", parameter, requestValue, responseValue);
+                        LOGGER.error("Response body field value mismatch for: {}. Expected: '{}', Actual: '{}'", parameter, requestValue, responseValue);
                     } else {
                         // If the values match, add them to the matchedValues map
                         matchedValues.put(parameter, responseValue);
                     }
                 } else {
                     allFieldsMatch = false;
-                    logger.error("Parameter '{}' in request body not found in response body", parameter);
+                    LOGGER.error("Parameter '{}' in request body not found in response body", parameter);
                 }
             }
 
             // Log the matched parameters and their values
             if (allFieldsMatch) {
-                logger.info("All parameters in the response body match the parameters in the request body:");
+                LOGGER.info("All parameters in the response body match the parameters in the request body:");
                 for (String parameter : matchedValues.keySet()) {
-                    logger.info("{}: {}", parameter, matchedValues.get(parameter));
+                    LOGGER.info("{}: {}", parameter, matchedValues.get(parameter));
                 }
             }
 
@@ -190,10 +193,10 @@ public class CreateEmployeeAPI {
         lastResponse = httpClient.execute(httpPost);
         int statusCode = lastResponse.getStatusLine().getStatusCode();
         if (statusCode != 201) {
-            logger.error("POST request failed with status code: {}", statusCode);
+            LOGGER.error("POST request failed with status code: {}", statusCode);
             throw new Exception("POST request failed with status code: " + statusCode);
         }
-        logger.info("POST request performed successfully");
+        LOGGER.info("POST request performed successfully");
     }
 
     private int getRandomNumber(int min, int max) {

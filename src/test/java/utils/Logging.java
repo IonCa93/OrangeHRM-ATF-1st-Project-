@@ -1,6 +1,5 @@
 package utils;
 
-import ch.qos.logback.classic.Level;
 import ch.qos.logback.classic.Logger;
 import ch.qos.logback.classic.LoggerContext;
 import ch.qos.logback.classic.spi.ILoggingEvent;
@@ -23,9 +22,9 @@ public class Logging {
     private FileAppender<ILoggingEvent> archiveLogAppender;
     private String featureName;
     // The logger instance that will be used to log messages for the feature.
-    private Logger featureLogger;
+    public Logger featureLogger;
 
-    @Before
+    @Before //
     public void beforeScenario(Scenario scenario) {
         // Extract the feature name from the scenario's URI.
         featureName = extractFeatureName(scenario);
@@ -40,11 +39,14 @@ public class Logging {
         // Ensure that the directories for the log files exist (create them if they don't exist).
         ensureDirectoriesExist(featureLogDirectoryPath, archiveLogDirectoryPath);
 
-        // Define the logger name to match with the package where actual logging calls are made.
-        String loggerName = "stepDefinitions";
-        // Retrieve the logger instance from the LoggerFactory.
-        featureLogger = (Logger) LoggerFactory.getLogger(loggerName);
-        featureLogger.setLevel(Level.DEBUG);
+
+        // Get the logger context
+        LoggerContext loggerContext = (LoggerContext) LoggerFactory.getILoggerFactory();
+        // Get the logger instance based on the package name
+        featureLogger = loggerContext.getLogger(getClass().getPackage().getName());
+
+
+
 
         // Set up the file appenders for logging.
         featureLogAppender = setupLogging(featureLogDirectoryPath, featureLogFileName);
@@ -116,6 +118,3 @@ public class Logging {
         }
     }
 }
-
-
-

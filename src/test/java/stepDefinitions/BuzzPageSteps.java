@@ -8,7 +8,8 @@ import org.junit.Assert;
 import pages.BuzzPage;
 import utils.DriverManager;
 import utils.ScenarioContext;
-import utils.ScenarioContextKeys;
+import utils.ContextKey;
+
 public class BuzzPageSteps {
 
     private final BuzzPage buzzPage = new BuzzPage(DriverManager.getDriver());
@@ -25,7 +26,7 @@ public class BuzzPageSteps {
         String randomText = faker.lorem().sentence(); // Generate random text using Java Faker
         buzzPage.populateWhatsOnYourMindField(randomText); // Populate the field with random text
         // Store the random text in the scenario context
-        scenarioContext.saveValueToScenarioContext(ScenarioContextKeys.ScenarioContextKey.RANDOM_POST_TEXT, randomText);
+        scenarioContext.saveValueToScenarioContext(ContextKey.RANDOM_POST_TEXT, randomText);
     }
 
     @And("Post button is clicked")
@@ -36,7 +37,7 @@ public class BuzzPageSteps {
     @Then("a new post is displayed on the top of the page")
     public void new_post_is_displayed_on_the_top_of_the_page() {
         // Retrieve the expected dynamic text
-        String expectedText = scenarioContext.getValueFromScenarioContext(ScenarioContextKeys.ScenarioContextKey.RANDOM_POST_TEXT);
+        String expectedText = scenarioContext.getValueFromScenarioContext(ContextKey.RANDOM_POST_TEXT);
 
         // Verify that the new post displayed on the page contains the expected dynamic text
         Assert.assertTrue("New Post is not displayed", buzzPage.getNewPostText(expectedText));

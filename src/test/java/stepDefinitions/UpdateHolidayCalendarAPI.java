@@ -1,23 +1,21 @@
 package stepDefinitions;
 
+import exceptions.NoPreviousResponseException;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.apache.http.HttpHeaders;
-import org.apache.http.HttpResponse;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.entity.StringEntity;
-import org.apache.http.impl.client.CloseableHttpClient;
-import org.apache.http.impl.client.HttpClients;
-import org.apache.http.util.EntityUtils;
+import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
 import org.json.JSONArray;
 import org.json.JSONObject;
+import org.junit.Assert;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import utils.PropertiesUtil;
 import utils.ScenarioContext;
-import utils.ScenarioContextKeys;
+import utils.ContextKey;
 import utils.TokenUtility;
 import java.io.IOException;
 import java.time.LocalDate;
@@ -25,33 +23,37 @@ import java.util.Map;
 import java.util.Random;
 
 public class UpdateHolidayCalendarAPI {
-    private final Logger logger = LoggerFactory.getLogger(UpdateHolidayCalendarAPI.class);
+    private final Logger LOGGER = LoggerFactory.getLogger(UpdateHolidayCalendarAPI.class);
     private static final String HOLIDAY_API_ENDPOINT = PropertiesUtil.getProperty("api.holiday.endpoint");
 
-    private static final CloseableHttpClient httpClient = HttpClients.createDefault();
-    private static HttpResponse lastResponse;
+    private static Response lastResponse;
     private String requestBodySent;
 
     @When("POST request is performed with following request body:")
-    public void sendHolidayData(DataTable dataTable) throws Exception {
+    public void sendHolidayData(DataTable dataTable) {
         // Convert DataTable to Map for request body
         Map<String, String> holidayData = dataTable.asMap(String.class, String.class);
 
         // Generate request body with dynamic values
-        JSONObject requestBody = generateHolidayRequestBody(holidayData);
+        String requestBody = generateHolidayRequestBody(holidayData);
 
         // Perform POST request
-        performPostRequest(HOLIDAY_API_ENDPOINT, requestBody.toString());
+        lastResponse = RestAssured
+                .given()
+                .header("Authorization", "Bearer " + TokenUtility.generateBearerToken())
+                .contentType(ContentType.JSON)
+                .body(requestBody)
+                .post(HOLIDAY_API_ENDPOINT);
 
         // Log the request body
-        logger.info("Request body sent: {}", requestBody.toString());
+        LOGGER.info("Request body sent: {}", requestBody);
 
         // Save the request body to Scenario Context
-        requestBodySent = requestBody.toString();
-        ScenarioContext.getInstance().saveValueToScenarioContext(ScenarioContextKeys.ScenarioContextKey.REQUEST_BODY_SENT, requestBodySent);
+        requestBodySent = requestBody;
+        ScenarioContext.getInstance().saveValueToScenarioContext(ContextKey.REQUEST_BODY_SENT, requestBodySent);
     }
 
-    private JSONObject generateHolidayRequestBody(Map<String, String> holidayData) {
+    private String generateHolidayRequestBody(Map<String, String> holidayData) {
         JSONObject requestBody = new JSONObject();
 
         // Handle the location field separately as it is an array
@@ -83,7 +85,7 @@ public class UpdateHolidayCalendarAPI {
                 requestBody.put(key, value);
             }
         }
-        return requestBody;
+        return requestBody.toString(); // Convert JSONObject to String
     }
 
     private String getRandomDateInYear(int year) {
@@ -114,39 +116,36 @@ public class UpdateHolidayCalendarAPI {
         return description.toString();
     }
 
-
     @Then("the status code received in the response is {int}")
-    public void checkStatusCode(int expectedStatusCode) throws Exception {
+    public void checkStatusCode(int expectedStatusCode) {
         if (lastResponse == null) {
-            throw new Exception("No previous response to verify status code");
+            throw new NoPreviousResponseException("No previous response to verify status code");
         }
-        int actualStatusCode = lastResponse.getStatusLine().getStatusCode();
-        if (actualStatusCode != expectedStatusCode) {
-            throw new Exception("Expected status code: " + expectedStatusCode + ", Actual status code: " + actualStatusCode);
-        }
-        logger.info("Response status code is {}", expectedStatusCode);
+
+        int actualStatusCode = lastResponse.getStatusCode();
+        Assert.assertEquals("Response status code does not match expected", expectedStatusCode, actualStatusCode);
+        LOGGER.info("Response status code is {}", actualStatusCode);
     }
 
     @And("the response body parameters match the request body")
     public void verifyResponseBodyMatchesRequest() throws Exception {
-        if (lastResponse == null || lastResponse.getEntity() == null) {
+        if (lastResponse == null || lastResponse.getBody() == null) {
             throw new Exception("Response body is null or empty");
         }
-
         try {
             // Parse the response body
-            String responseBody = EntityUtils.toString(lastResponse.getEntity());
+            String responseBody = lastResponse.getBody().asString();
             JSONObject responseJson = new JSONObject(responseBody);
 
             // Retrieve the data object from the response body
             JSONObject responseData = responseJson.getJSONObject("data");
 
             // Retrieve the request body from Scenario Context
-            String requestBodyString = ScenarioContext.getInstance().<String>getValueFromScenarioContext(ScenarioContextKeys.ScenarioContextKey.REQUEST_BODY_SENT);
+            String requestBodyString = ScenarioContext.getInstance().<String>getValueFromScenarioContext(ContextKey.REQUEST_BODY_SENT);
             JSONObject requestBody = new JSONObject(requestBodyString);
 
             // Log the request body
-            logger.info("Request body for comparison: {}", requestBody.toString());
+            LOGGER.info("Request body for comparison: {}", requestBody.toString());
 
             // Compare each key-value pair in the request body with the response body
             for (String key : requestBody.keySet()) {
@@ -156,30 +155,28 @@ public class UpdateHolidayCalendarAPI {
                 if (responseValue == null) {
                     // Skip logging for location and adjustLeave
                     if (!("location".equals(key) || "adjustLeave".equals(key))) {
-                        logger.error("Mismatch found - Key: {}, Request Value: {}, Response Value: {}", key, requestValue, responseValue);
+                        LOGGER.error("Mismatch found - Key: {}, Request Value: {}, Response Value: {}", key, requestValue, responseValue);
                         throw new Exception("Response body parameters do not match the request body");
                     }
                 } else if (!compareValues(requestValue, responseValue)) {
-                    logger.error("Mismatch found - Key: {}, Request Value: {}, Response Value: {}", key, requestValue, responseValue);
+                    LOGGER.error("Mismatch found - Key: {}, Request Value: {}, Response Value: {}", key, requestValue, responseValue);
                     throw new Exception("Response body parameters do not match the request body");
                 }
             }
 
             // Log the parameters matching between request and response
-            logger.info("Response body parameters match the request body:");
-            logger.info("date: {} (Request), {} (Response)", requestBody.opt("date"), responseData.optString("date"));
-            logger.info("operational_country_id: {} (Request), {} (Response)", requestBody.opt("operational_country_id"), responseData.optString("operational_country_id"));
-            logger.info("length: {} (Request), {} (Response)", requestBody.opt("length"), responseData.optString("length"));
-            logger.info("description: {} (Request), {} (Response)", requestBody.opt("description"), responseData.optString("description"));
-            logger.info("location: {} (Request), mapped with location_id: {} (Response)", requestBody.opt("location"), getLocationIds(responseData.optJSONArray("HolidayLocation")));
-            logger.info("adjustLeave: {} (Request), mapped with editable: {} (Response)", requestBody.opt("adjustLeave"), responseData.optBoolean("editable"));
+            LOGGER.info("Response body parameters match the request body:");
+            LOGGER.info("date: {} (Request), {} (Response)", requestBody.opt("date"), responseData.optString("date"));
+            LOGGER.info("operational_country_id: {} (Request), {} (Response)", requestBody.opt("operational_country_id"), responseData.optString("operational_country_id"));
+            LOGGER.info("length: {} (Request), {} (Response)", requestBody.opt("length"), responseData.optString("length"));
+            LOGGER.info("description: {} (Request), {} (Response)", requestBody.opt("description"), responseData.optString("description"));
+            LOGGER.info("location: {} (Request), mapped with location_id: {} (Response)", requestBody.opt("location"), getLocationIds(responseData.optJSONArray("HolidayLocation")));
+            LOGGER.info("adjustLeave: {} (Request), mapped with editable: {} (Response)", requestBody.opt("adjustLeave"), responseData.optBoolean("editable"));
 
         } catch (IOException e) {
             throw new Exception("Failed to read response body: " + e.getMessage());
         }
     }
-
-
 
     // Method to extract location_ids from JSONArray of HolidayLocation objects
     private String getLocationIds(JSONArray holidayLocations) {
@@ -199,7 +196,6 @@ public class UpdateHolidayCalendarAPI {
         }
         return locationIds.toString();
     }
-
 
     private boolean compareValues(Object requestValue, Object responseValue) {
         if (requestValue instanceof Integer) {
@@ -221,27 +217,5 @@ public class UpdateHolidayCalendarAPI {
         } else {
             return requestValue.equals(responseValue);
         }
-    }
-
-    private void performPostRequest(String url, String requestBody) throws Exception {
-        HttpPost httpPost = new HttpPost(url);
-        // Retrieve token from TokenUtility
-        String token = TokenUtility.generateBearerToken();
-
-        // Set headers
-        httpPost.setHeader(HttpHeaders.AUTHORIZATION, "Bearer " + token);
-        httpPost.setHeader(HttpHeaders.CONTENT_TYPE, "application/json");
-
-        // Set request body
-        httpPost.setEntity(new StringEntity(requestBody));
-
-        // Execute POST request
-        lastResponse = httpClient.execute(httpPost);
-        int statusCode = lastResponse.getStatusLine().getStatusCode();
-        if (statusCode != 200) {
-            logger.error("POST request failed with status code: {}", statusCode);
-            throw new Exception("POST request failed with status code: " + statusCode);
-        }
-        logger.info("POST request performed successfully");
     }
 }

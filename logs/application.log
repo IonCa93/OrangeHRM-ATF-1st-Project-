@@ -1,0 +1,693 @@
+2024-06-04 17:09:55,212 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-04 17:09:55,215 [main] INFO  utils.PropertiesUtil - Properties file 'config.properties' loaded successfully.
+2024-06-04 17:09:55,217 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-04 17:09:55,217 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-04 17:09:55,217 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-04 17:09:55,225 [main] INFO  utils.DriverManager - Starting Chrome browser
+2024-06-04 17:09:57,717 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-04 17:09:59,015 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-04 17:09:59,021 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-04 17:09:59,037 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
+2024-06-04 17:09:59,037 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
+2024-06-04 17:09:59,826 [main] INFO  utils.BrowserActions - Entering text 'Admin' into element '[[ChromeDriver: chrome on windows (f894df9519ea9126e0caeb53b46238fb)] -> name: username]' with field name 'Username'
+2024-06-04 17:10:00,208 [main] INFO  utils.BrowserActions - Entering text 'admin123' into element '[[ChromeDriver: chrome on windows (f894df9519ea9126e0caeb53b46238fb)] -> name: password]' with field name 'Password'
+2024-06-04 17:10:00,383 [main] INFO  pages.LoginPage - Logged in with credentials
+2024-06-04 17:10:00,397 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-04 17:10:02,508 [main] INFO  pages.BuzzPage - Clicked on Buzz menu item
+2024-06-04 17:10:02,745 [main] INFO  utils.BrowserActions - Attempt 1: Waiting for element to be clickable
+2024-06-04 17:10:03,003 [main] INFO  utils.BrowserActions - Attempt 1: Clearing the field
+2024-06-04 17:10:03,138 [main] INFO  utils.BrowserActions - Attempt 1: Sending keys to the field
+2024-06-04 17:10:03,336 [main] INFO  utils.BrowserActions - Attempt 1: Successfully populated the field with text
+2024-06-04 17:10:03,336 [main] INFO  pages.BuzzPage - Populated 'What's on your mind' field with text: Veritatis impedit pariatur ut dolor.
+2024-06-04 17:10:03,436 [main] INFO  pages.BuzzPage - Clicked on the post button
+2024-06-04 17:10:03,436 [main] INFO  pages.BuzzPage - New Post is present on the page
+2024-06-04 17:10:23,507 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: Verify Post functionality
+2024-06-04 17:10:23,668 [main] INFO  utils.ScreenshotUtils - Screenshot saved to file: C:\Users\icalugher\IdeaProjects\IC_Project 1stATF\target\screenshots\Verify Post functionality_20240604-171023.png
+2024-06-04 17:10:23,668 [main] INFO  utils.ScreenshotUtils - Screenshot taken for scenario: Verify Post functionality
+2024-06-04 17:10:23,887 [main] INFO  Hooks.Hooks - Starting Scenario Context teardown
+2024-06-04 17:10:23,887 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-04 17:13:36,784 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-04 17:13:36,784 [main] INFO  utils.PropertiesUtil - Properties file 'config.properties' loaded successfully.
+2024-06-04 17:13:36,784 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-04 17:13:36,784 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-04 17:13:36,784 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-04 17:13:36,800 [main] INFO  utils.DriverManager - Starting Chrome browser
+2024-06-04 17:13:38,961 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-04 17:13:40,289 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-04 17:13:40,351 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-04 17:13:40,354 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
+2024-06-04 17:13:40,354 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
+2024-06-04 17:13:41,199 [main] INFO  utils.BrowserActions - Entering text 'Admin' into element '[[ChromeDriver: chrome on windows (8d14037e0ab4c524c540e888251dc2a4)] -> name: username]' with field name 'Username'
+2024-06-04 17:13:41,435 [main] INFO  utils.BrowserActions - Entering text 'admin123' into element '[[ChromeDriver: chrome on windows (8d14037e0ab4c524c540e888251dc2a4)] -> name: password]' with field name 'Password'
+2024-06-04 17:13:41,559 [main] INFO  pages.LoginPage - Logged in with credentials
+2024-06-04 17:13:41,565 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-04 17:13:43,624 [main] INFO  pages.BuzzPage - Clicked on Buzz menu item
+2024-06-04 17:13:43,732 [main] INFO  utils.BrowserActions - Attempt 1: Waiting for element to be clickable
+2024-06-04 17:13:44,298 [main] INFO  utils.BrowserActions - Attempt 1: Clearing the field
+2024-06-04 17:13:44,504 [main] INFO  utils.BrowserActions - Attempt 1: Sending keys to the field
+2024-06-04 17:13:44,669 [main] INFO  utils.BrowserActions - Attempt 1: Successfully populated the field with text
+2024-06-04 17:13:44,670 [main] INFO  pages.BuzzPage - Populated 'What's on your mind' field with text: Maxime iure minima ex quaerat accusamus dolor.
+2024-06-04 17:13:44,749 [main] INFO  pages.BuzzPage - Clicked on the post button
+2024-06-04 17:13:44,750 [main] INFO  pages.BuzzPage - New Post is present on the page
+2024-06-04 17:13:45,308 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: Verify Post functionality
+2024-06-04 17:13:45,482 [main] INFO  utils.ScreenshotUtils - Screenshot saved to file: C:\Users\icalugher\IdeaProjects\IC_Project 1stATF\target\screenshots\Verify Post functionality_20240604-171345.png
+2024-06-04 17:13:45,482 [main] INFO  utils.ScreenshotUtils - Screenshot taken for scenario: Verify Post functionality
+2024-06-04 17:13:45,720 [main] INFO  Hooks.Hooks - Starting Scenario Context teardown
+2024-06-04 17:13:45,720 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-04 17:16:59,966 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-04 17:17:02,425 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-04 17:17:03,710 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-04 17:17:05,165 [main] INFO  pages.LoginPage - Logged in with credentials
+2024-06-04 17:17:07,723 [main] INFO  pages.BuzzPage - Clicked on Buzz menu item
+2024-06-04 17:17:09,079 [main] INFO  pages.BuzzPage - Populated 'What's on your mind' field with text: Laudantium quas in.
+2024-06-04 17:17:09,165 [main] INFO  pages.BuzzPage - Clicked on the post button
+2024-06-04 17:17:09,165 [main] INFO  pages.BuzzPage - New Post is present on the page
+2024-06-04 17:17:10,224 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: Verify Post functionality
+2024-06-04 17:17:10,585 [main] INFO  Hooks.Hooks - Starting Scenario Context teardown
+2024-06-04 17:17:10,585 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-04 17:21:14,931 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-04 17:21:14,935 [main] INFO  utils.PropertiesUtil - Properties file 'config.properties' loaded successfully.
+2024-06-04 17:21:14,936 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-04 17:21:14,936 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-04 17:21:14,937 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-04 17:21:14,942 [main] INFO  utils.DriverManager - Starting Chrome browser
+2024-06-04 17:21:16,992 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-04 17:21:18,541 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-04 17:21:18,569 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-04 17:21:18,569 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
+2024-06-04 17:21:18,569 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
+2024-06-04 17:21:19,421 [main] INFO  utils.BrowserActions - Entering text 'Admin' into element '[[ChromeDriver: chrome on windows (0381e3c4b8f92cf17b3fba8334fc600b)] -> name: username]' with field name 'Username'
+2024-06-04 17:21:19,600 [main] INFO  utils.BrowserActions - Entering text 'admin123' into element '[[ChromeDriver: chrome on windows (0381e3c4b8f92cf17b3fba8334fc600b)] -> name: password]' with field name 'Password'
+2024-06-04 17:21:19,709 [main] INFO  pages.LoginPage - Logged in with credentials
+2024-06-04 17:21:19,709 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-04 17:21:22,022 [main] INFO  pages.BuzzPage - Clicked on Buzz menu item
+2024-06-04 17:21:22,140 [main] INFO  utils.BrowserActions - Attempt 1: Waiting for element to be clickable
+2024-06-04 17:21:22,727 [main] INFO  utils.BrowserActions - Attempt 1: Clearing the field
+2024-06-04 17:21:22,847 [main] ERROR utils.BrowserActions - Attempt 1: Exception occurred while populating the field. Retrying...
+org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=125.0.6422.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0381e3c4b8f92cf17b3fba8334fc600b, clearElement {id=f.95EB6D84E65291836720E6A59A757461.d.2741CA5F1F63E5F4B4586CBE52DA3AF1.e.48}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\ICALUG~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64456}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64456/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0381e3c4b8f92cf17b3fba8334fc600b)] -> xpath: //textarea[@placeholder="What's on your mind?"]]
+Session ID: 0381e3c4b8f92cf17b3fba8334fc600b
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:129)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.clear(Unknown Source)
+	at utils.BrowserActions.inputTextWithRetry(BrowserActions.java:38)
+	at pages.BuzzPage.populateWhatsOnYourMindField(BuzzPage.java:35)
+	at stepDefinitions.BuzzPageSteps.whatSOnYourMindFieldIsPopulatedWithRandomText(BuzzPageSteps.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.core.runtime.Runtime.lambda$executePickle$6(Runtime.java:107)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.Runtime.lambda$executePickle$7(Runtime.java:107)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at io.cucumber.core.runtime.Runtime$SameThreadExecutorService.execute(Runtime.java:235)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+	at io.cucumber.core.runtime.Runtime.lambda$runFeatures$3(Runtime.java:89)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.SliceOps$1$1.accept(SliceOps.java:200)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1685)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at io.cucumber.core.runtime.Runtime.runFeatures(Runtime.java:90)
+	at io.cucumber.core.runtime.Runtime.lambda$run$0(Runtime.java:78)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.core.runtime.Runtime.run(Runtime.java:78)
+	at io.cucumber.core.cli.Main.run(Main.java:87)
+	at io.cucumber.core.cli.Main.main(Main.java:30)
+2024-06-04 17:21:22,847 [main] INFO  utils.BrowserActions - Attempt 2: Waiting for element to be clickable
+2024-06-04 17:21:22,915 [main] INFO  utils.BrowserActions - Attempt 2: Clearing the field
+2024-06-04 17:21:23,110 [main] INFO  utils.BrowserActions - Attempt 2: Sending keys to the field
+2024-06-04 17:21:23,252 [main] INFO  utils.BrowserActions - Attempt 2: Successfully populated the field with text
+2024-06-04 17:21:23,253 [main] INFO  pages.BuzzPage - Populated 'What's on your mind' field with text: Voluptas molestiae architecto suscipit quis quibusdam.
+2024-06-04 17:21:23,343 [main] INFO  pages.BuzzPage - Clicked on the post button
+2024-06-04 17:21:23,343 [main] INFO  pages.BuzzPage - New Post is present on the page
+2024-06-04 17:21:23,884 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: Verify Post functionality
+2024-06-04 17:21:24,150 [main] INFO  utils.ScreenshotUtils - Screenshot saved to file: C:\Users\icalugher\IdeaProjects\IC_Project 1stATF\target\screenshots\Verify Post functionality_20240604-172124.png
+2024-06-04 17:21:24,150 [main] INFO  utils.ScreenshotUtils - Screenshot taken for scenario: Verify Post functionality
+2024-06-04 17:21:24,357 [main] INFO  Hooks.Hooks - Starting Scenario Context teardown
+2024-06-04 17:21:24,357 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-04 17:33:49,407 [main] INFO  utils.PropertiesUtil - Properties file 'config.properties' loaded successfully.
+2024-06-04 17:33:49,407 [main] INFO  utils.PropertiesUtil - Property key 'token.endpoint' retrieved with value 'https://api-sandbox.orangehrm.com/oauth/issueToken'.
+2024-06-04 17:33:49,407 [main] INFO  utils.PropertiesUtil - Property key 'client.id' retrieved with value 'api-client'.
+2024-06-04 17:33:49,407 [main] INFO  utils.PropertiesUtil - Property key 'client.secret' retrieved with value '942d36a36d6bf422a36f5871f905b6e5'.
+2024-06-04 17:33:49,407 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
+2024-06-04 17:33:49,407 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
+2024-06-04 17:33:52,430 [main] INFO  utils.PropertiesUtil - Property key 'api.customer.endpoint' retrieved with value 'https://api-sandbox.orangehrm.com/api/customers'.
+2024-06-04 17:33:52,430 [main] INFO  s.FetchCustomerInfoAPI - Sending GET request to retrieve customer information...
+2024-06-04 17:33:53,218 [main] INFO  s.FetchCustomerInfoAPI - GET request executed
+2024-06-04 17:33:53,231 [main] INFO  s.FetchCustomerInfoAPI - Response status code verified successfully: 200
+2024-06-04 17:33:53,234 [main] INFO  s.FetchCustomerInfoAPI - Response body received: {"data":[{"customerId":"1","isDeleted":"0","name":"01 Communique Laboratory Inc(OCQLF)","description":"01 Communique Laboratory Inc(OCQLF) Description"},{"customerId":"2","isDeleted":"0","name":"1 800 Flowers.com Inc(FLWS)","description":"1 800 Flowers.com Inc(FLWS) Description"},{"customerId":"3","isDeleted":"0","name":"141 Capital Inc(ONCP)","description":"141 Capital Inc(ONCP) Description"},{"customerId":"4","isDeleted":"0","name":"1847 Holdings LLC(0955837D)","description":"1847 Holdings LLC(0955837D) Description"},{"customerId":"5","isDeleted":"0","name":"1867 Western Financial Corp(WFCL)","description":"1867 Western Financial Corp(WFCL) Description"},{"customerId":"6","isDeleted":"0","name":"1mage Software Inc(ISOL)","description":"1mage Software Inc(ISOL) Description"},{"customerId":"7","isDeleted":"0","name":"1st Capital Bank(FISB)","description":"1st Capital Bank(FISB) Description"},{"customerId":"8","isDeleted":"0","name":"1st Century Bancshares Inc(FCTY)","description":"1st Century Bancshares Inc(FCTY) Description"},{"customerId":"9","isDeleted":"0","name":"1st Colonial Bancorp Inc(FCOB)","description":"1st Colonial Bancorp Inc(FCOB) Description"},{"customerId":"10","isDeleted":"0","name":"1st Constitution Bancorp(FCCY)","description":"1st Constitution Bancorp(FCCY) Description"},{"customerId":"11","isDeleted":"0","name":"Nitso Inegrations","description":"Nitso Integration is client whose domain is integrations"},{"customerId":"12","isDeleted":"0","name":"Test","description":"Nitso Integration is client whose domain is integrations"}],"meta":{"total":12,"permissions":{"delete":["1","11","12"],"update":["1","2","3","4","5","6","7","8","9","10","11","12"]}}}
+2024-06-04 17:33:53,234 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=1, isDeleted=0, name=01 Communique Laboratory Inc(OCQLF), description=01 Communique Laboratory Inc(OCQLF) Description}
+2024-06-04 17:33:53,234 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=2, isDeleted=0, name=1 800 Flowers.com Inc(FLWS), description=1 800 Flowers.com Inc(FLWS) Description}
+2024-06-04 17:33:53,234 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=3, isDeleted=0, name=141 Capital Inc(ONCP), description=141 Capital Inc(ONCP) Description}
+2024-06-04 17:33:53,234 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=4, isDeleted=0, name=1847 Holdings LLC(0955837D), description=1847 Holdings LLC(0955837D) Description}
+2024-06-04 17:33:53,234 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=5, isDeleted=0, name=1867 Western Financial Corp(WFCL), description=1867 Western Financial Corp(WFCL) Description}
+2024-06-04 17:33:53,234 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=6, isDeleted=0, name=1mage Software Inc(ISOL), description=1mage Software Inc(ISOL) Description}
+2024-06-04 17:33:53,234 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=7, isDeleted=0, name=1st Capital Bank(FISB), description=1st Capital Bank(FISB) Description}
+2024-06-04 17:33:53,234 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=8, isDeleted=0, name=1st Century Bancshares Inc(FCTY), description=1st Century Bancshares Inc(FCTY) Description}
+2024-06-04 17:33:53,234 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=9, isDeleted=0, name=1st Colonial Bancorp Inc(FCOB), description=1st Colonial Bancorp Inc(FCOB) Description}
+2024-06-04 17:33:53,234 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=10, isDeleted=0, name=1st Constitution Bancorp(FCCY), description=1st Constitution Bancorp(FCCY) Description}
+2024-06-04 17:33:53,234 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=11, isDeleted=0, name=Nitso Inegrations, description=Nitso Integration is client whose domain is integrations}
+2024-06-04 17:33:53,234 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=12, isDeleted=0, name=Test, description=Nitso Integration is client whose domain is integrations}
+2024-06-04 17:33:53,234 [main] INFO  Hooks.Hooks - Starting Scenario Context teardown
+2024-06-04 17:33:53,234 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-04 17:38:41,067 [main] INFO  utils.PropertiesUtil - Properties file 'config.properties' loaded successfully.
+2024-06-04 17:38:41,071 [main] INFO  utils.PropertiesUtil - Property key 'token.endpoint' retrieved with value 'https://api-sandbox.orangehrm.com/oauth/issueToken'.
+2024-06-04 17:38:41,071 [main] INFO  utils.PropertiesUtil - Property key 'client.id' retrieved with value 'api-client'.
+2024-06-04 17:38:41,071 [main] INFO  utils.PropertiesUtil - Property key 'client.secret' retrieved with value '942d36a36d6bf422a36f5871f905b6e5'.
+2024-06-04 17:38:41,071 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
+2024-06-04 17:38:41,071 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
+2024-06-04 17:38:43,677 [main] INFO  utils.PropertiesUtil - Property key 'api.customer.endpoint' retrieved with value 'https://api-sandbox.orangehrm.com/api/customers'.
+2024-06-04 17:38:43,677 [main] INFO  s.FetchCustomerInfoAPI - Sending GET request to retrieve customer information...
+2024-06-04 17:38:44,521 [main] INFO  s.FetchCustomerInfoAPI - GET request executed
+2024-06-04 17:38:44,521 [main] INFO  s.FetchCustomerInfoAPI - Response status code verified successfully: 200
+2024-06-04 17:38:44,521 [main] INFO  s.FetchCustomerInfoAPI - Response body received: {"data":[{"customerId":"1","isDeleted":"0","name":"01 Communique Laboratory Inc(OCQLF)","description":"01 Communique Laboratory Inc(OCQLF) Description"},{"customerId":"2","isDeleted":"0","name":"1 800 Flowers.com Inc(FLWS)","description":"1 800 Flowers.com Inc(FLWS) Description"},{"customerId":"3","isDeleted":"0","name":"141 Capital Inc(ONCP)","description":"141 Capital Inc(ONCP) Description"},{"customerId":"4","isDeleted":"0","name":"1847 Holdings LLC(0955837D)","description":"1847 Holdings LLC(0955837D) Description"},{"customerId":"5","isDeleted":"0","name":"1867 Western Financial Corp(WFCL)","description":"1867 Western Financial Corp(WFCL) Description"},{"customerId":"6","isDeleted":"0","name":"1mage Software Inc(ISOL)","description":"1mage Software Inc(ISOL) Description"},{"customerId":"7","isDeleted":"0","name":"1st Capital Bank(FISB)","description":"1st Capital Bank(FISB) Description"},{"customerId":"8","isDeleted":"0","name":"1st Century Bancshares Inc(FCTY)","description":"1st Century Bancshares Inc(FCTY) Description"},{"customerId":"9","isDeleted":"0","name":"1st Colonial Bancorp Inc(FCOB)","description":"1st Colonial Bancorp Inc(FCOB) Description"},{"customerId":"10","isDeleted":"0","name":"1st Constitution Bancorp(FCCY)","description":"1st Constitution Bancorp(FCCY) Description"},{"customerId":"11","isDeleted":"0","name":"Nitso Inegrations","description":"Nitso Integration is client whose domain is integrations"},{"customerId":"12","isDeleted":"0","name":"Test","description":"Nitso Integration is client whose domain is integrations"}],"meta":{"total":12,"permissions":{"delete":["1","11","12"],"update":["1","2","3","4","5","6","7","8","9","10","11","12"]}}}
+2024-06-04 17:38:44,537 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=1, isDeleted=0, name=01 Communique Laboratory Inc(OCQLF), description=01 Communique Laboratory Inc(OCQLF) Description}
+2024-06-04 17:38:44,537 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=2, isDeleted=0, name=1 800 Flowers.com Inc(FLWS), description=1 800 Flowers.com Inc(FLWS) Description}
+2024-06-04 17:38:44,537 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=3, isDeleted=0, name=141 Capital Inc(ONCP), description=141 Capital Inc(ONCP) Description}
+2024-06-04 17:38:44,537 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=4, isDeleted=0, name=1847 Holdings LLC(0955837D), description=1847 Holdings LLC(0955837D) Description}
+2024-06-04 17:38:44,537 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=5, isDeleted=0, name=1867 Western Financial Corp(WFCL), description=1867 Western Financial Corp(WFCL) Description}
+2024-06-04 17:38:44,537 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=6, isDeleted=0, name=1mage Software Inc(ISOL), description=1mage Software Inc(ISOL) Description}
+2024-06-04 17:38:44,537 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=7, isDeleted=0, name=1st Capital Bank(FISB), description=1st Capital Bank(FISB) Description}
+2024-06-04 17:38:44,537 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=8, isDeleted=0, name=1st Century Bancshares Inc(FCTY), description=1st Century Bancshares Inc(FCTY) Description}
+2024-06-04 17:38:44,537 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=9, isDeleted=0, name=1st Colonial Bancorp Inc(FCOB), description=1st Colonial Bancorp Inc(FCOB) Description}
+2024-06-04 17:38:44,537 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=10, isDeleted=0, name=1st Constitution Bancorp(FCCY), description=1st Constitution Bancorp(FCCY) Description}
+2024-06-04 17:38:44,537 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=11, isDeleted=0, name=Nitso Inegrations, description=Nitso Integration is client whose domain is integrations}
+2024-06-04 17:38:44,537 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=12, isDeleted=0, name=Test, description=Nitso Integration is client whose domain is integrations}
+2024-06-04 17:38:44,537 [main] INFO  Hooks.Hooks - Starting Scenario Context teardown
+2024-06-04 17:38:44,537 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-04 17:47:11,208 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-04 17:47:11,208 [main] INFO  utils.PropertiesUtil - Properties file 'config.properties' loaded successfully.
+2024-06-04 17:47:11,224 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-04 17:47:11,224 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-04 17:47:11,224 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-04 17:47:11,224 [main] INFO  utils.DriverManager - Starting Chrome browser
+2024-06-04 17:47:14,259 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-04 17:47:15,717 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-04 17:47:15,744 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-04 17:47:15,746 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
+2024-06-04 17:47:15,746 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
+2024-06-04 17:47:16,562 [main] INFO  utils.BrowserActions - Entering text 'Admin' into element '[[ChromeDriver: chrome on windows (532d4f5bca695b0530162e89fa800696)] -> name: username]' with field name 'Username'
+2024-06-04 17:47:16,793 [main] INFO  utils.BrowserActions - Entering text 'admin123' into element '[[ChromeDriver: chrome on windows (532d4f5bca695b0530162e89fa800696)] -> name: password]' with field name 'Password'
+2024-06-04 17:47:16,993 [main] INFO  pages.LoginPage - Logged in with credentials
+2024-06-04 17:47:16,998 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-04 17:47:19,187 [main] INFO  pages.BuzzPage - Clicked on Buzz menu item
+2024-06-04 17:47:19,425 [main] INFO  utils.BrowserActions - Attempt 1: Waiting for element to be clickable
+2024-06-04 17:47:19,591 [main] INFO  utils.BrowserActions - Attempt 1: Clearing the field
+2024-06-04 17:47:19,760 [main] INFO  utils.BrowserActions - Attempt 1: Sending keys to the field
+2024-06-04 17:47:50,482 [main] ERROR utils.BrowserActions - Attempt 1: Exception occurred while populating the field. Retrying...
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text ('Repellat ipsum placeat quo omnis.') to be the value of element [[ChromeDriver: chrome on windows (532d4f5bca695b0530162e89fa800696)] -> xpath: //textarea[@placeholder="What's on your mind?"]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\ICALUG~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64889}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64889/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 532d4f5bca695b0530162e89fa800696
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at utils.BrowserActions.inputTextWithRetry(BrowserActions.java:50)
+	at pages.BuzzPage.populateWhatsOnYourMindField(BuzzPage.java:35)
+	at stepDefinitions.BuzzPageSteps.whatSOnYourMindFieldIsPopulatedWithRandomText(BuzzPageSteps.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.core.runtime.Runtime.lambda$executePickle$6(Runtime.java:107)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.Runtime.lambda$executePickle$7(Runtime.java:107)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at io.cucumber.core.runtime.Runtime$SameThreadExecutorService.execute(Runtime.java:235)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+	at io.cucumber.core.runtime.Runtime.lambda$runFeatures$3(Runtime.java:89)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.SliceOps$1$1.accept(SliceOps.java:200)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1685)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at io.cucumber.core.runtime.Runtime.runFeatures(Runtime.java:90)
+	at io.cucumber.core.runtime.Runtime.lambda$run$0(Runtime.java:78)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.core.runtime.Runtime.run(Runtime.java:78)
+	at io.cucumber.core.cli.Main.run(Main.java:87)
+	at io.cucumber.core.cli.Main.main(Main.java:30)
+2024-06-04 17:47:50,482 [main] INFO  utils.BrowserActions - Attempt 2: Waiting for element to be clickable
+2024-06-04 17:47:50,529 [main] INFO  utils.BrowserActions - Attempt 2: Clearing the field
+2024-06-04 17:47:50,608 [main] INFO  utils.BrowserActions - Attempt 2: Sending keys to the field
+2024-06-04 17:47:50,751 [main] INFO  utils.BrowserActions - Attempt 2: Successfully populated the field with text
+2024-06-04 17:47:50,751 [main] INFO  pages.BuzzPage - Populated 'What's on your mind' field with text: Repellat ipsum placeat quo omnis.
+2024-06-04 17:47:50,881 [main] INFO  pages.BuzzPage - Clicked on the post button
+2024-06-04 17:47:50,881 [main] INFO  pages.BuzzPage - New Post is present on the page
+2024-06-04 17:47:52,050 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: Verify Post functionality
+2024-06-04 17:47:52,252 [main] INFO  utils.ScreenshotUtils - Screenshot saved to file: C:\Users\icalugher\IdeaProjects\IC_Project 1stATF\target\screenshots\Verify Post functionality_20240604-174752.png
+2024-06-04 17:47:52,252 [main] INFO  utils.ScreenshotUtils - Screenshot taken for scenario: Verify Post functionality
+2024-06-04 17:47:52,750 [main] INFO  Hooks.Hooks - Starting Scenario Context teardown
+2024-06-04 17:47:52,750 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-04 18:01:01,644 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-04 18:01:01,644 [main] INFO  utils.PropertiesUtil - Properties file 'config.properties' loaded successfully.
+2024-06-04 18:01:01,644 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-04 18:01:01,644 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-04 18:01:01,644 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-04 18:01:01,644 [main] INFO  utils.DriverManager - Starting Chrome browser
+2024-06-04 18:01:03,768 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-04 18:01:04,957 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-04 18:01:04,978 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-04 18:01:04,979 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
+2024-06-04 18:01:04,979 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
+2024-06-04 18:01:05,686 [main] INFO  utils.BrowserActions - Entering text 'Admin' into element '[[ChromeDriver: chrome on windows (36eef809d2a16d542b581543015d7791)] -> name: username]' with field name 'Username'
+2024-06-04 18:01:05,842 [main] INFO  utils.BrowserActions - Entering text 'admin123' into element '[[ChromeDriver: chrome on windows (36eef809d2a16d542b581543015d7791)] -> name: password]' with field name 'Password'
+2024-06-04 18:01:05,938 [main] INFO  pages.LoginPage - Logged in with credentials
+2024-06-04 18:01:05,942 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-04 18:01:08,293 [main] INFO  pages.BuzzPage - Clicked on Buzz menu item
+2024-06-04 18:01:08,405 [main] INFO  utils.BrowserActions - Attempt 1: Waiting for element to be clickable
+2024-06-04 18:01:08,969 [main] INFO  utils.BrowserActions - Attempt 1: Clearing the field
+2024-06-04 18:01:09,074 [main] INFO  utils.BrowserActions - Attempt 1: Sending keys to the field
+2024-06-04 18:01:09,241 [main] INFO  utils.BrowserActions - Attempt 1: Successfully populated the field with text
+2024-06-04 18:01:09,241 [main] INFO  pages.BuzzPage - Populated 'What's on your mind' field with text: Et aut ut assumenda sit.
+2024-06-04 18:01:09,348 [main] INFO  pages.BuzzPage - Clicked on the post button
+2024-06-04 18:01:09,348 [main] INFO  pages.BuzzPage - New Post is present on the page
+2024-06-04 18:01:09,910 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: Verify Post functionality
+2024-06-04 18:01:10,107 [main] INFO  utils.ScreenshotUtils - Screenshot saved to file: C:\Users\icalugher\IdeaProjects\IC_Project 1stATF\target\screenshots\Verify Post functionality_20240604-180110.png
+2024-06-04 18:01:10,108 [main] INFO  utils.ScreenshotUtils - Screenshot taken for scenario: Verify Post functionality
+2024-06-04 18:01:10,303 [main] INFO  Hooks.Hooks - Starting Scenario Context teardown
+2024-06-04 18:01:10,303 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-04 18:05:21,682 [main] INFO  utils.PropertiesUtil - Properties file 'config.properties' loaded successfully.
+2024-06-04 18:05:21,682 [main] INFO  utils.PropertiesUtil - Property key 'token.endpoint' retrieved with value 'https://api-sandbox.orangehrm.com/oauth/issueToken'.
+2024-06-04 18:05:21,682 [main] INFO  utils.PropertiesUtil - Property key 'client.id' retrieved with value 'api-client'.
+2024-06-04 18:05:21,689 [main] INFO  utils.PropertiesUtil - Property key 'client.secret' retrieved with value '942d36a36d6bf422a36f5871f905b6e5'.
+2024-06-04 18:05:21,689 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
+2024-06-04 18:05:21,689 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
+2024-06-04 18:05:24,465 [main] INFO  utils.PropertiesUtil - Property key 'api.customer.endpoint' retrieved with value 'https://api-sandbox.orangehrm.com/api/customers'.
+2024-06-04 18:05:24,465 [main] INFO  s.FetchCustomerInfoAPI - Sending GET request to retrieve customer information...
+2024-06-04 18:05:25,282 [main] INFO  s.FetchCustomerInfoAPI - GET request executed
+2024-06-04 18:05:25,299 [main] INFO  s.FetchCustomerInfoAPI - Response status code verified successfully: 200
+2024-06-04 18:05:25,299 [main] INFO  s.FetchCustomerInfoAPI - Response body received: {"data":[{"customerId":"1","isDeleted":"0","name":"01 Communique Laboratory Inc(OCQLF)","description":"01 Communique Laboratory Inc(OCQLF) Description"},{"customerId":"2","isDeleted":"0","name":"1 800 Flowers.com Inc(FLWS)","description":"1 800 Flowers.com Inc(FLWS) Description"},{"customerId":"3","isDeleted":"0","name":"141 Capital Inc(ONCP)","description":"141 Capital Inc(ONCP) Description"},{"customerId":"4","isDeleted":"0","name":"1847 Holdings LLC(0955837D)","description":"1847 Holdings LLC(0955837D) Description"},{"customerId":"5","isDeleted":"0","name":"1867 Western Financial Corp(WFCL)","description":"1867 Western Financial Corp(WFCL) Description"},{"customerId":"6","isDeleted":"0","name":"1mage Software Inc(ISOL)","description":"1mage Software Inc(ISOL) Description"},{"customerId":"7","isDeleted":"0","name":"1st Capital Bank(FISB)","description":"1st Capital Bank(FISB) Description"},{"customerId":"8","isDeleted":"0","name":"1st Century Bancshares Inc(FCTY)","description":"1st Century Bancshares Inc(FCTY) Description"},{"customerId":"9","isDeleted":"0","name":"1st Colonial Bancorp Inc(FCOB)","description":"1st Colonial Bancorp Inc(FCOB) Description"},{"customerId":"10","isDeleted":"0","name":"1st Constitution Bancorp(FCCY)","description":"1st Constitution Bancorp(FCCY) Description"},{"customerId":"11","isDeleted":"0","name":"Nitso Inegrations","description":"Nitso Integration is client whose domain is integrations"},{"customerId":"12","isDeleted":"0","name":"Test","description":"Nitso Integration is client whose domain is integrations"}],"meta":{"total":12,"permissions":{"delete":["1","11","12"],"update":["1","2","3","4","5","6","7","8","9","10","11","12"]}}}
+2024-06-04 18:05:25,299 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=1, isDeleted=0, name=01 Communique Laboratory Inc(OCQLF), description=01 Communique Laboratory Inc(OCQLF) Description}
+2024-06-04 18:05:25,299 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=2, isDeleted=0, name=1 800 Flowers.com Inc(FLWS), description=1 800 Flowers.com Inc(FLWS) Description}
+2024-06-04 18:05:25,299 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=3, isDeleted=0, name=141 Capital Inc(ONCP), description=141 Capital Inc(ONCP) Description}
+2024-06-04 18:05:25,299 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=4, isDeleted=0, name=1847 Holdings LLC(0955837D), description=1847 Holdings LLC(0955837D) Description}
+2024-06-04 18:05:25,299 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=5, isDeleted=0, name=1867 Western Financial Corp(WFCL), description=1867 Western Financial Corp(WFCL) Description}
+2024-06-04 18:05:25,299 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=6, isDeleted=0, name=1mage Software Inc(ISOL), description=1mage Software Inc(ISOL) Description}
+2024-06-04 18:05:25,299 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=7, isDeleted=0, name=1st Capital Bank(FISB), description=1st Capital Bank(FISB) Description}
+2024-06-04 18:05:25,299 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=8, isDeleted=0, name=1st Century Bancshares Inc(FCTY), description=1st Century Bancshares Inc(FCTY) Description}
+2024-06-04 18:05:25,299 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=9, isDeleted=0, name=1st Colonial Bancorp Inc(FCOB), description=1st Colonial Bancorp Inc(FCOB) Description}
+2024-06-04 18:05:25,299 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=10, isDeleted=0, name=1st Constitution Bancorp(FCCY), description=1st Constitution Bancorp(FCCY) Description}
+2024-06-04 18:05:25,299 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=11, isDeleted=0, name=Nitso Inegrations, description=Nitso Integration is client whose domain is integrations}
+2024-06-04 18:05:25,299 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=12, isDeleted=0, name=Test, description=Nitso Integration is client whose domain is integrations}
+2024-06-04 18:05:25,299 [main] INFO  Hooks.Hooks - Starting Scenario Context teardown
+2024-06-04 18:05:25,314 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-04 18:05:26,266 [main] INFO  utils.PropertiesUtil - Property key 'api.holiday.endpoint' retrieved with value 'https://api-sandbox.orangehrm.com/api/holidays'.
+2024-06-04 18:05:28,065 [main] INFO  s.UpdateHolidayCalendarAPI - Request body sent: {"date":"2024-10-10","operational_country_id":1,"length":0,"description":"holiday holiday event","location":[1],"adjustLeave":true}
+2024-06-04 18:05:28,065 [main] INFO  s.UpdateHolidayCalendarAPI - Response status code is 200
+2024-06-04 18:05:28,065 [main] INFO  s.UpdateHolidayCalendarAPI - Request body for comparison: {"date":"2024-10-10","operational_country_id":1,"length":0,"description":"holiday holiday event","location":[1],"adjustLeave":true}
+2024-06-04 18:05:28,065 [main] INFO  s.UpdateHolidayCalendarAPI - Response body parameters match the request body:
+2024-06-04 18:05:28,065 [main] INFO  s.UpdateHolidayCalendarAPI - date: 2024-10-10 (Request), 2024-10-10 (Response)
+2024-06-04 18:05:28,065 [main] INFO  s.UpdateHolidayCalendarAPI - operational_country_id: 1 (Request), 1 (Response)
+2024-06-04 18:05:28,065 [main] INFO  s.UpdateHolidayCalendarAPI - length: 0 (Request), 0 (Response)
+2024-06-04 18:05:28,065 [main] INFO  s.UpdateHolidayCalendarAPI - description: holiday holiday event (Request), holiday holiday event (Response)
+2024-06-04 18:05:28,065 [main] INFO  s.UpdateHolidayCalendarAPI - location: [1] (Request), mapped with location_id: 1 (Response)
+2024-06-04 18:05:28,065 [main] INFO  s.UpdateHolidayCalendarAPI - adjustLeave: true (Request), mapped with editable: true (Response)
+2024-06-04 18:05:28,065 [main] INFO  Hooks.Hooks - Starting Scenario Context teardown
+2024-06-04 18:05:28,065 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-04 18:05:28,082 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-04 18:05:28,082 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-04 18:05:28,082 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-04 18:05:28,082 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-04 18:05:28,082 [main] INFO  utils.DriverManager - Starting Chrome browser
+2024-06-04 18:05:29,912 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-04 18:05:31,172 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-04 18:05:31,183 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-04 18:05:31,183 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
+2024-06-04 18:05:31,183 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
+2024-06-04 18:05:31,849 [main] INFO  utils.BrowserActions - Entering text 'Admin' into element '[[ChromeDriver: chrome on windows (3e8ddfefd7293bf019ebb0939e411160)] -> name: username]' with field name 'Username'
+2024-06-04 18:05:31,985 [main] INFO  utils.BrowserActions - Entering text 'admin123' into element '[[ChromeDriver: chrome on windows (3e8ddfefd7293bf019ebb0939e411160)] -> name: password]' with field name 'Password'
+2024-06-04 18:05:32,086 [main] INFO  pages.LoginPage - Logged in with credentials
+2024-06-04 18:05:32,086 [main] INFO  pages.LoginPage - Default tab is displayed
+2024-06-04 18:05:33,515 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: User logs in successfully with valid credentials
+2024-06-04 18:05:33,736 [main] INFO  utils.ScreenshotUtils - Screenshot saved to file: C:\Users\icalugher\IdeaProjects\IC_Project 1stATF\target\screenshots\User logs in successfully with valid credentials_20240604-180533.png
+2024-06-04 18:05:33,736 [main] INFO  utils.ScreenshotUtils - Screenshot taken for scenario: User logs in successfully with valid credentials
+2024-06-04 18:05:34,049 [main] INFO  Hooks.Hooks - Starting Scenario Context teardown
+2024-06-04 18:05:34,049 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-04 18:05:34,049 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-04 18:05:34,049 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-04 18:05:34,049 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-04 18:05:34,049 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-04 18:05:34,049 [main] INFO  utils.DriverManager - Starting Chrome browser
+2024-06-04 18:05:35,755 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-04 18:05:36,908 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-04 18:05:36,908 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-04 18:05:37,592 [main] INFO  utils.BrowserActions - Entering text 'AdminBLAbla' into element '[[ChromeDriver: chrome on windows (a06e83fb6e8240cf239b3756380fb19a)] -> name: username]' with field name 'Username'
+2024-06-04 18:05:37,734 [main] INFO  utils.BrowserActions - Entering text 'admin123' into element '[[ChromeDriver: chrome on windows (a06e83fb6e8240cf239b3756380fb19a)] -> name: password]' with field name 'Password'
+2024-06-04 18:05:37,833 [main] INFO  pages.LoginPage - Logged in with credentials
+2024-06-04 18:05:39,122 [main] WARN  pages.LoginPage - Unsuccessful login attempt: Invalid credentials
+2024-06-04 18:05:39,154 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: User logs in successfully with invalid credentials
+2024-06-04 18:05:39,280 [main] INFO  utils.ScreenshotUtils - Screenshot saved to file: C:\Users\icalugher\IdeaProjects\IC_Project 1stATF\target\screenshots\User logs in successfully with invalid credentials_20240604-180539.png
+2024-06-04 18:05:39,295 [main] INFO  utils.ScreenshotUtils - Screenshot taken for scenario: User logs in successfully with invalid credentials
+2024-06-04 18:05:39,534 [main] INFO  Hooks.Hooks - Starting Scenario Context teardown
+2024-06-04 18:05:39,534 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-04 18:05:39,534 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-04 18:05:39,534 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-04 18:05:39,534 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-04 18:05:39,534 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-04 18:05:39,534 [main] INFO  utils.DriverManager - Starting Chrome browser
+2024-06-04 18:05:41,502 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-04 18:05:42,669 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-04 18:05:42,669 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-04 18:05:43,323 [main] INFO  utils.BrowserActions - Entering text 'Admin' into element '[[ChromeDriver: chrome on windows (7d9533cf54d2c648343adedae8b67272)] -> name: username]' with field name 'Username'
+2024-06-04 18:05:43,468 [main] INFO  utils.BrowserActions - Entering text 'admin123*/*/' into element '[[ChromeDriver: chrome on windows (7d9533cf54d2c648343adedae8b67272)] -> name: password]' with field name 'Password'
+2024-06-04 18:05:43,583 [main] INFO  pages.LoginPage - Logged in with credentials
+2024-06-04 18:05:45,025 [main] WARN  pages.LoginPage - Unsuccessful login attempt: Invalid credentials
+2024-06-04 18:05:45,052 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: User logs in successfully with invalid credentials
+2024-06-04 18:05:45,200 [main] INFO  utils.ScreenshotUtils - Screenshot saved to file: C:\Users\icalugher\IdeaProjects\IC_Project 1stATF\target\screenshots\User logs in successfully with invalid credentials_20240604-180545.png
+2024-06-04 18:05:45,201 [main] INFO  utils.ScreenshotUtils - Screenshot taken for scenario: User logs in successfully with invalid credentials
+2024-06-04 18:05:45,445 [main] INFO  Hooks.Hooks - Starting Scenario Context teardown
+2024-06-04 18:05:45,445 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-04 18:05:45,451 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-04 18:05:45,451 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-04 18:05:45,451 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-04 18:05:45,451 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-04 18:05:45,451 [main] INFO  utils.DriverManager - Starting Chrome browser
+2024-06-04 18:05:47,138 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-04 18:05:48,304 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-04 18:05:48,305 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-04 18:05:48,985 [main] INFO  utils.BrowserActions - Entering text 'testABC' into element '[[ChromeDriver: chrome on windows (a6cf56ed2064f8b821faa4bb0355a499)] -> name: username]' with field name 'Username'
+2024-06-04 18:05:49,122 [main] INFO  utils.BrowserActions - Entering text 'pass2658' into element '[[ChromeDriver: chrome on windows (a6cf56ed2064f8b821faa4bb0355a499)] -> name: password]' with field name 'Password'
+2024-06-04 18:05:49,219 [main] INFO  pages.LoginPage - Logged in with credentials
+2024-06-04 18:05:50,253 [main] WARN  pages.LoginPage - Unsuccessful login attempt: Invalid credentials
+2024-06-04 18:05:50,284 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: User logs in successfully with invalid credentials
+2024-06-04 18:05:50,413 [main] INFO  utils.ScreenshotUtils - Screenshot saved to file: C:\Users\icalugher\IdeaProjects\IC_Project 1stATF\target\screenshots\User logs in successfully with invalid credentials_20240604-180550.png
+2024-06-04 18:05:50,413 [main] INFO  utils.ScreenshotUtils - Screenshot taken for scenario: User logs in successfully with invalid credentials
+2024-06-04 18:05:50,668 [main] INFO  Hooks.Hooks - Starting Scenario Context teardown
+2024-06-04 18:05:50,668 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-04 18:05:50,668 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-04 18:05:50,668 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-04 18:05:50,668 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-04 18:05:50,668 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-04 18:05:50,668 [main] INFO  utils.DriverManager - Starting Chrome browser
+2024-06-04 18:05:52,578 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-04 18:05:53,791 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-04 18:05:53,791 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-04 18:05:53,791 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
+2024-06-04 18:05:53,791 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
+2024-06-04 18:05:54,434 [main] INFO  utils.BrowserActions - Entering text 'Admin' into element '[[ChromeDriver: chrome on windows (10300cb31c16bfff281862ad763c0be9)] -> name: username]' with field name 'Username'
+2024-06-04 18:05:54,569 [main] INFO  utils.BrowserActions - Entering text 'admin123' into element '[[ChromeDriver: chrome on windows (10300cb31c16bfff281862ad763c0be9)] -> name: password]' with field name 'Password'
+2024-06-04 18:05:55,497 [main] INFO  pages.LoginPage - Logged in with credentials
+2024-06-04 18:05:55,499 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-04 18:05:57,043 [main] INFO  pages.BuzzPage - Clicked on Buzz menu item
+2024-06-04 18:05:57,152 [main] INFO  utils.BrowserActions - Attempt 1: Waiting for element to be clickable
+2024-06-04 18:05:57,717 [main] INFO  utils.BrowserActions - Attempt 1: Clearing the field
+2024-06-04 18:05:57,850 [main] INFO  utils.BrowserActions - Attempt 1: Sending keys to the field
+2024-06-04 18:06:28,244 [main] ERROR utils.BrowserActions - Attempt 1: Exception occurred while populating the field. Retrying...
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text ('Maxime dignissimos nihil consequatur consectetur.') to be the value of element [[ChromeDriver: chrome on windows (10300cb31c16bfff281862ad763c0be9)] -> xpath: //textarea[@placeholder="What's on your mind?"]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\ICALUG~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65346}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65346/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 10300cb31c16bfff281862ad763c0be9
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at utils.BrowserActions.inputTextWithRetry(BrowserActions.java:50)
+	at pages.BuzzPage.populateWhatsOnYourMindField(BuzzPage.java:35)
+	at stepDefinitions.BuzzPageSteps.whatSOnYourMindFieldIsPopulatedWithRandomText(BuzzPageSteps.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+2024-06-04 18:06:28,247 [main] INFO  utils.BrowserActions - Attempt 2: Waiting for element to be clickable
+2024-06-04 18:06:28,283 [main] INFO  utils.BrowserActions - Attempt 2: Clearing the field
+2024-06-04 18:06:28,394 [main] INFO  utils.BrowserActions - Attempt 2: Sending keys to the field
+2024-06-04 18:06:28,535 [main] INFO  utils.BrowserActions - Attempt 2: Successfully populated the field with text
+2024-06-04 18:06:28,535 [main] INFO  pages.BuzzPage - Populated 'What's on your mind' field with text: Maxime dignissimos nihil consequatur consectetur.
+2024-06-04 18:06:28,684 [main] INFO  pages.BuzzPage - Clicked on the post button
+2024-06-04 18:06:28,684 [main] INFO  pages.BuzzPage - New Post is present on the page
+2024-06-04 18:06:29,244 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: Verify Post functionality
+2024-06-04 18:06:29,566 [main] INFO  utils.ScreenshotUtils - Screenshot saved to file: C:\Users\icalugher\IdeaProjects\IC_Project 1stATF\target\screenshots\Verify Post functionality_20240604-180629.png
+2024-06-04 18:06:29,566 [main] INFO  utils.ScreenshotUtils - Screenshot taken for scenario: Verify Post functionality
+2024-06-04 18:06:29,863 [main] INFO  Hooks.Hooks - Starting Scenario Context teardown
+2024-06-04 18:06:29,863 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-04 18:29:39,798 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-04 18:29:39,806 [main] INFO  utils.PropertiesUtil - Properties file 'config.properties' loaded successfully.
+2024-06-04 18:29:39,806 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-04 18:29:39,806 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-04 18:29:39,806 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-04 18:29:39,814 [main] INFO  utils.DriverManager - Starting Chrome browser
+2024-06-04 18:29:41,887 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-04 18:29:43,132 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-04 18:29:43,156 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-04 18:29:43,157 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
+2024-06-04 18:29:43,157 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
+2024-06-04 18:29:43,836 [main] INFO  utils.BrowserActions - Entering text 'Admin' into element '[[ChromeDriver: chrome on windows (3f7bd8aed2a0b5c89ce5ea15b52f6972)] -> name: username]' with field name 'Username'
+2024-06-04 18:29:43,993 [main] INFO  utils.BrowserActions - Entering text 'admin123' into element '[[ChromeDriver: chrome on windows (3f7bd8aed2a0b5c89ce5ea15b52f6972)] -> name: password]' with field name 'Password'
+2024-06-04 18:29:44,946 [main] INFO  pages.LoginPage - Logged in with credentials
+2024-06-04 18:29:44,948 [main] INFO  pages.LoginPage - Default tab is displayed
+2024-06-04 18:29:45,531 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: User logs in successfully with valid credentials
+2024-06-04 18:29:45,767 [main] INFO  utils.ScreenshotUtils - Screenshot saved to file: C:\Users\icalugher\IdeaProjects\IC_Project 1stATF\target\screenshots\User logs in successfully with valid credentials_20240604-182945.png
+2024-06-04 18:29:45,767 [main] INFO  utils.ScreenshotUtils - Screenshot taken for scenario: User logs in successfully with valid credentials
+2024-06-04 18:29:46,014 [main] INFO  Hooks.Hooks - Starting Scenario Context teardown
+2024-06-04 18:29:46,014 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-04 18:29:46,017 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-04 18:29:46,030 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-04 18:29:46,030 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-04 18:29:46,030 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-04 18:29:46,030 [main] INFO  utils.DriverManager - Starting Chrome browser
+2024-06-04 18:29:47,614 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-04 18:29:48,877 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-04 18:29:48,877 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-04 18:29:49,531 [main] INFO  utils.BrowserActions - Entering text 'AdminBLAbla' into element '[[ChromeDriver: chrome on windows (7382a62bcc871a012beca2498db323ad)] -> name: username]' with field name 'Username'
+2024-06-04 18:29:49,677 [main] INFO  utils.BrowserActions - Entering text 'admin123' into element '[[ChromeDriver: chrome on windows (7382a62bcc871a012beca2498db323ad)] -> name: password]' with field name 'Password'
+2024-06-04 18:29:49,787 [main] INFO  pages.LoginPage - Logged in with credentials
+2024-06-04 18:29:50,804 [main] WARN  pages.LoginPage - Unsuccessful login attempt: Invalid credentials
+2024-06-04 18:29:50,841 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: User logs in successfully with invalid credentials
+2024-06-04 18:29:50,963 [main] INFO  utils.ScreenshotUtils - Screenshot saved to file: C:\Users\icalugher\IdeaProjects\IC_Project 1stATF\target\screenshots\User logs in successfully with invalid credentials_20240604-182950.png
+2024-06-04 18:29:50,963 [main] INFO  utils.ScreenshotUtils - Screenshot taken for scenario: User logs in successfully with invalid credentials
+2024-06-04 18:29:51,188 [main] INFO  Hooks.Hooks - Starting Scenario Context teardown
+2024-06-04 18:29:51,188 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-04 18:29:51,188 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-04 18:29:51,188 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-04 18:29:51,188 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-04 18:29:51,188 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-04 18:29:51,188 [main] INFO  utils.DriverManager - Starting Chrome browser
+2024-06-04 18:29:52,700 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-04 18:29:53,871 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-04 18:29:53,872 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-04 18:29:54,521 [main] INFO  utils.BrowserActions - Entering text 'Admin' into element '[[ChromeDriver: chrome on windows (f328a370f593c8047e5acc72c83b8aee)] -> name: username]' with field name 'Username'
+2024-06-04 18:29:54,682 [main] INFO  utils.BrowserActions - Entering text 'admin123*/*/' into element '[[ChromeDriver: chrome on windows (f328a370f593c8047e5acc72c83b8aee)] -> name: password]' with field name 'Password'
+2024-06-04 18:29:54,783 [main] INFO  pages.LoginPage - Logged in with credentials
+2024-06-04 18:29:56,071 [main] WARN  pages.LoginPage - Unsuccessful login attempt: Invalid credentials
+2024-06-04 18:29:56,108 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: User logs in successfully with invalid credentials
+2024-06-04 18:29:56,229 [main] INFO  utils.ScreenshotUtils - Screenshot saved to file: C:\Users\icalugher\IdeaProjects\IC_Project 1stATF\target\screenshots\User logs in successfully with invalid credentials_20240604-182956.png
+2024-06-04 18:29:56,229 [main] INFO  utils.ScreenshotUtils - Screenshot taken for scenario: User logs in successfully with invalid credentials
+2024-06-04 18:29:56,434 [main] INFO  Hooks.Hooks - Starting Scenario Context teardown
+2024-06-04 18:29:56,434 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-04 18:29:56,438 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-04 18:29:56,438 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-04 18:29:56,438 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-04 18:29:56,438 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-04 18:29:56,438 [main] INFO  utils.DriverManager - Starting Chrome browser
+2024-06-04 18:29:57,951 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-04 18:29:59,183 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-04 18:29:59,183 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-04 18:29:59,842 [main] INFO  utils.BrowserActions - Entering text 'testABC' into element '[[ChromeDriver: chrome on windows (bf0be4045c98512aa5d30167dbfc5835)] -> name: username]' with field name 'Username'
+2024-06-04 18:29:59,981 [main] INFO  utils.BrowserActions - Entering text 'pass2658' into element '[[ChromeDriver: chrome on windows (bf0be4045c98512aa5d30167dbfc5835)] -> name: password]' with field name 'Password'
+2024-06-04 18:30:00,107 [main] INFO  pages.LoginPage - Logged in with credentials
+2024-06-04 18:30:01,203 [main] WARN  pages.LoginPage - Unsuccessful login attempt: Invalid credentials
+2024-06-04 18:30:01,245 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: User logs in successfully with invalid credentials
+2024-06-04 18:30:01,364 [main] INFO  utils.ScreenshotUtils - Screenshot saved to file: C:\Users\icalugher\IdeaProjects\IC_Project 1stATF\target\screenshots\User logs in successfully with invalid credentials_20240604-183001.png
+2024-06-04 18:30:01,364 [main] INFO  utils.ScreenshotUtils - Screenshot taken for scenario: User logs in successfully with invalid credentials
+2024-06-04 18:30:01,584 [main] INFO  Hooks.Hooks - Starting Scenario Context teardown
+2024-06-04 18:30:01,584 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-04 18:30:01,584 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-04 18:30:01,584 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-04 18:30:01,584 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-04 18:30:01,584 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-04 18:30:01,584 [main] INFO  utils.DriverManager - Starting Chrome browser
+2024-06-04 18:30:03,167 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-04 18:30:04,419 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-04 18:30:04,420 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-04 18:30:04,420 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
+2024-06-04 18:30:04,420 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
+2024-06-04 18:30:05,071 [main] INFO  utils.BrowserActions - Entering text 'Admin' into element '[[ChromeDriver: chrome on windows (1ba39348d2d49b16a23261cc994a953b)] -> name: username]' with field name 'Username'
+2024-06-04 18:30:05,206 [main] INFO  utils.BrowserActions - Entering text 'admin123' into element '[[ChromeDriver: chrome on windows (1ba39348d2d49b16a23261cc994a953b)] -> name: password]' with field name 'Password'
+2024-06-04 18:30:05,292 [main] INFO  pages.LoginPage - Logged in with credentials
+2024-06-04 18:30:05,292 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-04 18:30:07,296 [main] INFO  pages.BuzzPage - Clicked on Buzz menu item
+2024-06-04 18:30:07,440 [main] INFO  utils.BrowserActions - Attempt 1: Waiting for element to be clickable
+2024-06-04 18:30:07,998 [main] INFO  utils.BrowserActions - Attempt 1: Clearing the field
+2024-06-04 18:30:08,099 [main] INFO  utils.BrowserActions - Attempt 1: Sending keys to the field
+2024-06-04 18:30:38,743 [main] ERROR utils.BrowserActions - Attempt 1: Exception occurred while populating the field. Retrying...
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text ('Totam dolorum ut quia quia culpa laboriosam dolores.') to be the value of element [[ChromeDriver: chrome on windows (1ba39348d2d49b16a23261cc994a953b)] -> xpath: //textarea[@placeholder="What's on your mind?"]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\ICALUG~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49387}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49387/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1ba39348d2d49b16a23261cc994a953b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at utils.BrowserActions.inputTextWithRetry(BrowserActions.java:50)
+	at pages.BuzzPage.populateWhatsOnYourMindField(BuzzPage.java:35)
+	at stepDefinitions.BuzzPageSteps.whatSOnYourMindFieldIsPopulatedWithRandomText(BuzzPageSteps.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+2024-06-04 18:30:38,743 [main] INFO  utils.BrowserActions - Attempt 2: Waiting for element to be clickable
+2024-06-04 18:30:38,790 [main] INFO  utils.BrowserActions - Attempt 2: Clearing the field
+2024-06-04 18:30:38,884 [main] INFO  utils.BrowserActions - Attempt 2: Sending keys to the field
+2024-06-04 18:30:39,059 [main] INFO  utils.BrowserActions - Attempt 2: Successfully populated the field with text
+2024-06-04 18:30:39,060 [main] INFO  pages.BuzzPage - Populated 'What's on your mind' field with text: Totam dolorum ut quia quia culpa laboriosam dolores.
+2024-06-04 18:30:39,145 [main] INFO  pages.BuzzPage - Clicked on the post button
+2024-06-04 18:30:39,150 [main] INFO  pages.BuzzPage - New Post is present on the page
+2024-06-04 18:30:39,680 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: Verify Post functionality
+2024-06-04 18:30:39,876 [main] INFO  utils.ScreenshotUtils - Screenshot saved to file: C:\Users\icalugher\IdeaProjects\IC_Project 1stATF\target\screenshots\Verify Post functionality_20240604-183039.png
+2024-06-04 18:30:39,876 [main] INFO  utils.ScreenshotUtils - Screenshot taken for scenario: Verify Post functionality
+2024-06-04 18:30:40,097 [main] INFO  Hooks.Hooks - Starting Scenario Context teardown
+2024-06-04 18:30:40,097 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared

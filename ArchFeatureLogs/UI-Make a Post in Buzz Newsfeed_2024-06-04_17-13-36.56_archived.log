@@ -1,0 +1,15 @@
+2024-06-04 17:13:36.784 [main] INFO  utils.PropertiesUtil - Properties file 'config.properties' loaded successfully.
+2024-06-04 17:13:36.784 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-04 17:13:36.784 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-04 17:13:36.784 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-04 17:13:36.800 [main] INFO  utils.DriverManager - Starting Chrome browser
+2024-06-04 17:13:40.351 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-04 17:13:40.354 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
+2024-06-04 17:13:40.354 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
+2024-06-04 17:13:41.199 [main] INFO  utils.BrowserActions - Entering text 'Admin' into element '[[ChromeDriver: chrome on windows (8d14037e0ab4c524c540e888251dc2a4)] -> name: username]' with field name 'Username'
+2024-06-04 17:13:41.435 [main] INFO  utils.BrowserActions - Entering text 'admin123' into element '[[ChromeDriver: chrome on windows (8d14037e0ab4c524c540e888251dc2a4)] -> name: password]' with field name 'Password'
+2024-06-04 17:13:41.565 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-04 17:13:43.732 [main] INFO  utils.BrowserActions - Attempt 1: Waiting for element to be clickable
+2024-06-04 17:13:44.298 [main] INFO  utils.BrowserActions - Attempt 1: Clearing the field
+2024-06-04 17:13:44.504 [main] INFO  utils.BrowserActions - Attempt 1: Sending keys to the field
+2024-06-04 17:13:44.669 [main] INFO  utils.BrowserActions - Attempt 1: Successfully populated the field with text

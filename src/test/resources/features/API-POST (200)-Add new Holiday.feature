@@ -1,10 +1,10 @@
 @api @run
 Feature: Update holiday calendar
 
-  Scenario Outline: Create a new holiday
-
   Background:
     Given Bearer token is generated
+
+  Scenario: Create a new holiday
 
     When POST request is performed with following request body:
       | description            | <dynamic_description> |

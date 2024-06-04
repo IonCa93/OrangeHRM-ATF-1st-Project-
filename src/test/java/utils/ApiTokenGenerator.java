@@ -1,18 +1,8 @@
 package utils;
 
-import org.apache.http.HttpEntity;
-import org.apache.http.HttpResponse;
-import org.apache.http.NameValuePair;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.impl.client.HttpClientBuilder;
-import org.apache.http.message.BasicNameValuePair;
-import org.apache.http.util.EntityUtils;
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
 import org.json.JSONObject;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class ApiTokenGenerator {
 
@@ -23,30 +13,22 @@ public class ApiTokenGenerator {
     private static final String PASSWORD = PropertiesUtil.getProperty("password");
 
     public static String generateBearerToken() throws Exception {
-        HttpClient httpClient = HttpClientBuilder.create().build();
-        HttpPost httpPost = new HttpPost(TOKEN_ENDPOINT);
+        // Send POST request to get token
+        Response response = RestAssured
+                .given()
+                .formParam("client_id", CLIENT_ID)
+                .formParam("client_secret", CLIENT_SECRET)
+                .formParam("grant_type", "client_credentials")
+                .formParam("username", USERNAME)
+                .formParam("password", PASSWORD)
+                .post(TOKEN_ENDPOINT);
 
-        // Request parameters
-        List<NameValuePair> params = new ArrayList<>();
-        params.add(new BasicNameValuePair("client_id", CLIENT_ID));
-        params.add(new BasicNameValuePair("client_secret", CLIENT_SECRET));
-        params.add(new BasicNameValuePair("grant_type", "client_credentials"));
-        params.add(new BasicNameValuePair("username", USERNAME));
-        params.add(new BasicNameValuePair("password", PASSWORD));
-
-        // Set request body
-        httpPost.setEntity(new UrlEncodedFormEntity(params));
-
-        // Execute the request
-        HttpResponse response = httpClient.execute(httpPost);
-        HttpEntity entity = response.getEntity();
-
-        if (entity != null) {
-            JSONObject jsonResponse = new JSONObject(EntityUtils.toString(entity));
-            String token = jsonResponse.getString("access_token");
-            return token;
-        } else {
-            throw new Exception("Failed to generate bearer token");
+        if (response.getStatusCode() != 200) {
+            throw new RuntimeException("Failed to generate bearer token");
         }
+
+        // Parse the response to get the token
+        JSONObject jsonResponse = new JSONObject(response.getBody().asString());
+        return jsonResponse.getString("access_token");
     }
 }

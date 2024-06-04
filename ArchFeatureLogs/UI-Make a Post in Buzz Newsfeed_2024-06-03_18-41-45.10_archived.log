@@ -1,0 +1,89 @@
+2024-06-03 18:41:45.195 [main] INFO  utils.PropertiesUtil - Properties file 'config.properties' loaded successfully.
+2024-06-03 18:41:45.197 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-03 18:41:45.198 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-03 18:41:45.198 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-03 18:41:45.204 [main] INFO  utils.DriverManager - Starting Chrome browser
+2024-06-03 18:41:48.511 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-03 18:41:48.512 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
+2024-06-03 18:41:48.512 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
+2024-06-03 18:41:49.304 [main] INFO  utils.BrowserActions - Entering text 'Admin' into element '[[ChromeDriver: chrome on windows (442488f80dcd00159878a1d6b0dc8914)] -> name: username]' with field name 'Username'
+2024-06-03 18:41:49.448 [main] INFO  utils.BrowserActions - Entering text 'admin123' into element '[[ChromeDriver: chrome on windows (442488f80dcd00159878a1d6b0dc8914)] -> name: password]' with field name 'Password'
+2024-06-03 18:41:50.415 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-03 18:41:51.630 [main] INFO  utils.BrowserActions - Attempt 1: Waiting for element to be clickable
+2024-06-03 18:41:52.203 [main] INFO  utils.BrowserActions - Attempt 1: Clearing the field
+2024-06-03 18:41:52.283 [main] ERROR utils.BrowserActions - Attempt 1: Exception occurred while populating the field. Retrying...
+org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=125.0.6422.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [442488f80dcd00159878a1d6b0dc8914, clearElement {id=f.F2DE2130BA0D2AE68510F4F01E0D2550.d.1B43A346BD965F1777F8C676B73D62C1.e.49}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\ICALUG~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64575}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64575/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (442488f80dcd00159878a1d6b0dc8914)] -> xpath: //textarea[@placeholder="What's on your mind?"]]
+Session ID: 442488f80dcd00159878a1d6b0dc8914
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:129)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.clear(Unknown Source)
+	at utils.BrowserActions.inputTextWithRetry(BrowserActions.java:38)
+	at pages.BuzzPage.populateWhatsOnYourMindField(BuzzPage.java:35)
+	at stepDefinitions.BuzzPageSteps.whatSOnYourMindFieldIsPopulatedWithRandomText(BuzzPageSteps.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.core.runtime.Runtime.lambda$executePickle$6(Runtime.java:107)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.Runtime.lambda$executePickle$7(Runtime.java:107)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at io.cucumber.core.runtime.Runtime$SameThreadExecutorService.execute(Runtime.java:235)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+	at io.cucumber.core.runtime.Runtime.lambda$runFeatures$3(Runtime.java:89)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.SliceOps$1$1.accept(SliceOps.java:200)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1685)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at io.cucumber.core.runtime.Runtime.runFeatures(Runtime.java:90)
+	at io.cucumber.core.runtime.Runtime.lambda$run$0(Runtime.java:78)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.core.runtime.Runtime.run(Runtime.java:78)
+	at io.cucumber.core.cli.Main.run(Main.java:87)
+	at io.cucumber.core.cli.Main.main(Main.java:30)
+2024-06-03 18:41:52.293 [main] INFO  utils.BrowserActions - Attempt 2: Waiting for element to be clickable
+2024-06-03 18:41:52.365 [main] INFO  utils.BrowserActions - Attempt 2: Clearing the field
+2024-06-03 18:41:52.547 [main] INFO  utils.BrowserActions - Attempt 2: Sending keys to the field
+2024-06-03 18:41:52.746 [main] INFO  utils.BrowserActions - Attempt 2: Successfully populated the field with text

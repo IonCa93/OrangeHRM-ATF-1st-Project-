@@ -1,4 +1,4 @@
-@ui @run
+@UI @run
 Feature: Make a Post in Buzz Newsfeed
 
   Scenario: Verify Post functionality

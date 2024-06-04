@@ -1,4 +1,4 @@
-@ui @run
+@UI @run
 Feature: Login functionality
 
   Background:
