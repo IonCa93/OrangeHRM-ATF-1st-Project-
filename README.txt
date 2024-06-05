@@ -9,7 +9,7 @@ V4.0
 
 
 V4.3-UNSTABLE
--------------------------------------------------------------->>>PRE-assessment #1 observations:<<<---------------------------------------------------------
+---------------------->>>PRE-assessment #1 observations:<<<---------------------------------------------------------
 
 -TODO remove comments on assessment
 -Inform about Appender -configLog
@@ -113,4 +113,4 @@ V4.3-UNSTABLE
  - navigateToLoginPage(WebDriver driver, String baseUrl) {//TODO move to browserActions
  - Logger - replace {} with %s;
 
--------------------------------------------------------------->>>PRE-assessment #1 observations:<<<---------------------------------------------------------
+---------------------->>>PRE-assessment #1 observations:<<<---------------------------------------------------------
