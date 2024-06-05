@@ -16,6 +16,11 @@ V4.3-UNSTABLE
 -Created new packages for actions (ui, api side), config (driverManager, logging), context (ScenarioContext), enums (Contextkey, TBA);
 -Hooks class - navigateToLoginPage method to be moved in BrowserActions; Logger - replace {} with %s;
 
+-TestRunner class:
+ - //TODO add StepNotifications-OPTIONAL
+ - "html:target/reports/Reports.html", //TODO add logs in reports
+ - //TODO add git ignore for target folder!!! Why required all evidence in target, but not in project
+
 -UI-LoginPage class
  - fieldName either variable or Enum (LogInWithCredentials method); DurationofSeconds 
  - retrieve from config (getErrorMessage method); 
