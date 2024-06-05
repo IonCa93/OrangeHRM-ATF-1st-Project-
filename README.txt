@@ -12,6 +12,7 @@ V4.3-UNSTABLE
 -------------------------------------------------------------->>>PRE-assessment #1 observations:<<<---------------------------------------------------------
 
 -TODO remove comments on assessment
+-Inform about Appender -configLog
 -Created new packages for actions (ui, api side), config (driverManager, logging), context (ScenarioContext), enums (Contextkey, TBA);
 -Hooks class - navigateToLoginPage method to be moved in BrowserActions; Logger - replace {} with %s;
 
