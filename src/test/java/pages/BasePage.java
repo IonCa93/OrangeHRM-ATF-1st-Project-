@@ -1,9 +1,9 @@
 package pages;
 
+import actions.UIActions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import utils.BrowserActions;
 import utils.PropertiesUtil;
 
 import java.time.Duration;
@@ -11,12 +11,12 @@ import java.time.Duration;
 public abstract class BasePage {
 
     protected final WebDriver driver; //TODO dif btw public/protected/default
-    protected final BrowserActions browserActions;
+    protected final UIActions browserActions;
     protected final WebDriverWait wait;
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
-        this.browserActions = new BrowserActions(driver);
+        this.browserActions = new UIActions(driver);
         PageFactory.initElements(driver, this);
         long timeoutSeconds = getTimeoutFromConfig();
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutSeconds));

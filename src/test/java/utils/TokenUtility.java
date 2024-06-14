@@ -1,5 +1,7 @@
 package utils;
 
+import api.ApiTokenGenerator;
+
 public class TokenUtility {
     public static String generateBearerToken() {
         try {

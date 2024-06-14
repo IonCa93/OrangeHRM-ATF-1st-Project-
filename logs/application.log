@@ -3,21 +3,21 @@
 2024-06-04 17:09:55,217 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
 2024-06-04 17:09:55,217 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
 2024-06-04 17:09:55,217 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
-2024-06-04 17:09:55,225 [main] INFO  utils.DriverManager - Starting Chrome browser
+2024-06-04 17:09:55,225 [main] INFO  config.DriverManager - Starting Chrome browser
 2024-06-04 17:09:57,717 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
 2024-06-04 17:09:59,015 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 2024-06-04 17:09:59,021 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
 2024-06-04 17:09:59,037 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
 2024-06-04 17:09:59,037 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
-2024-06-04 17:09:59,826 [main] INFO  utils.BrowserActions - Entering text 'Admin' into element '[[ChromeDriver: chrome on windows (f894df9519ea9126e0caeb53b46238fb)] -> name: username]' with field name 'Username'
-2024-06-04 17:10:00,208 [main] INFO  utils.BrowserActions - Entering text 'admin123' into element '[[ChromeDriver: chrome on windows (f894df9519ea9126e0caeb53b46238fb)] -> name: password]' with field name 'Password'
+2024-06-04 17:09:59,826 [main] INFO  actions.UIActions - Entering text 'Admin' into element '[[ChromeDriver: chrome on windows (f894df9519ea9126e0caeb53b46238fb)] -> name: username]' with field name 'Username'
+2024-06-04 17:10:00,208 [main] INFO  actions.UIActions - Entering text 'admin123' into element '[[ChromeDriver: chrome on windows (f894df9519ea9126e0caeb53b46238fb)] -> name: password]' with field name 'Password'
 2024-06-04 17:10:00,383 [main] INFO  pages.LoginPage - Logged in with credentials
 2024-06-04 17:10:00,397 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
 2024-06-04 17:10:02,508 [main] INFO  pages.BuzzPage - Clicked on Buzz menu item
-2024-06-04 17:10:02,745 [main] INFO  utils.BrowserActions - Attempt 1: Waiting for element to be clickable
-2024-06-04 17:10:03,003 [main] INFO  utils.BrowserActions - Attempt 1: Clearing the field
-2024-06-04 17:10:03,138 [main] INFO  utils.BrowserActions - Attempt 1: Sending keys to the field
-2024-06-04 17:10:03,336 [main] INFO  utils.BrowserActions - Attempt 1: Successfully populated the field with text
+2024-06-04 17:10:02,745 [main] INFO  actions.UIActions - Attempt 1: Waiting for element to be clickable
+2024-06-04 17:10:03,003 [main] INFO  actions.UIActions - Attempt 1: Clearing the field
+2024-06-04 17:10:03,138 [main] INFO  actions.UIActions - Attempt 1: Sending keys to the field
+2024-06-04 17:10:03,336 [main] INFO  actions.UIActions - Attempt 1: Successfully populated the field with text
 2024-06-04 17:10:03,336 [main] INFO  pages.BuzzPage - Populated 'What's on your mind' field with text: Veritatis impedit pariatur ut dolor.
 2024-06-04 17:10:03,436 [main] INFO  pages.BuzzPage - Clicked on the post button
 2024-06-04 17:10:03,436 [main] INFO  pages.BuzzPage - New Post is present on the page
@@ -31,21 +31,21 @@
 2024-06-04 17:13:36,784 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
 2024-06-04 17:13:36,784 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
 2024-06-04 17:13:36,784 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
-2024-06-04 17:13:36,800 [main] INFO  utils.DriverManager - Starting Chrome browser
+2024-06-04 17:13:36,800 [main] INFO  config.DriverManager - Starting Chrome browser
 2024-06-04 17:13:38,961 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
 2024-06-04 17:13:40,289 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 2024-06-04 17:13:40,351 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
 2024-06-04 17:13:40,354 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
 2024-06-04 17:13:40,354 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
-2024-06-04 17:13:41,199 [main] INFO  utils.BrowserActions - Entering text 'Admin' into element '[[ChromeDriver: chrome on windows (8d14037e0ab4c524c540e888251dc2a4)] -> name: username]' with field name 'Username'
-2024-06-04 17:13:41,435 [main] INFO  utils.BrowserActions - Entering text 'admin123' into element '[[ChromeDriver: chrome on windows (8d14037e0ab4c524c540e888251dc2a4)] -> name: password]' with field name 'Password'
+2024-06-04 17:13:41,199 [main] INFO  actions.UIActions - Entering text 'Admin' into element '[[ChromeDriver: chrome on windows (8d14037e0ab4c524c540e888251dc2a4)] -> name: username]' with field name 'Username'
+2024-06-04 17:13:41,435 [main] INFO  actions.UIActions - Entering text 'admin123' into element '[[ChromeDriver: chrome on windows (8d14037e0ab4c524c540e888251dc2a4)] -> name: password]' with field name 'Password'
 2024-06-04 17:13:41,559 [main] INFO  pages.LoginPage - Logged in with credentials
 2024-06-04 17:13:41,565 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
 2024-06-04 17:13:43,624 [main] INFO  pages.BuzzPage - Clicked on Buzz menu item
-2024-06-04 17:13:43,732 [main] INFO  utils.BrowserActions - Attempt 1: Waiting for element to be clickable
-2024-06-04 17:13:44,298 [main] INFO  utils.BrowserActions - Attempt 1: Clearing the field
-2024-06-04 17:13:44,504 [main] INFO  utils.BrowserActions - Attempt 1: Sending keys to the field
-2024-06-04 17:13:44,669 [main] INFO  utils.BrowserActions - Attempt 1: Successfully populated the field with text
+2024-06-04 17:13:43,732 [main] INFO  actions.UIActions - Attempt 1: Waiting for element to be clickable
+2024-06-04 17:13:44,298 [main] INFO  actions.UIActions - Attempt 1: Clearing the field
+2024-06-04 17:13:44,504 [main] INFO  actions.UIActions - Attempt 1: Sending keys to the field
+2024-06-04 17:13:44,669 [main] INFO  actions.UIActions - Attempt 1: Successfully populated the field with text
 2024-06-04 17:13:44,670 [main] INFO  pages.BuzzPage - Populated 'What's on your mind' field with text: Maxime iure minima ex quaerat accusamus dolor.
 2024-06-04 17:13:44,749 [main] INFO  pages.BuzzPage - Clicked on the post button
 2024-06-04 17:13:44,750 [main] INFO  pages.BuzzPage - New Post is present on the page
@@ -70,20 +70,20 @@
 2024-06-04 17:21:14,936 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
 2024-06-04 17:21:14,936 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
 2024-06-04 17:21:14,937 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
-2024-06-04 17:21:14,942 [main] INFO  utils.DriverManager - Starting Chrome browser
+2024-06-04 17:21:14,942 [main] INFO  config.DriverManager - Starting Chrome browser
 2024-06-04 17:21:16,992 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
 2024-06-04 17:21:18,541 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 2024-06-04 17:21:18,569 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
 2024-06-04 17:21:18,569 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
 2024-06-04 17:21:18,569 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
-2024-06-04 17:21:19,421 [main] INFO  utils.BrowserActions - Entering text 'Admin' into element '[[ChromeDriver: chrome on windows (0381e3c4b8f92cf17b3fba8334fc600b)] -> name: username]' with field name 'Username'
-2024-06-04 17:21:19,600 [main] INFO  utils.BrowserActions - Entering text 'admin123' into element '[[ChromeDriver: chrome on windows (0381e3c4b8f92cf17b3fba8334fc600b)] -> name: password]' with field name 'Password'
+2024-06-04 17:21:19,421 [main] INFO  actions.UIActions - Entering text 'Admin' into element '[[ChromeDriver: chrome on windows (0381e3c4b8f92cf17b3fba8334fc600b)] -> name: username]' with field name 'Username'
+2024-06-04 17:21:19,600 [main] INFO  actions.UIActions - Entering text 'admin123' into element '[[ChromeDriver: chrome on windows (0381e3c4b8f92cf17b3fba8334fc600b)] -> name: password]' with field name 'Password'
 2024-06-04 17:21:19,709 [main] INFO  pages.LoginPage - Logged in with credentials
 2024-06-04 17:21:19,709 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
 2024-06-04 17:21:22,022 [main] INFO  pages.BuzzPage - Clicked on Buzz menu item
-2024-06-04 17:21:22,140 [main] INFO  utils.BrowserActions - Attempt 1: Waiting for element to be clickable
-2024-06-04 17:21:22,727 [main] INFO  utils.BrowserActions - Attempt 1: Clearing the field
-2024-06-04 17:21:22,847 [main] ERROR utils.BrowserActions - Attempt 1: Exception occurred while populating the field. Retrying...
+2024-06-04 17:21:22,140 [main] INFO  actions.UIActions - Attempt 1: Waiting for element to be clickable
+2024-06-04 17:21:22,727 [main] INFO  actions.UIActions - Attempt 1: Clearing the field
+2024-06-04 17:21:22,847 [main] ERROR actions.UIActions - Attempt 1: Exception occurred while populating the field. Retrying...
 org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
   (Session info: chrome=125.0.6422.142)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
@@ -110,9 +110,9 @@ Session ID: 0381e3c4b8f92cf17b3fba8334fc600b
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at jdk.proxy2/jdk.proxy2.$Proxy16.clear(Unknown Source)
-	at utils.BrowserActions.inputTextWithRetry(BrowserActions.java:38)
+	at actions.UIActions.inputTextWithRetry(BrowserActions.java:38)
 	at pages.BuzzPage.populateWhatsOnYourMindField(BuzzPage.java:35)
-	at stepDefinitions.BuzzPageSteps.whatSOnYourMindFieldIsPopulatedWithRandomText(BuzzPageSteps.java:27)
+	at stepDefinitions.ui.BuzzPageSteps.whatSOnYourMindFieldIsPopulatedWithRandomText(BuzzPageSteps.java:27)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
@@ -155,10 +155,10 @@ Session ID: 0381e3c4b8f92cf17b3fba8334fc600b
 	at io.cucumber.core.runtime.Runtime.run(Runtime.java:78)
 	at io.cucumber.core.cli.Main.run(Main.java:87)
 	at io.cucumber.core.cli.Main.main(Main.java:30)
-2024-06-04 17:21:22,847 [main] INFO  utils.BrowserActions - Attempt 2: Waiting for element to be clickable
-2024-06-04 17:21:22,915 [main] INFO  utils.BrowserActions - Attempt 2: Clearing the field
-2024-06-04 17:21:23,110 [main] INFO  utils.BrowserActions - Attempt 2: Sending keys to the field
-2024-06-04 17:21:23,252 [main] INFO  utils.BrowserActions - Attempt 2: Successfully populated the field with text
+2024-06-04 17:21:22,847 [main] INFO  actions.UIActions - Attempt 2: Waiting for element to be clickable
+2024-06-04 17:21:22,915 [main] INFO  actions.UIActions - Attempt 2: Clearing the field
+2024-06-04 17:21:23,110 [main] INFO  actions.UIActions - Attempt 2: Sending keys to the field
+2024-06-04 17:21:23,252 [main] INFO  actions.UIActions - Attempt 2: Successfully populated the field with text
 2024-06-04 17:21:23,253 [main] INFO  pages.BuzzPage - Populated 'What's on your mind' field with text: Voluptas molestiae architecto suscipit quis quibusdam.
 2024-06-04 17:21:23,343 [main] INFO  pages.BuzzPage - Clicked on the post button
 2024-06-04 17:21:23,343 [main] INFO  pages.BuzzPage - New Post is present on the page
@@ -222,21 +222,21 @@ Session ID: 0381e3c4b8f92cf17b3fba8334fc600b
 2024-06-04 17:47:11,224 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
 2024-06-04 17:47:11,224 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
 2024-06-04 17:47:11,224 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
-2024-06-04 17:47:11,224 [main] INFO  utils.DriverManager - Starting Chrome browser
+2024-06-04 17:47:11,224 [main] INFO  config.DriverManager - Starting Chrome browser
 2024-06-04 17:47:14,259 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
 2024-06-04 17:47:15,717 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 2024-06-04 17:47:15,744 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
 2024-06-04 17:47:15,746 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
 2024-06-04 17:47:15,746 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
-2024-06-04 17:47:16,562 [main] INFO  utils.BrowserActions - Entering text 'Admin' into element '[[ChromeDriver: chrome on windows (532d4f5bca695b0530162e89fa800696)] -> name: username]' with field name 'Username'
-2024-06-04 17:47:16,793 [main] INFO  utils.BrowserActions - Entering text 'admin123' into element '[[ChromeDriver: chrome on windows (532d4f5bca695b0530162e89fa800696)] -> name: password]' with field name 'Password'
+2024-06-04 17:47:16,562 [main] INFO  actions.UIActions - Entering text 'Admin' into element '[[ChromeDriver: chrome on windows (532d4f5bca695b0530162e89fa800696)] -> name: username]' with field name 'Username'
+2024-06-04 17:47:16,793 [main] INFO  actions.UIActions - Entering text 'admin123' into element '[[ChromeDriver: chrome on windows (532d4f5bca695b0530162e89fa800696)] -> name: password]' with field name 'Password'
 2024-06-04 17:47:16,993 [main] INFO  pages.LoginPage - Logged in with credentials
 2024-06-04 17:47:16,998 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
 2024-06-04 17:47:19,187 [main] INFO  pages.BuzzPage - Clicked on Buzz menu item
-2024-06-04 17:47:19,425 [main] INFO  utils.BrowserActions - Attempt 1: Waiting for element to be clickable
-2024-06-04 17:47:19,591 [main] INFO  utils.BrowserActions - Attempt 1: Clearing the field
-2024-06-04 17:47:19,760 [main] INFO  utils.BrowserActions - Attempt 1: Sending keys to the field
-2024-06-04 17:47:50,482 [main] ERROR utils.BrowserActions - Attempt 1: Exception occurred while populating the field. Retrying...
+2024-06-04 17:47:19,425 [main] INFO  actions.UIActions - Attempt 1: Waiting for element to be clickable
+2024-06-04 17:47:19,591 [main] INFO  actions.UIActions - Attempt 1: Clearing the field
+2024-06-04 17:47:19,760 [main] INFO  actions.UIActions - Attempt 1: Sending keys to the field
+2024-06-04 17:47:50,482 [main] ERROR actions.UIActions - Attempt 1: Exception occurred while populating the field. Retrying...
 org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text ('Repellat ipsum placeat quo omnis.') to be the value of element [[ChromeDriver: chrome on windows (532d4f5bca695b0530162e89fa800696)] -> xpath: //textarea[@placeholder="What's on your mind?"]] (tried for 30 second(s) with 500 milliseconds interval)
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
@@ -245,9 +245,9 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 Session ID: 532d4f5bca695b0530162e89fa800696
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at utils.BrowserActions.inputTextWithRetry(BrowserActions.java:50)
+	at actions.UIActions.inputTextWithRetry(BrowserActions.java:50)
 	at pages.BuzzPage.populateWhatsOnYourMindField(BuzzPage.java:35)
-	at stepDefinitions.BuzzPageSteps.whatSOnYourMindFieldIsPopulatedWithRandomText(BuzzPageSteps.java:27)
+	at stepDefinitions.ui.BuzzPageSteps.whatSOnYourMindFieldIsPopulatedWithRandomText(BuzzPageSteps.java:27)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
@@ -290,10 +290,10 @@ Session ID: 532d4f5bca695b0530162e89fa800696
 	at io.cucumber.core.runtime.Runtime.run(Runtime.java:78)
 	at io.cucumber.core.cli.Main.run(Main.java:87)
 	at io.cucumber.core.cli.Main.main(Main.java:30)
-2024-06-04 17:47:50,482 [main] INFO  utils.BrowserActions - Attempt 2: Waiting for element to be clickable
-2024-06-04 17:47:50,529 [main] INFO  utils.BrowserActions - Attempt 2: Clearing the field
-2024-06-04 17:47:50,608 [main] INFO  utils.BrowserActions - Attempt 2: Sending keys to the field
-2024-06-04 17:47:50,751 [main] INFO  utils.BrowserActions - Attempt 2: Successfully populated the field with text
+2024-06-04 17:47:50,482 [main] INFO  actions.UIActions - Attempt 2: Waiting for element to be clickable
+2024-06-04 17:47:50,529 [main] INFO  actions.UIActions - Attempt 2: Clearing the field
+2024-06-04 17:47:50,608 [main] INFO  actions.UIActions - Attempt 2: Sending keys to the field
+2024-06-04 17:47:50,751 [main] INFO  actions.UIActions - Attempt 2: Successfully populated the field with text
 2024-06-04 17:47:50,751 [main] INFO  pages.BuzzPage - Populated 'What's on your mind' field with text: Repellat ipsum placeat quo omnis.
 2024-06-04 17:47:50,881 [main] INFO  pages.BuzzPage - Clicked on the post button
 2024-06-04 17:47:50,881 [main] INFO  pages.BuzzPage - New Post is present on the page
@@ -307,21 +307,21 @@ Session ID: 532d4f5bca695b0530162e89fa800696
 2024-06-04 18:01:01,644 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
 2024-06-04 18:01:01,644 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
 2024-06-04 18:01:01,644 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
-2024-06-04 18:01:01,644 [main] INFO  utils.DriverManager - Starting Chrome browser
+2024-06-04 18:01:01,644 [main] INFO  config.DriverManager - Starting Chrome browser
 2024-06-04 18:01:03,768 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
 2024-06-04 18:01:04,957 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 2024-06-04 18:01:04,978 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
 2024-06-04 18:01:04,979 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
 2024-06-04 18:01:04,979 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
-2024-06-04 18:01:05,686 [main] INFO  utils.BrowserActions - Entering text 'Admin' into element '[[ChromeDriver: chrome on windows (36eef809d2a16d542b581543015d7791)] -> name: username]' with field name 'Username'
-2024-06-04 18:01:05,842 [main] INFO  utils.BrowserActions - Entering text 'admin123' into element '[[ChromeDriver: chrome on windows (36eef809d2a16d542b581543015d7791)] -> name: password]' with field name 'Password'
+2024-06-04 18:01:05,686 [main] INFO  actions.UIActions - Entering text 'Admin' into element '[[ChromeDriver: chrome on windows (36eef809d2a16d542b581543015d7791)] -> name: username]' with field name 'Username'
+2024-06-04 18:01:05,842 [main] INFO  actions.UIActions - Entering text 'admin123' into element '[[ChromeDriver: chrome on windows (36eef809d2a16d542b581543015d7791)] -> name: password]' with field name 'Password'
 2024-06-04 18:01:05,938 [main] INFO  pages.LoginPage - Logged in with credentials
 2024-06-04 18:01:05,942 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
 2024-06-04 18:01:08,293 [main] INFO  pages.BuzzPage - Clicked on Buzz menu item
-2024-06-04 18:01:08,405 [main] INFO  utils.BrowserActions - Attempt 1: Waiting for element to be clickable
-2024-06-04 18:01:08,969 [main] INFO  utils.BrowserActions - Attempt 1: Clearing the field
-2024-06-04 18:01:09,074 [main] INFO  utils.BrowserActions - Attempt 1: Sending keys to the field
-2024-06-04 18:01:09,241 [main] INFO  utils.BrowserActions - Attempt 1: Successfully populated the field with text
+2024-06-04 18:01:08,405 [main] INFO  actions.UIActions - Attempt 1: Waiting for element to be clickable
+2024-06-04 18:01:08,969 [main] INFO  actions.UIActions - Attempt 1: Clearing the field
+2024-06-04 18:01:09,074 [main] INFO  actions.UIActions - Attempt 1: Sending keys to the field
+2024-06-04 18:01:09,241 [main] INFO  actions.UIActions - Attempt 1: Successfully populated the field with text
 2024-06-04 18:01:09,241 [main] INFO  pages.BuzzPage - Populated 'What's on your mind' field with text: Et aut ut assumenda sit.
 2024-06-04 18:01:09,348 [main] INFO  pages.BuzzPage - Clicked on the post button
 2024-06-04 18:01:09,348 [main] INFO  pages.BuzzPage - New Post is present on the page
@@ -372,14 +372,14 @@ Session ID: 532d4f5bca695b0530162e89fa800696
 2024-06-04 18:05:28,082 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
 2024-06-04 18:05:28,082 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
 2024-06-04 18:05:28,082 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
-2024-06-04 18:05:28,082 [main] INFO  utils.DriverManager - Starting Chrome browser
+2024-06-04 18:05:28,082 [main] INFO  config.DriverManager - Starting Chrome browser
 2024-06-04 18:05:29,912 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
 2024-06-04 18:05:31,172 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 2024-06-04 18:05:31,183 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
 2024-06-04 18:05:31,183 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
 2024-06-04 18:05:31,183 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
-2024-06-04 18:05:31,849 [main] INFO  utils.BrowserActions - Entering text 'Admin' into element '[[ChromeDriver: chrome on windows (3e8ddfefd7293bf019ebb0939e411160)] -> name: username]' with field name 'Username'
-2024-06-04 18:05:31,985 [main] INFO  utils.BrowserActions - Entering text 'admin123' into element '[[ChromeDriver: chrome on windows (3e8ddfefd7293bf019ebb0939e411160)] -> name: password]' with field name 'Password'
+2024-06-04 18:05:31,849 [main] INFO  actions.UIActions - Entering text 'Admin' into element '[[ChromeDriver: chrome on windows (3e8ddfefd7293bf019ebb0939e411160)] -> name: username]' with field name 'Username'
+2024-06-04 18:05:31,985 [main] INFO  actions.UIActions - Entering text 'admin123' into element '[[ChromeDriver: chrome on windows (3e8ddfefd7293bf019ebb0939e411160)] -> name: password]' with field name 'Password'
 2024-06-04 18:05:32,086 [main] INFO  pages.LoginPage - Logged in with credentials
 2024-06-04 18:05:32,086 [main] INFO  pages.LoginPage - Default tab is displayed
 2024-06-04 18:05:33,515 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: User logs in successfully with valid credentials
@@ -391,12 +391,12 @@ Session ID: 532d4f5bca695b0530162e89fa800696
 2024-06-04 18:05:34,049 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
 2024-06-04 18:05:34,049 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
 2024-06-04 18:05:34,049 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
-2024-06-04 18:05:34,049 [main] INFO  utils.DriverManager - Starting Chrome browser
+2024-06-04 18:05:34,049 [main] INFO  config.DriverManager - Starting Chrome browser
 2024-06-04 18:05:35,755 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
 2024-06-04 18:05:36,908 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 2024-06-04 18:05:36,908 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
-2024-06-04 18:05:37,592 [main] INFO  utils.BrowserActions - Entering text 'AdminBLAbla' into element '[[ChromeDriver: chrome on windows (a06e83fb6e8240cf239b3756380fb19a)] -> name: username]' with field name 'Username'
-2024-06-04 18:05:37,734 [main] INFO  utils.BrowserActions - Entering text 'admin123' into element '[[ChromeDriver: chrome on windows (a06e83fb6e8240cf239b3756380fb19a)] -> name: password]' with field name 'Password'
+2024-06-04 18:05:37,592 [main] INFO  actions.UIActions - Entering text 'AdminBLAbla' into element '[[ChromeDriver: chrome on windows (a06e83fb6e8240cf239b3756380fb19a)] -> name: username]' with field name 'Username'
+2024-06-04 18:05:37,734 [main] INFO  actions.UIActions - Entering text 'admin123' into element '[[ChromeDriver: chrome on windows (a06e83fb6e8240cf239b3756380fb19a)] -> name: password]' with field name 'Password'
 2024-06-04 18:05:37,833 [main] INFO  pages.LoginPage - Logged in with credentials
 2024-06-04 18:05:39,122 [main] WARN  pages.LoginPage - Unsuccessful login attempt: Invalid credentials
 2024-06-04 18:05:39,154 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: User logs in successfully with invalid credentials
@@ -408,12 +408,12 @@ Session ID: 532d4f5bca695b0530162e89fa800696
 2024-06-04 18:05:39,534 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
 2024-06-04 18:05:39,534 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
 2024-06-04 18:05:39,534 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
-2024-06-04 18:05:39,534 [main] INFO  utils.DriverManager - Starting Chrome browser
+2024-06-04 18:05:39,534 [main] INFO  config.DriverManager - Starting Chrome browser
 2024-06-04 18:05:41,502 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
 2024-06-04 18:05:42,669 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 2024-06-04 18:05:42,669 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
-2024-06-04 18:05:43,323 [main] INFO  utils.BrowserActions - Entering text 'Admin' into element '[[ChromeDriver: chrome on windows (7d9533cf54d2c648343adedae8b67272)] -> name: username]' with field name 'Username'
-2024-06-04 18:05:43,468 [main] INFO  utils.BrowserActions - Entering text 'admin123*/*/' into element '[[ChromeDriver: chrome on windows (7d9533cf54d2c648343adedae8b67272)] -> name: password]' with field name 'Password'
+2024-06-04 18:05:43,323 [main] INFO  actions.UIActions - Entering text 'Admin' into element '[[ChromeDriver: chrome on windows (7d9533cf54d2c648343adedae8b67272)] -> name: username]' with field name 'Username'
+2024-06-04 18:05:43,468 [main] INFO  actions.UIActions - Entering text 'admin123*/*/' into element '[[ChromeDriver: chrome on windows (7d9533cf54d2c648343adedae8b67272)] -> name: password]' with field name 'Password'
 2024-06-04 18:05:43,583 [main] INFO  pages.LoginPage - Logged in with credentials
 2024-06-04 18:05:45,025 [main] WARN  pages.LoginPage - Unsuccessful login attempt: Invalid credentials
 2024-06-04 18:05:45,052 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: User logs in successfully with invalid credentials
@@ -425,12 +425,12 @@ Session ID: 532d4f5bca695b0530162e89fa800696
 2024-06-04 18:05:45,451 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
 2024-06-04 18:05:45,451 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
 2024-06-04 18:05:45,451 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
-2024-06-04 18:05:45,451 [main] INFO  utils.DriverManager - Starting Chrome browser
+2024-06-04 18:05:45,451 [main] INFO  config.DriverManager - Starting Chrome browser
 2024-06-04 18:05:47,138 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
 2024-06-04 18:05:48,304 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 2024-06-04 18:05:48,305 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
-2024-06-04 18:05:48,985 [main] INFO  utils.BrowserActions - Entering text 'testABC' into element '[[ChromeDriver: chrome on windows (a6cf56ed2064f8b821faa4bb0355a499)] -> name: username]' with field name 'Username'
-2024-06-04 18:05:49,122 [main] INFO  utils.BrowserActions - Entering text 'pass2658' into element '[[ChromeDriver: chrome on windows (a6cf56ed2064f8b821faa4bb0355a499)] -> name: password]' with field name 'Password'
+2024-06-04 18:05:48,985 [main] INFO  actions.UIActions - Entering text 'testABC' into element '[[ChromeDriver: chrome on windows (a6cf56ed2064f8b821faa4bb0355a499)] -> name: username]' with field name 'Username'
+2024-06-04 18:05:49,122 [main] INFO  actions.UIActions - Entering text 'pass2658' into element '[[ChromeDriver: chrome on windows (a6cf56ed2064f8b821faa4bb0355a499)] -> name: password]' with field name 'Password'
 2024-06-04 18:05:49,219 [main] INFO  pages.LoginPage - Logged in with credentials
 2024-06-04 18:05:50,253 [main] WARN  pages.LoginPage - Unsuccessful login attempt: Invalid credentials
 2024-06-04 18:05:50,284 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: User logs in successfully with invalid credentials
@@ -442,21 +442,21 @@ Session ID: 532d4f5bca695b0530162e89fa800696
 2024-06-04 18:05:50,668 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
 2024-06-04 18:05:50,668 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
 2024-06-04 18:05:50,668 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
-2024-06-04 18:05:50,668 [main] INFO  utils.DriverManager - Starting Chrome browser
+2024-06-04 18:05:50,668 [main] INFO  config.DriverManager - Starting Chrome browser
 2024-06-04 18:05:52,578 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
 2024-06-04 18:05:53,791 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 2024-06-04 18:05:53,791 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
 2024-06-04 18:05:53,791 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
 2024-06-04 18:05:53,791 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
-2024-06-04 18:05:54,434 [main] INFO  utils.BrowserActions - Entering text 'Admin' into element '[[ChromeDriver: chrome on windows (10300cb31c16bfff281862ad763c0be9)] -> name: username]' with field name 'Username'
-2024-06-04 18:05:54,569 [main] INFO  utils.BrowserActions - Entering text 'admin123' into element '[[ChromeDriver: chrome on windows (10300cb31c16bfff281862ad763c0be9)] -> name: password]' with field name 'Password'
+2024-06-04 18:05:54,434 [main] INFO  actions.UIActions - Entering text 'Admin' into element '[[ChromeDriver: chrome on windows (10300cb31c16bfff281862ad763c0be9)] -> name: username]' with field name 'Username'
+2024-06-04 18:05:54,569 [main] INFO  actions.UIActions - Entering text 'admin123' into element '[[ChromeDriver: chrome on windows (10300cb31c16bfff281862ad763c0be9)] -> name: password]' with field name 'Password'
 2024-06-04 18:05:55,497 [main] INFO  pages.LoginPage - Logged in with credentials
 2024-06-04 18:05:55,499 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
 2024-06-04 18:05:57,043 [main] INFO  pages.BuzzPage - Clicked on Buzz menu item
-2024-06-04 18:05:57,152 [main] INFO  utils.BrowserActions - Attempt 1: Waiting for element to be clickable
-2024-06-04 18:05:57,717 [main] INFO  utils.BrowserActions - Attempt 1: Clearing the field
-2024-06-04 18:05:57,850 [main] INFO  utils.BrowserActions - Attempt 1: Sending keys to the field
-2024-06-04 18:06:28,244 [main] ERROR utils.BrowserActions - Attempt 1: Exception occurred while populating the field. Retrying...
+2024-06-04 18:05:57,152 [main] INFO  actions.UIActions - Attempt 1: Waiting for element to be clickable
+2024-06-04 18:05:57,717 [main] INFO  actions.UIActions - Attempt 1: Clearing the field
+2024-06-04 18:05:57,850 [main] INFO  actions.UIActions - Attempt 1: Sending keys to the field
+2024-06-04 18:06:28,244 [main] ERROR actions.UIActions - Attempt 1: Exception occurred while populating the field. Retrying...
 org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text ('Maxime dignissimos nihil consequatur consectetur.') to be the value of element [[ChromeDriver: chrome on windows (10300cb31c16bfff281862ad763c0be9)] -> xpath: //textarea[@placeholder="What's on your mind?"]] (tried for 30 second(s) with 500 milliseconds interval)
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
@@ -465,9 +465,9 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 Session ID: 10300cb31c16bfff281862ad763c0be9
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at utils.BrowserActions.inputTextWithRetry(BrowserActions.java:50)
+	at actions.UIActions.inputTextWithRetry(BrowserActions.java:50)
 	at pages.BuzzPage.populateWhatsOnYourMindField(BuzzPage.java:35)
-	at stepDefinitions.BuzzPageSteps.whatSOnYourMindFieldIsPopulatedWithRandomText(BuzzPageSteps.java:27)
+	at stepDefinitions.ui.BuzzPageSteps.whatSOnYourMindFieldIsPopulatedWithRandomText(BuzzPageSteps.java:27)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
@@ -517,10 +517,10 @@ Session ID: 10300cb31c16bfff281862ad763c0be9
 	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
 	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
 	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
-2024-06-04 18:06:28,247 [main] INFO  utils.BrowserActions - Attempt 2: Waiting for element to be clickable
-2024-06-04 18:06:28,283 [main] INFO  utils.BrowserActions - Attempt 2: Clearing the field
-2024-06-04 18:06:28,394 [main] INFO  utils.BrowserActions - Attempt 2: Sending keys to the field
-2024-06-04 18:06:28,535 [main] INFO  utils.BrowserActions - Attempt 2: Successfully populated the field with text
+2024-06-04 18:06:28,247 [main] INFO  actions.UIActions - Attempt 2: Waiting for element to be clickable
+2024-06-04 18:06:28,283 [main] INFO  actions.UIActions - Attempt 2: Clearing the field
+2024-06-04 18:06:28,394 [main] INFO  actions.UIActions - Attempt 2: Sending keys to the field
+2024-06-04 18:06:28,535 [main] INFO  actions.UIActions - Attempt 2: Successfully populated the field with text
 2024-06-04 18:06:28,535 [main] INFO  pages.BuzzPage - Populated 'What's on your mind' field with text: Maxime dignissimos nihil consequatur consectetur.
 2024-06-04 18:06:28,684 [main] INFO  pages.BuzzPage - Clicked on the post button
 2024-06-04 18:06:28,684 [main] INFO  pages.BuzzPage - New Post is present on the page
@@ -534,14 +534,14 @@ Session ID: 10300cb31c16bfff281862ad763c0be9
 2024-06-04 18:29:39,806 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
 2024-06-04 18:29:39,806 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
 2024-06-04 18:29:39,806 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
-2024-06-04 18:29:39,814 [main] INFO  utils.DriverManager - Starting Chrome browser
+2024-06-04 18:29:39,814 [main] INFO  config.DriverManager - Starting Chrome browser
 2024-06-04 18:29:41,887 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
 2024-06-04 18:29:43,132 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 2024-06-04 18:29:43,156 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
 2024-06-04 18:29:43,157 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
 2024-06-04 18:29:43,157 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
-2024-06-04 18:29:43,836 [main] INFO  utils.BrowserActions - Entering text 'Admin' into element '[[ChromeDriver: chrome on windows (3f7bd8aed2a0b5c89ce5ea15b52f6972)] -> name: username]' with field name 'Username'
-2024-06-04 18:29:43,993 [main] INFO  utils.BrowserActions - Entering text 'admin123' into element '[[ChromeDriver: chrome on windows (3f7bd8aed2a0b5c89ce5ea15b52f6972)] -> name: password]' with field name 'Password'
+2024-06-04 18:29:43,836 [main] INFO  actions.UIActions - Entering text 'Admin' into element '[[ChromeDriver: chrome on windows (3f7bd8aed2a0b5c89ce5ea15b52f6972)] -> name: username]' with field name 'Username'
+2024-06-04 18:29:43,993 [main] INFO  actions.UIActions - Entering text 'admin123' into element '[[ChromeDriver: chrome on windows (3f7bd8aed2a0b5c89ce5ea15b52f6972)] -> name: password]' with field name 'Password'
 2024-06-04 18:29:44,946 [main] INFO  pages.LoginPage - Logged in with credentials
 2024-06-04 18:29:44,948 [main] INFO  pages.LoginPage - Default tab is displayed
 2024-06-04 18:29:45,531 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: User logs in successfully with valid credentials
@@ -553,12 +553,12 @@ Session ID: 10300cb31c16bfff281862ad763c0be9
 2024-06-04 18:29:46,030 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
 2024-06-04 18:29:46,030 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
 2024-06-04 18:29:46,030 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
-2024-06-04 18:29:46,030 [main] INFO  utils.DriverManager - Starting Chrome browser
+2024-06-04 18:29:46,030 [main] INFO  config.DriverManager - Starting Chrome browser
 2024-06-04 18:29:47,614 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
 2024-06-04 18:29:48,877 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 2024-06-04 18:29:48,877 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
-2024-06-04 18:29:49,531 [main] INFO  utils.BrowserActions - Entering text 'AdminBLAbla' into element '[[ChromeDriver: chrome on windows (7382a62bcc871a012beca2498db323ad)] -> name: username]' with field name 'Username'
-2024-06-04 18:29:49,677 [main] INFO  utils.BrowserActions - Entering text 'admin123' into element '[[ChromeDriver: chrome on windows (7382a62bcc871a012beca2498db323ad)] -> name: password]' with field name 'Password'
+2024-06-04 18:29:49,531 [main] INFO  actions.UIActions - Entering text 'AdminBLAbla' into element '[[ChromeDriver: chrome on windows (7382a62bcc871a012beca2498db323ad)] -> name: username]' with field name 'Username'
+2024-06-04 18:29:49,677 [main] INFO  actions.UIActions - Entering text 'admin123' into element '[[ChromeDriver: chrome on windows (7382a62bcc871a012beca2498db323ad)] -> name: password]' with field name 'Password'
 2024-06-04 18:29:49,787 [main] INFO  pages.LoginPage - Logged in with credentials
 2024-06-04 18:29:50,804 [main] WARN  pages.LoginPage - Unsuccessful login attempt: Invalid credentials
 2024-06-04 18:29:50,841 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: User logs in successfully with invalid credentials
@@ -570,12 +570,12 @@ Session ID: 10300cb31c16bfff281862ad763c0be9
 2024-06-04 18:29:51,188 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
 2024-06-04 18:29:51,188 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
 2024-06-04 18:29:51,188 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
-2024-06-04 18:29:51,188 [main] INFO  utils.DriverManager - Starting Chrome browser
+2024-06-04 18:29:51,188 [main] INFO  config.DriverManager - Starting Chrome browser
 2024-06-04 18:29:52,700 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
 2024-06-04 18:29:53,871 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 2024-06-04 18:29:53,872 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
-2024-06-04 18:29:54,521 [main] INFO  utils.BrowserActions - Entering text 'Admin' into element '[[ChromeDriver: chrome on windows (f328a370f593c8047e5acc72c83b8aee)] -> name: username]' with field name 'Username'
-2024-06-04 18:29:54,682 [main] INFO  utils.BrowserActions - Entering text 'admin123*/*/' into element '[[ChromeDriver: chrome on windows (f328a370f593c8047e5acc72c83b8aee)] -> name: password]' with field name 'Password'
+2024-06-04 18:29:54,521 [main] INFO  actions.UIActions - Entering text 'Admin' into element '[[ChromeDriver: chrome on windows (f328a370f593c8047e5acc72c83b8aee)] -> name: username]' with field name 'Username'
+2024-06-04 18:29:54,682 [main] INFO  actions.UIActions - Entering text 'admin123*/*/' into element '[[ChromeDriver: chrome on windows (f328a370f593c8047e5acc72c83b8aee)] -> name: password]' with field name 'Password'
 2024-06-04 18:29:54,783 [main] INFO  pages.LoginPage - Logged in with credentials
 2024-06-04 18:29:56,071 [main] WARN  pages.LoginPage - Unsuccessful login attempt: Invalid credentials
 2024-06-04 18:29:56,108 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: User logs in successfully with invalid credentials
@@ -587,12 +587,12 @@ Session ID: 10300cb31c16bfff281862ad763c0be9
 2024-06-04 18:29:56,438 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
 2024-06-04 18:29:56,438 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
 2024-06-04 18:29:56,438 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
-2024-06-04 18:29:56,438 [main] INFO  utils.DriverManager - Starting Chrome browser
+2024-06-04 18:29:56,438 [main] INFO  config.DriverManager - Starting Chrome browser
 2024-06-04 18:29:57,951 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
 2024-06-04 18:29:59,183 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 2024-06-04 18:29:59,183 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
-2024-06-04 18:29:59,842 [main] INFO  utils.BrowserActions - Entering text 'testABC' into element '[[ChromeDriver: chrome on windows (bf0be4045c98512aa5d30167dbfc5835)] -> name: username]' with field name 'Username'
-2024-06-04 18:29:59,981 [main] INFO  utils.BrowserActions - Entering text 'pass2658' into element '[[ChromeDriver: chrome on windows (bf0be4045c98512aa5d30167dbfc5835)] -> name: password]' with field name 'Password'
+2024-06-04 18:29:59,842 [main] INFO  actions.UIActions - Entering text 'testABC' into element '[[ChromeDriver: chrome on windows (bf0be4045c98512aa5d30167dbfc5835)] -> name: username]' with field name 'Username'
+2024-06-04 18:29:59,981 [main] INFO  actions.UIActions - Entering text 'pass2658' into element '[[ChromeDriver: chrome on windows (bf0be4045c98512aa5d30167dbfc5835)] -> name: password]' with field name 'Password'
 2024-06-04 18:30:00,107 [main] INFO  pages.LoginPage - Logged in with credentials
 2024-06-04 18:30:01,203 [main] WARN  pages.LoginPage - Unsuccessful login attempt: Invalid credentials
 2024-06-04 18:30:01,245 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: User logs in successfully with invalid credentials
@@ -604,21 +604,21 @@ Session ID: 10300cb31c16bfff281862ad763c0be9
 2024-06-04 18:30:01,584 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
 2024-06-04 18:30:01,584 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
 2024-06-04 18:30:01,584 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
-2024-06-04 18:30:01,584 [main] INFO  utils.DriverManager - Starting Chrome browser
+2024-06-04 18:30:01,584 [main] INFO  config.DriverManager - Starting Chrome browser
 2024-06-04 18:30:03,167 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
 2024-06-04 18:30:04,419 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 2024-06-04 18:30:04,420 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
 2024-06-04 18:30:04,420 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
 2024-06-04 18:30:04,420 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
-2024-06-04 18:30:05,071 [main] INFO  utils.BrowserActions - Entering text 'Admin' into element '[[ChromeDriver: chrome on windows (1ba39348d2d49b16a23261cc994a953b)] -> name: username]' with field name 'Username'
-2024-06-04 18:30:05,206 [main] INFO  utils.BrowserActions - Entering text 'admin123' into element '[[ChromeDriver: chrome on windows (1ba39348d2d49b16a23261cc994a953b)] -> name: password]' with field name 'Password'
+2024-06-04 18:30:05,071 [main] INFO  actions.UIActions - Entering text 'Admin' into element '[[ChromeDriver: chrome on windows (1ba39348d2d49b16a23261cc994a953b)] -> name: username]' with field name 'Username'
+2024-06-04 18:30:05,206 [main] INFO  actions.UIActions - Entering text 'admin123' into element '[[ChromeDriver: chrome on windows (1ba39348d2d49b16a23261cc994a953b)] -> name: password]' with field name 'Password'
 2024-06-04 18:30:05,292 [main] INFO  pages.LoginPage - Logged in with credentials
 2024-06-04 18:30:05,292 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
 2024-06-04 18:30:07,296 [main] INFO  pages.BuzzPage - Clicked on Buzz menu item
-2024-06-04 18:30:07,440 [main] INFO  utils.BrowserActions - Attempt 1: Waiting for element to be clickable
-2024-06-04 18:30:07,998 [main] INFO  utils.BrowserActions - Attempt 1: Clearing the field
-2024-06-04 18:30:08,099 [main] INFO  utils.BrowserActions - Attempt 1: Sending keys to the field
-2024-06-04 18:30:38,743 [main] ERROR utils.BrowserActions - Attempt 1: Exception occurred while populating the field. Retrying...
+2024-06-04 18:30:07,440 [main] INFO  actions.UIActions - Attempt 1: Waiting for element to be clickable
+2024-06-04 18:30:07,998 [main] INFO  actions.UIActions - Attempt 1: Clearing the field
+2024-06-04 18:30:08,099 [main] INFO  actions.UIActions - Attempt 1: Sending keys to the field
+2024-06-04 18:30:38,743 [main] ERROR actions.UIActions - Attempt 1: Exception occurred while populating the field. Retrying...
 org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text ('Totam dolorum ut quia quia culpa laboriosam dolores.') to be the value of element [[ChromeDriver: chrome on windows (1ba39348d2d49b16a23261cc994a953b)] -> xpath: //textarea[@placeholder="What's on your mind?"]] (tried for 30 second(s) with 500 milliseconds interval)
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
@@ -627,9 +627,9 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 Session ID: 1ba39348d2d49b16a23261cc994a953b
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at utils.BrowserActions.inputTextWithRetry(BrowserActions.java:50)
+	at actions.UIActions.inputTextWithRetry(BrowserActions.java:50)
 	at pages.BuzzPage.populateWhatsOnYourMindField(BuzzPage.java:35)
-	at stepDefinitions.BuzzPageSteps.whatSOnYourMindFieldIsPopulatedWithRandomText(BuzzPageSteps.java:27)
+	at stepDefinitions.ui.BuzzPageSteps.whatSOnYourMindFieldIsPopulatedWithRandomText(BuzzPageSteps.java:27)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
@@ -679,10 +679,10 @@ Session ID: 1ba39348d2d49b16a23261cc994a953b
 	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
 	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
 	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
-2024-06-04 18:30:38,743 [main] INFO  utils.BrowserActions - Attempt 2: Waiting for element to be clickable
-2024-06-04 18:30:38,790 [main] INFO  utils.BrowserActions - Attempt 2: Clearing the field
-2024-06-04 18:30:38,884 [main] INFO  utils.BrowserActions - Attempt 2: Sending keys to the field
-2024-06-04 18:30:39,059 [main] INFO  utils.BrowserActions - Attempt 2: Successfully populated the field with text
+2024-06-04 18:30:38,743 [main] INFO  actions.UIActions - Attempt 2: Waiting for element to be clickable
+2024-06-04 18:30:38,790 [main] INFO  actions.UIActions - Attempt 2: Clearing the field
+2024-06-04 18:30:38,884 [main] INFO  actions.UIActions - Attempt 2: Sending keys to the field
+2024-06-04 18:30:39,059 [main] INFO  actions.UIActions - Attempt 2: Successfully populated the field with text
 2024-06-04 18:30:39,060 [main] INFO  pages.BuzzPage - Populated 'What's on your mind' field with text: Totam dolorum ut quia quia culpa laboriosam dolores.
 2024-06-04 18:30:39,145 [main] INFO  pages.BuzzPage - Clicked on the post button
 2024-06-04 18:30:39,150 [main] INFO  pages.BuzzPage - New Post is present on the page
@@ -691,3 +691,855 @@ Session ID: 1ba39348d2d49b16a23261cc994a953b
 2024-06-04 18:30:39,876 [main] INFO  utils.ScreenshotUtils - Screenshot taken for scenario: Verify Post functionality
 2024-06-04 18:30:40,097 [main] INFO  Hooks.Hooks - Starting Scenario Context teardown
 2024-06-04 18:30:40,097 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-04 18:49:28,425 [main] INFO  utils.PropertiesUtil - Properties file 'config.properties' loaded successfully.
+2024-06-04 18:49:28,425 [main] INFO  utils.PropertiesUtil - Property key 'token.endpoint' retrieved with value 'https://api-sandbox.orangehrm.com/oauth/issueToken'.
+2024-06-04 18:49:28,425 [main] INFO  utils.PropertiesUtil - Property key 'client.id' retrieved with value 'api-client'.
+2024-06-04 18:49:28,425 [main] INFO  utils.PropertiesUtil - Property key 'client.secret' retrieved with value '942d36a36d6bf422a36f5871f905b6e5'.
+2024-06-04 18:49:28,436 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
+2024-06-04 18:49:28,436 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
+2024-06-04 18:49:31,400 [main] INFO  utils.PropertiesUtil - Property key 'api.employee.endpoint' retrieved with value 'https://api-sandbox.orangehrm.com/api/employees'.
+2024-06-04 18:49:33,117 [main] ERROR s.DEPRECATED_CreateEmployeeAPI - POST request failed with status code: 403
+2024-06-04 18:49:33,124 [main] INFO  Hooks.Hooks - Starting Scenario Context teardown
+2024-06-04 18:49:33,124 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-05 12:45:49,900 [main] INFO  utils.PropertiesUtil - Properties file 'config.properties' loaded successfully.
+2024-06-05 12:45:49,916 [main] INFO  utils.PropertiesUtil - Property key 'token.endpoint' retrieved with value 'https://api-sandbox.orangehrm.com/oauth/issueToken'.
+2024-06-05 12:45:49,916 [main] INFO  utils.PropertiesUtil - Property key 'client.id' retrieved with value 'api-client'.
+2024-06-05 12:45:49,916 [main] INFO  utils.PropertiesUtil - Property key 'client.secret' retrieved with value '942d36a36d6bf422a36f5871f905b6e5'.
+2024-06-05 12:45:49,916 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
+2024-06-05 12:45:49,916 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
+2024-06-05 12:45:53,008 [main] INFO  utils.PropertiesUtil - Property key 'api.customer.endpoint' retrieved with value 'https://api-sandbox.orangehrm.com/api/customers'.
+2024-06-05 12:45:53,008 [main] INFO  s.FetchCustomerInfoAPI - Sending GET request to retrieve customer information...
+2024-06-05 12:45:53,953 [main] INFO  s.FetchCustomerInfoAPI - GET request executed
+2024-06-05 12:45:53,953 [main] INFO  s.FetchCustomerInfoAPI - Response status code verified successfully: 200
+2024-06-05 12:45:53,953 [main] INFO  s.FetchCustomerInfoAPI - Response body received: {"data":[{"customerId":"1","isDeleted":"0","name":"01 Communique Laboratory Inc(OCQLF)","description":"01 Communique Laboratory Inc(OCQLF) Description"},{"customerId":"2","isDeleted":"0","name":"1 800 Flowers.com Inc(FLWS)","description":"1 800 Flowers.com Inc(FLWS) Description"},{"customerId":"3","isDeleted":"0","name":"141 Capital Inc(ONCP)","description":"141 Capital Inc(ONCP) Description"},{"customerId":"4","isDeleted":"0","name":"1847 Holdings LLC(0955837D)","description":"1847 Holdings LLC(0955837D) Description"},{"customerId":"5","isDeleted":"0","name":"1867 Western Financial Corp(WFCL)","description":"1867 Western Financial Corp(WFCL) Description"},{"customerId":"6","isDeleted":"0","name":"1mage Software Inc(ISOL)","description":"1mage Software Inc(ISOL) Description"},{"customerId":"7","isDeleted":"0","name":"1st Capital Bank(FISB)","description":"1st Capital Bank(FISB) Description"},{"customerId":"8","isDeleted":"0","name":"1st Century Bancshares Inc(FCTY)","description":"1st Century Bancshares Inc(FCTY) Description"},{"customerId":"9","isDeleted":"0","name":"1st Colonial Bancorp Inc(FCOB)","description":"1st Colonial Bancorp Inc(FCOB) Description"},{"customerId":"10","isDeleted":"0","name":"1st Constitution Bancorp(FCCY)","description":"1st Constitution Bancorp(FCCY) Description"},{"customerId":"11","isDeleted":"0","name":"Nitso Inegrations","description":"Nitso Integration is client whose domain is integrations"},{"customerId":"12","isDeleted":"0","name":"Test","description":"Nitso Integration is client whose domain is integrations"}],"meta":{"total":12,"permissions":{"delete":["1","11","12"],"update":["1","2","3","4","5","6","7","8","9","10","11","12"]}}}
+2024-06-05 12:45:53,969 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=1, isDeleted=0, name=01 Communique Laboratory Inc(OCQLF), description=01 Communique Laboratory Inc(OCQLF) Description}
+2024-06-05 12:45:53,969 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=2, isDeleted=0, name=1 800 Flowers.com Inc(FLWS), description=1 800 Flowers.com Inc(FLWS) Description}
+2024-06-05 12:45:53,969 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=3, isDeleted=0, name=141 Capital Inc(ONCP), description=141 Capital Inc(ONCP) Description}
+2024-06-05 12:45:53,969 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=4, isDeleted=0, name=1847 Holdings LLC(0955837D), description=1847 Holdings LLC(0955837D) Description}
+2024-06-05 12:45:53,969 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=5, isDeleted=0, name=1867 Western Financial Corp(WFCL), description=1867 Western Financial Corp(WFCL) Description}
+2024-06-05 12:45:53,969 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=6, isDeleted=0, name=1mage Software Inc(ISOL), description=1mage Software Inc(ISOL) Description}
+2024-06-05 12:45:53,969 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=7, isDeleted=0, name=1st Capital Bank(FISB), description=1st Capital Bank(FISB) Description}
+2024-06-05 12:45:53,969 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=8, isDeleted=0, name=1st Century Bancshares Inc(FCTY), description=1st Century Bancshares Inc(FCTY) Description}
+2024-06-05 12:45:53,969 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=9, isDeleted=0, name=1st Colonial Bancorp Inc(FCOB), description=1st Colonial Bancorp Inc(FCOB) Description}
+2024-06-05 12:45:53,969 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=10, isDeleted=0, name=1st Constitution Bancorp(FCCY), description=1st Constitution Bancorp(FCCY) Description}
+2024-06-05 12:45:53,969 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=11, isDeleted=0, name=Nitso Inegrations, description=Nitso Integration is client whose domain is integrations}
+2024-06-05 12:45:53,969 [main] INFO  s.FetchCustomerInfoAPI - Expected customer data found in response: {customerId=12, isDeleted=0, name=Test, description=Nitso Integration is client whose domain is integrations}
+2024-06-05 12:45:53,969 [main] INFO  Hooks.Hooks - Starting Scenario Context teardown
+2024-06-05 12:45:53,969 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-05 12:45:54,986 [main] INFO  utils.PropertiesUtil - Property key 'api.holiday.endpoint' retrieved with value 'https://api-sandbox.orangehrm.com/api/holidays'.
+2024-06-05 12:45:56,866 [main] INFO  s.UpdateHolidayCalendarAPI - Request body sent: {"date":"2024-05-05","operational_country_id":1,"length":0,"description":"day","location":[1],"adjustLeave":true}
+2024-06-05 12:45:56,868 [main] INFO  s.UpdateHolidayCalendarAPI - Response status code is 200
+2024-06-05 12:45:56,869 [main] INFO  s.UpdateHolidayCalendarAPI - Request body for comparison: {"date":"2024-05-05","operational_country_id":1,"length":0,"description":"day","location":[1],"adjustLeave":true}
+2024-06-05 12:45:56,869 [main] INFO  s.UpdateHolidayCalendarAPI - Response body parameters match the request body:
+2024-06-05 12:45:56,869 [main] INFO  s.UpdateHolidayCalendarAPI - date: 2024-05-05 (Request), 2024-05-05 (Response)
+2024-06-05 12:45:56,869 [main] INFO  s.UpdateHolidayCalendarAPI - operational_country_id: 1 (Request), 1 (Response)
+2024-06-05 12:45:56,869 [main] INFO  s.UpdateHolidayCalendarAPI - length: 0 (Request), 0 (Response)
+2024-06-05 12:45:56,869 [main] INFO  s.UpdateHolidayCalendarAPI - description: day (Request), day (Response)
+2024-06-05 12:45:56,869 [main] INFO  s.UpdateHolidayCalendarAPI - location: [1] (Request), mapped with location_id: 1 (Response)
+2024-06-05 12:45:56,869 [main] INFO  s.UpdateHolidayCalendarAPI - adjustLeave: true (Request), mapped with editable: true (Response)
+2024-06-05 12:45:56,869 [main] INFO  Hooks.Hooks - Starting Scenario Context teardown
+2024-06-05 12:45:56,869 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-05 12:45:56,880 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-05 12:45:56,880 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-05 12:45:56,881 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-05 12:45:56,881 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-05 12:45:56,898 [main] INFO  config.DriverManager - Starting Chrome browser
+2024-06-05 12:46:01,144 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-05 12:46:02,426 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-05 12:46:02,467 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-05 12:46:02,468 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
+2024-06-05 12:46:02,468 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
+2024-06-05 12:46:03,167 [main] INFO  actions.UIActions - Entering text 'Admin' into element '[[ChromeDriver: chrome on windows (e377343808852cb551c5d0df334ff477)] -> name: username]' with field name 'Username'
+2024-06-05 12:46:03,317 [main] INFO  actions.UIActions - Entering text 'admin123' into element '[[ChromeDriver: chrome on windows (e377343808852cb551c5d0df334ff477)] -> name: password]' with field name 'Password'
+2024-06-05 12:46:03,424 [main] INFO  pages.LoginPage - Logged in with credentials
+2024-06-05 12:46:03,425 [main] INFO  pages.LoginPage - Default tab is displayed
+2024-06-05 12:46:05,004 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: User logs in successfully with valid credentials
+2024-06-05 12:46:05,245 [main] INFO  utils.ScreenshotUtils - Screenshot saved to file: C:\Users\icalugher\IdeaProjects\IC_Project 1stATF\target\screenshots\User logs in successfully with valid credentials_20240605-124605.png
+2024-06-05 12:46:05,245 [main] INFO  utils.ScreenshotUtils - Screenshot taken for scenario: User logs in successfully with valid credentials
+2024-06-05 12:46:05,463 [main] INFO  Hooks.Hooks - Starting Scenario Context teardown
+2024-06-05 12:46:05,463 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-05 12:46:05,471 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-05 12:46:05,471 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-05 12:46:05,471 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-05 12:46:05,471 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-05 12:46:05,471 [main] INFO  config.DriverManager - Starting Chrome browser
+2024-06-05 12:46:06,899 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-05 12:46:08,284 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-05 12:46:08,285 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-05 12:46:09,081 [main] INFO  actions.UIActions - Entering text 'AdminBLAbla' into element '[[ChromeDriver: chrome on windows (d7bef96a51a3ac36cbf4364081bff077)] -> name: username]' with field name 'Username'
+2024-06-05 12:46:09,270 [main] INFO  actions.UIActions - Entering text 'admin123' into element '[[ChromeDriver: chrome on windows (d7bef96a51a3ac36cbf4364081bff077)] -> name: password]' with field name 'Password'
+2024-06-05 12:46:09,401 [main] INFO  pages.LoginPage - Logged in with credentials
+2024-06-05 12:46:10,675 [main] WARN  pages.LoginPage - Unsuccessful login attempt: Invalid credentials
+2024-06-05 12:46:10,724 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: User logs in successfully with invalid credentials
+2024-06-05 12:46:10,871 [main] INFO  utils.ScreenshotUtils - Screenshot saved to file: C:\Users\icalugher\IdeaProjects\IC_Project 1stATF\target\screenshots\User logs in successfully with invalid credentials_20240605-124610.png
+2024-06-05 12:46:10,871 [main] INFO  utils.ScreenshotUtils - Screenshot taken for scenario: User logs in successfully with invalid credentials
+2024-06-05 12:46:11,117 [main] INFO  Hooks.Hooks - Starting Scenario Context teardown
+2024-06-05 12:46:11,117 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-05 12:46:11,122 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-05 12:46:11,122 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-05 12:46:11,122 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-05 12:46:11,122 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-05 12:46:11,122 [main] INFO  config.DriverManager - Starting Chrome browser
+2024-06-05 12:46:12,821 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-05 12:46:14,100 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-05 12:46:14,101 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-05 12:46:14,854 [main] INFO  actions.UIActions - Entering text 'Admin' into element '[[ChromeDriver: chrome on windows (850fe4c539c7b8da8e73bc696ef6d5e3)] -> name: username]' with field name 'Username'
+2024-06-05 12:46:15,002 [main] INFO  actions.UIActions - Entering text 'admin123*/*/' into element '[[ChromeDriver: chrome on windows (850fe4c539c7b8da8e73bc696ef6d5e3)] -> name: password]' with field name 'Password'
+2024-06-05 12:46:15,113 [main] INFO  pages.LoginPage - Logged in with credentials
+2024-06-05 12:46:16,459 [main] WARN  pages.LoginPage - Unsuccessful login attempt: Invalid credentials
+2024-06-05 12:46:16,503 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: User logs in successfully with invalid credentials
+2024-06-05 12:46:16,653 [main] INFO  utils.ScreenshotUtils - Screenshot saved to file: C:\Users\icalugher\IdeaProjects\IC_Project 1stATF\target\screenshots\User logs in successfully with invalid credentials_20240605-124616.png
+2024-06-05 12:46:16,653 [main] INFO  utils.ScreenshotUtils - Screenshot taken for scenario: User logs in successfully with invalid credentials
+2024-06-05 12:46:16,851 [main] INFO  Hooks.Hooks - Starting Scenario Context teardown
+2024-06-05 12:46:16,851 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-05 12:46:16,856 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-05 12:46:16,856 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-05 12:46:16,856 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-05 12:46:16,856 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-05 12:46:16,856 [main] INFO  config.DriverManager - Starting Chrome browser
+2024-06-05 12:46:18,320 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-05 12:46:19,780 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-05 12:46:19,781 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-05 12:46:20,478 [main] INFO  actions.UIActions - Entering text 'testABC' into element '[[ChromeDriver: chrome on windows (b1a059c103e319e6e83031a5646954ed)] -> name: username]' with field name 'Username'
+2024-06-05 12:46:20,682 [main] INFO  actions.UIActions - Entering text 'pass2658' into element '[[ChromeDriver: chrome on windows (b1a059c103e319e6e83031a5646954ed)] -> name: password]' with field name 'Password'
+2024-06-05 12:46:21,383 [main] INFO  pages.LoginPage - Logged in with credentials
+2024-06-05 12:46:21,973 [main] WARN  pages.LoginPage - Unsuccessful login attempt: Invalid credentials
+2024-06-05 12:46:22,026 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: User logs in successfully with invalid credentials
+2024-06-05 12:46:22,177 [main] INFO  utils.ScreenshotUtils - Screenshot saved to file: C:\Users\icalugher\IdeaProjects\IC_Project 1stATF\target\screenshots\User logs in successfully with invalid credentials_20240605-124622.png
+2024-06-05 12:46:22,177 [main] INFO  utils.ScreenshotUtils - Screenshot taken for scenario: User logs in successfully with invalid credentials
+2024-06-05 12:46:22,380 [main] INFO  Hooks.Hooks - Starting Scenario Context teardown
+2024-06-05 12:46:22,380 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-05 12:46:22,385 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-05 12:46:22,385 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-05 12:46:22,385 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-05 12:46:22,385 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-05 12:46:22,385 [main] INFO  config.DriverManager - Starting Chrome browser
+2024-06-05 12:46:23,774 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-05 12:46:29,141 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-05 12:46:29,142 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-05 12:46:29,143 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
+2024-06-05 12:46:29,143 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
+2024-06-05 12:46:29,825 [main] INFO  actions.UIActions - Entering text 'Admin' into element '[[ChromeDriver: chrome on windows (0801fc7f0b05454a6ce6b7fb5b35b627)] -> name: username]' with field name 'Username'
+2024-06-05 12:46:29,973 [main] INFO  actions.UIActions - Entering text 'admin123' into element '[[ChromeDriver: chrome on windows (0801fc7f0b05454a6ce6b7fb5b35b627)] -> name: password]' with field name 'Password'
+2024-06-05 12:46:31,001 [main] INFO  pages.LoginPage - Logged in with credentials
+2024-06-05 12:46:31,003 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-05 12:46:32,267 [main] INFO  pages.BuzzPage - Clicked on Buzz menu item
+2024-06-05 12:46:32,370 [main] INFO  actions.UIActions - Attempt 1: Waiting for element to be clickable
+2024-06-05 12:46:32,933 [main] INFO  actions.UIActions - Attempt 1: Clearing the field
+2024-06-05 12:46:33,028 [main] INFO  actions.UIActions - Attempt 1: Sending keys to the field
+2024-06-05 12:47:03,122 [main] ERROR actions.UIActions - Attempt 1: Exception occurred while populating the field. Retrying...
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text ('Quis ipsa assumenda rerum placeat.') to be the value of element [[ChromeDriver: chrome on windows (0801fc7f0b05454a6ce6b7fb5b35b627)] -> xpath: //textarea[@placeholder="What's on your mind?"]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\ICALUG~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62240}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62240/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0801fc7f0b05454a6ce6b7fb5b35b627
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at actions.UIActions.inputTextWithRetry(BrowserActions.java:50)
+	at pages.BuzzPage.populateWhatsOnYourMindField(BuzzPage.java:35)
+	at stepDefinitions.ui.BuzzPageSteps.whatSOnYourMindFieldIsPopulatedWithRandomText(BuzzPageSteps.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+2024-06-05 12:47:03,138 [main] INFO  actions.UIActions - Attempt 2: Waiting for element to be clickable
+2024-06-05 12:47:03,169 [main] INFO  actions.UIActions - Attempt 2: Clearing the field
+2024-06-05 12:47:03,248 [main] INFO  actions.UIActions - Attempt 2: Sending keys to the field
+2024-06-05 12:47:03,358 [main] INFO  actions.UIActions - Attempt 2: Successfully populated the field with text
+2024-06-05 12:47:03,358 [main] INFO  pages.BuzzPage - Populated 'What's on your mind' field with text: Quis ipsa assumenda rerum placeat.
+2024-06-05 12:47:03,468 [main] INFO  pages.BuzzPage - Clicked on the post button
+2024-06-05 12:47:03,468 [main] INFO  pages.BuzzPage - New Post is present on the page
+2024-06-05 12:47:04,527 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: Verify Post functionality
+2024-06-05 12:47:04,691 [main] INFO  utils.ScreenshotUtils - Screenshot saved to file: C:\Users\icalugher\IdeaProjects\IC_Project 1stATF\target\screenshots\Verify Post functionality_20240605-124704.png
+2024-06-05 12:47:04,691 [main] INFO  utils.ScreenshotUtils - Screenshot taken for scenario: Verify Post functionality
+2024-06-05 12:47:04,927 [main] INFO  Hooks.Hooks - Starting Scenario Context teardown
+2024-06-05 12:47:04,927 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-05 16:14:44,595 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-05 16:14:44,611 [main] INFO  utils.PropertiesUtil - Properties file 'config.properties' loaded successfully.
+2024-06-05 16:14:44,611 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-05 16:14:44,611 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-05 16:14:44,611 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-05 16:14:46,489 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-05 16:14:48,721 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-05 16:14:48,743 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-05 16:14:48,745 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
+2024-06-05 16:14:48,745 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
+2024-06-05 16:14:49,683 [main] INFO  pages.LoginPage - Logged in with credentials
+2024-06-05 16:14:49,684 [main] INFO  pages.LoginPage - Default tab is displayed
+2024-06-05 16:14:51,172 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: User logs in successfully with valid credentials
+2024-06-05 16:14:51,476 [main] INFO  utils.ScreenshotUtils - Screenshot saved to file: C:\Users\icalugher\IdeaProjects\IC_Project 1stATF\target\screenshots\User logs in successfully with valid credentials_20240605-161451.png
+2024-06-05 16:14:51,476 [main] INFO  utils.ScreenshotUtils - Screenshot taken for scenario: User logs in successfully with valid credentials
+2024-06-05 16:14:51,739 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-05 16:20:21,194 [main] INFO  utils.PropertiesUtil - Properties file 'config.properties' loaded successfully.
+2024-06-05 16:20:21,210 [main] INFO  utils.PropertiesUtil - Property key 'token.endpoint' retrieved with value 'https://api-sandbox.orangehrm.com/oauth/issueToken'.
+2024-06-05 16:20:21,210 [main] INFO  utils.PropertiesUtil - Property key 'client.id' retrieved with value 'api-client'.
+2024-06-05 16:20:21,210 [main] INFO  utils.PropertiesUtil - Property key 'client.secret' retrieved with value '942d36a36d6bf422a36f5871f905b6e5'.
+2024-06-05 16:20:21,210 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
+2024-06-05 16:20:21,210 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
+2024-06-05 16:20:24,173 [main] INFO  utils.PropertiesUtil - Property key 'api.customer.endpoint' retrieved with value 'https://api-sandbox.orangehrm.com/api/customers'.
+2024-06-05 16:20:25,120 [main] INFO  s.api.GetCustomerInfo - GET request executed
+2024-06-05 16:20:25,136 [main] INFO  s.api.GetCustomerInfo - Response status code verified successfully: 200
+2024-06-05 16:20:25,136 [main] INFO  s.api.GetCustomerInfo - Response body received: {"data":[{"customerId":"1","isDeleted":"0","name":"01 Communique Laboratory Inc(OCQLF)","description":"01 Communique Laboratory Inc(OCQLF) Description"},{"customerId":"2","isDeleted":"0","name":"1 800 Flowers.com Inc(FLWS)","description":"1 800 Flowers.com Inc(FLWS) Description"},{"customerId":"3","isDeleted":"0","name":"141 Capital Inc(ONCP)","description":"141 Capital Inc(ONCP) Description"},{"customerId":"4","isDeleted":"0","name":"1847 Holdings LLC(0955837D)","description":"1847 Holdings LLC(0955837D) Description"},{"customerId":"5","isDeleted":"0","name":"1867 Western Financial Corp(WFCL)","description":"1867 Western Financial Corp(WFCL) Description"},{"customerId":"6","isDeleted":"0","name":"1mage Software Inc(ISOL)","description":"1mage Software Inc(ISOL) Description"},{"customerId":"7","isDeleted":"0","name":"1st Capital Bank(FISB)","description":"1st Capital Bank(FISB) Description"},{"customerId":"8","isDeleted":"0","name":"1st Century Bancshares Inc(FCTY)","description":"1st Century Bancshares Inc(FCTY) Description"},{"customerId":"9","isDeleted":"0","name":"1st Colonial Bancorp Inc(FCOB)","description":"1st Colonial Bancorp Inc(FCOB) Description"},{"customerId":"10","isDeleted":"0","name":"1st Constitution Bancorp(FCCY)","description":"1st Constitution Bancorp(FCCY) Description"},{"customerId":"11","isDeleted":"0","name":"Nitso Inegrations","description":"Nitso Integration is client whose domain is integrations"},{"customerId":"12","isDeleted":"0","name":"Test","description":"Nitso Integration is client whose domain is integrations"}],"meta":{"total":12,"permissions":{"delete":["1","11","12"],"update":["1","2","3","4","5","6","7","8","9","10","11","12"]}}}
+2024-06-05 16:20:25,143 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=1, isDeleted=0, name=01 Communique Laboratory Inc(OCQLF), description=01 Communique Laboratory Inc(OCQLF) Description}
+2024-06-05 16:20:25,143 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=2, isDeleted=0, name=1 800 Flowers.com Inc(FLWS), description=1 800 Flowers.com Inc(FLWS) Description}
+2024-06-05 16:20:25,143 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=3, isDeleted=0, name=141 Capital Inc(ONCP), description=141 Capital Inc(ONCP) Description}
+2024-06-05 16:20:25,143 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=4, isDeleted=0, name=1847 Holdings LLC(0955837D), description=1847 Holdings LLC(0955837D) Description}
+2024-06-05 16:20:25,143 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=5, isDeleted=0, name=1867 Western Financial Corp(WFCL), description=1867 Western Financial Corp(WFCL) Description}
+2024-06-05 16:20:25,143 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=6, isDeleted=0, name=1mage Software Inc(ISOL), description=1mage Software Inc(ISOL) Description}
+2024-06-05 16:20:25,143 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=7, isDeleted=0, name=1st Capital Bank(FISB), description=1st Capital Bank(FISB) Description}
+2024-06-05 16:20:25,143 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=8, isDeleted=0, name=1st Century Bancshares Inc(FCTY), description=1st Century Bancshares Inc(FCTY) Description}
+2024-06-05 16:20:25,143 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=9, isDeleted=0, name=1st Colonial Bancorp Inc(FCOB), description=1st Colonial Bancorp Inc(FCOB) Description}
+2024-06-05 16:20:25,143 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=10, isDeleted=0, name=1st Constitution Bancorp(FCCY), description=1st Constitution Bancorp(FCCY) Description}
+2024-06-05 16:20:25,143 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=11, isDeleted=0, name=Nitso Inegrations, description=Nitso Integration is client whose domain is integrations}
+2024-06-05 16:20:25,143 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=12, isDeleted=0, name=Test, description=Nitso Integration is client whose domain is integrations}
+2024-06-05 16:20:25,152 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-05 16:20:26,289 [main] INFO  utils.PropertiesUtil - Property key 'api.holiday.endpoint' retrieved with value 'https://api-sandbox.orangehrm.com/api/holidays'.
+2024-06-05 16:20:28,357 [main] INFO  stepDefinitions.api.PostHolidayDay - Request body sent: {"date":"2024-07-24","operational_country_id":1,"length":0,"description":"outing trip outing","location":[1],"adjustLeave":true}
+2024-06-05 16:20:28,357 [main] INFO  stepDefinitions.api.PostHolidayDay - Response status code is 200
+2024-06-05 16:20:28,357 [main] INFO  stepDefinitions.api.PostHolidayDay - Request body for comparison: {"date":"2024-07-24","operational_country_id":1,"length":0,"description":"outing trip outing","location":[1],"adjustLeave":true}
+2024-06-05 16:20:28,357 [main] INFO  stepDefinitions.api.PostHolidayDay - Response body parameters match the request body:
+2024-06-05 16:20:28,357 [main] INFO  stepDefinitions.api.PostHolidayDay - date: 2024-07-24 (Request), 2024-07-24 (Response)
+2024-06-05 16:20:28,357 [main] INFO  stepDefinitions.api.PostHolidayDay - operational_country_id: 1 (Request), 1 (Response)
+2024-06-05 16:20:28,357 [main] INFO  stepDefinitions.api.PostHolidayDay - length: 0 (Request), 0 (Response)
+2024-06-05 16:20:28,357 [main] INFO  stepDefinitions.api.PostHolidayDay - description: outing trip outing (Request), outing trip outing (Response)
+2024-06-05 16:20:28,357 [main] INFO  stepDefinitions.api.PostHolidayDay - location: [1] (Request), mapped with location_id: 1 (Response)
+2024-06-05 16:20:28,357 [main] INFO  stepDefinitions.api.PostHolidayDay - adjustLeave: true (Request), mapped with editable: true (Response)
+2024-06-05 16:20:28,357 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-05 16:20:28,373 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-05 16:20:28,373 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-05 16:20:28,373 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-05 16:20:28,373 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-05 16:20:30,200 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-05 16:20:32,019 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-05 16:20:32,034 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-05 16:20:32,034 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
+2024-06-05 16:20:32,034 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
+2024-06-05 16:20:33,967 [main] INFO  pages.LoginPage - Logged in with credentials
+2024-06-05 16:20:33,968 [main] INFO  pages.LoginPage - Default tab is displayed
+2024-06-05 16:20:34,542 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: User logs in successfully with valid credentials
+2024-06-05 16:20:34,809 [main] INFO  utils.ScreenshotUtils - Screenshot saved to file: C:\Users\icalugher\IdeaProjects\IC_Project 1stATF\target\screenshots\User logs in successfully with valid credentials_20240605-162034.png
+2024-06-05 16:20:34,809 [main] INFO  utils.ScreenshotUtils - Screenshot taken for scenario: User logs in successfully with valid credentials
+2024-06-05 16:20:35,143 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-05 16:20:35,143 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-05 16:20:35,143 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-05 16:20:35,143 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-05 16:20:35,143 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-05 16:20:36,556 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-05 16:20:38,478 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-05 16:20:38,491 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-05 16:20:40,226 [main] INFO  pages.LoginPage - Logged in with credentials
+2024-06-05 16:20:40,795 [main] WARN  pages.LoginPage - Unsuccessful login attempt: Invalid credentials
+2024-06-05 16:20:40,826 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: User logs in successfully with invalid credentials
+2024-06-05 16:20:40,962 [main] INFO  utils.ScreenshotUtils - Screenshot saved to file: C:\Users\icalugher\IdeaProjects\IC_Project 1stATF\target\screenshots\User logs in successfully with invalid credentials_20240605-162040.png
+2024-06-05 16:20:40,962 [main] INFO  utils.ScreenshotUtils - Screenshot taken for scenario: User logs in successfully with invalid credentials
+2024-06-05 16:20:41,242 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-05 16:20:41,242 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-05 16:20:41,242 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-05 16:20:41,242 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-05 16:20:41,242 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-05 16:20:42,605 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-05 16:20:44,336 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-05 16:20:44,336 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-05 16:20:46,079 [main] INFO  pages.LoginPage - Logged in with credentials
+2024-06-05 16:20:46,634 [main] WARN  pages.LoginPage - Unsuccessful login attempt: Invalid credentials
+2024-06-05 16:20:46,685 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: User logs in successfully with invalid credentials
+2024-06-05 16:20:46,790 [main] INFO  utils.ScreenshotUtils - Screenshot saved to file: C:\Users\icalugher\IdeaProjects\IC_Project 1stATF\target\screenshots\User logs in successfully with invalid credentials_20240605-162046.png
+2024-06-05 16:20:46,790 [main] INFO  utils.ScreenshotUtils - Screenshot taken for scenario: User logs in successfully with invalid credentials
+2024-06-05 16:20:47,029 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-05 16:20:47,029 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-05 16:20:47,029 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-05 16:20:47,029 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-05 16:20:47,029 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-05 16:20:48,399 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-05 16:20:50,159 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-05 16:20:50,160 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-05 16:20:51,611 [main] INFO  pages.LoginPage - Logged in with credentials
+2024-06-05 16:20:52,164 [main] WARN  pages.LoginPage - Unsuccessful login attempt: Invalid credentials
+2024-06-05 16:20:52,211 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: User logs in successfully with invalid credentials
+2024-06-05 16:20:52,323 [main] INFO  utils.ScreenshotUtils - Screenshot saved to file: C:\Users\icalugher\IdeaProjects\IC_Project 1stATF\target\screenshots\User logs in successfully with invalid credentials_20240605-162052.png
+2024-06-05 16:20:52,323 [main] INFO  utils.ScreenshotUtils - Screenshot taken for scenario: User logs in successfully with invalid credentials
+2024-06-05 16:20:52,574 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-05 16:20:52,574 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-05 16:20:52,574 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-05 16:20:52,574 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-05 16:20:52,574 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-05 16:20:53,952 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-05 16:20:57,035 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-05 16:20:57,036 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-05 16:20:57,037 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
+2024-06-05 16:20:57,037 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
+2024-06-05 16:20:58,856 [main] INFO  pages.LoginPage - Logged in with credentials
+2024-06-05 16:20:58,871 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-05 16:21:00,018 [main] INFO  pages.BuzzPage - Clicked on Buzz menu item
+2024-06-05 16:21:31,738 [main] INFO  pages.BuzzPage - Populated 'What's on your mind' field with text: Autem totam expedita et delectus minima molestias cupiditate.
+2024-06-05 16:21:31,810 [main] INFO  pages.BuzzPage - Clicked on the post button
+2024-06-05 16:21:31,811 [main] INFO  pages.BuzzPage - New Post is present on the page
+2024-06-05 16:21:32,853 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: Verify Post functionality
+2024-06-05 16:21:33,032 [main] INFO  utils.ScreenshotUtils - Screenshot saved to file: C:\Users\icalugher\IdeaProjects\IC_Project 1stATF\target\screenshots\Verify Post functionality_20240605-162133.png
+2024-06-05 16:21:33,032 [main] INFO  utils.ScreenshotUtils - Screenshot taken for scenario: Verify Post functionality
+2024-06-05 16:21:33,283 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-05 18:34:33,915 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-05 18:34:33,931 [main] INFO  utils.PropertiesUtil - Properties file 'config.properties' loaded successfully.
+2024-06-05 18:34:33,931 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-05 18:34:33,931 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-05 18:34:33,931 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-05 18:34:36,572 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-05 18:34:37,913 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: %s
+2024-06-05 18:34:37,945 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-05 18:34:37,945 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
+2024-06-05 18:34:37,945 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
+2024-06-05 18:34:39,754 [main] INFO  pages.LoginPage - Logged in with credentials
+2024-06-05 18:34:39,754 [main] INFO  pages.LoginPage - Default tab is displayed
+2024-06-05 18:34:40,370 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: %s
+2024-06-05 18:34:40,636 [main] INFO  utils.ScreenshotUtils - Screenshot saved to file: C:\Users\icalugher\IdeaProjects\IC_Project 1stATF\target\screenshots\User logs in successfully with valid credentials_20240605-183440.png
+2024-06-05 18:34:40,636 [main] INFO  utils.ScreenshotUtils - Screenshot taken for scenario: User logs in successfully with valid credentials
+2024-06-05 18:34:40,936 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-05 18:41:51,837 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-05 18:41:51,853 [main] INFO  utils.PropertiesUtil - Properties file 'config.properties' loaded successfully.
+2024-06-05 18:41:51,853 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-05 18:41:51,853 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-05 18:41:51,853 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-05 18:41:54,081 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-05 18:41:55,343 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-05 18:41:55,376 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-05 18:41:55,376 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
+2024-06-05 18:41:55,376 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
+2024-06-05 18:41:56,317 [main] INFO  pages.LoginPage - Logged in with credentials
+2024-06-05 18:41:56,318 [main] INFO  pages.LoginPage - Default tab is displayed
+2024-06-05 18:41:57,694 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: User logs in successfully with valid credentials
+2024-06-05 18:41:57,908 [main] INFO  utils.ScreenshotUtils - Screenshot saved to file: C:\Users\icalugher\IdeaProjects\IC_Project 1stATF\target\screenshots\User logs in successfully with valid credentials_20240605-184157.png
+2024-06-05 18:41:57,908 [main] INFO  utils.ScreenshotUtils - Screenshot taken for scenario: User logs in successfully with valid credentials
+2024-06-05 18:41:58,163 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-05 18:42:41,542 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-05 18:42:41,550 [main] INFO  utils.PropertiesUtil - Properties file 'config.properties' loaded successfully.
+2024-06-05 18:42:41,553 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-05 18:42:41,553 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-05 18:42:41,553 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-05 18:42:43,487 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-05 18:42:44,722 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-05 18:42:44,748 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-05 18:42:45,688 [main] INFO  pages.LoginPage - Logged in with credentials
+2024-06-05 18:42:46,771 [main] WARN  pages.LoginPage - Unsuccessful login attempt: Invalid credentials
+2024-06-05 18:42:46,835 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: User logs in successfully with invalid credentials
+2024-06-05 18:42:46,977 [main] INFO  utils.ScreenshotUtils - Screenshot saved to file: C:\Users\icalugher\IdeaProjects\IC_Project 1stATF\target\screenshots\User logs in successfully with invalid credentials_20240605-184246.png
+2024-06-05 18:42:46,985 [main] INFO  utils.ScreenshotUtils - Screenshot taken for scenario: User logs in successfully with invalid credentials
+2024-06-05 18:42:47,150 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-05 18:42:47,150 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-05 18:42:47,150 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-05 18:42:47,150 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-05 18:42:47,150 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-05 18:42:48,405 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-05 18:42:49,645 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-05 18:42:49,645 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-05 18:42:50,568 [main] INFO  pages.LoginPage - Logged in with credentials
+2024-06-05 18:42:51,881 [main] WARN  pages.LoginPage - Unsuccessful login attempt: Invalid credentials
+2024-06-05 18:42:51,930 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: User logs in successfully with invalid credentials
+2024-06-05 18:42:52,043 [main] INFO  utils.ScreenshotUtils - Screenshot saved to file: C:\Users\icalugher\IdeaProjects\IC_Project 1stATF\target\screenshots\User logs in successfully with invalid credentials_20240605-184252.png
+2024-06-05 18:42:52,043 [main] INFO  utils.ScreenshotUtils - Screenshot taken for scenario: User logs in successfully with invalid credentials
+2024-06-05 18:42:52,308 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-05 18:42:52,308 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-05 18:42:52,308 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-05 18:42:52,308 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-05 18:42:52,308 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-05 18:42:53,951 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-05 18:42:55,198 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-05 18:42:55,214 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-05 18:42:56,145 [main] INFO  pages.LoginPage - Logged in with credentials
+2024-06-05 18:42:57,165 [main] WARN  pages.LoginPage - Unsuccessful login attempt: Invalid credentials
+2024-06-05 18:42:57,213 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: User logs in successfully with invalid credentials
+2024-06-05 18:42:57,327 [main] INFO  utils.ScreenshotUtils - Screenshot saved to file: C:\Users\icalugher\IdeaProjects\IC_Project 1stATF\target\screenshots\User logs in successfully with invalid credentials_20240605-184257.png
+2024-06-05 18:42:57,327 [main] INFO  utils.ScreenshotUtils - Screenshot taken for scenario: User logs in successfully with invalid credentials
+2024-06-05 18:42:57,547 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-05 18:47:04,792 [main] INFO  utils.PropertiesUtil - Properties file 'config.properties' loaded successfully.
+2024-06-05 18:47:04,792 [main] INFO  utils.PropertiesUtil - Property key 'token.endpoint' retrieved with value 'https://api-sandbox.orangehrm.com/oauth/issueToken'.
+2024-06-05 18:47:04,792 [main] INFO  utils.PropertiesUtil - Property key 'client.id' retrieved with value 'api-client'.
+2024-06-05 18:47:04,792 [main] INFO  utils.PropertiesUtil - Property key 'client.secret' retrieved with value '942d36a36d6bf422a36f5871f905b6e5'.
+2024-06-05 18:47:04,792 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
+2024-06-05 18:47:04,792 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
+2024-06-05 18:47:07,532 [main] INFO  utils.PropertiesUtil - Property key 'api.customer.endpoint' retrieved with value 'https://api-sandbox.orangehrm.com/api/customers'.
+2024-06-05 18:47:08,335 [main] INFO  s.api.GetCustomerInfo - GET request executed
+2024-06-05 18:47:08,340 [main] INFO  s.api.GetCustomerInfo - Response status code verified successfully: 200
+2024-06-05 18:47:08,340 [main] INFO  s.api.GetCustomerInfo - Response body received: {"data":[{"customerId":"1","isDeleted":"0","name":"01 Communique Laboratory Inc(OCQLF)","description":"01 Communique Laboratory Inc(OCQLF) Description"},{"customerId":"2","isDeleted":"0","name":"1 800 Flowers.com Inc(FLWS)","description":"1 800 Flowers.com Inc(FLWS) Description"},{"customerId":"3","isDeleted":"0","name":"141 Capital Inc(ONCP)","description":"141 Capital Inc(ONCP) Description"},{"customerId":"4","isDeleted":"0","name":"1847 Holdings LLC(0955837D)","description":"1847 Holdings LLC(0955837D) Description"},{"customerId":"5","isDeleted":"0","name":"1867 Western Financial Corp(WFCL)","description":"1867 Western Financial Corp(WFCL) Description"},{"customerId":"6","isDeleted":"0","name":"1mage Software Inc(ISOL)","description":"1mage Software Inc(ISOL) Description"},{"customerId":"7","isDeleted":"0","name":"1st Capital Bank(FISB)","description":"1st Capital Bank(FISB) Description"},{"customerId":"8","isDeleted":"0","name":"1st Century Bancshares Inc(FCTY)","description":"1st Century Bancshares Inc(FCTY) Description"},{"customerId":"9","isDeleted":"0","name":"1st Colonial Bancorp Inc(FCOB)","description":"1st Colonial Bancorp Inc(FCOB) Description"},{"customerId":"10","isDeleted":"0","name":"1st Constitution Bancorp(FCCY)","description":"1st Constitution Bancorp(FCCY) Description"},{"customerId":"11","isDeleted":"0","name":"Nitso Inegrations","description":"Nitso Integration is client whose domain is integrations"},{"customerId":"12","isDeleted":"0","name":"Test","description":"Nitso Integration is client whose domain is integrations"}],"meta":{"total":12,"permissions":{"delete":["1","11","12"],"update":["1","2","3","4","5","6","7","8","9","10","11","12"]}}}
+2024-06-05 18:47:08,340 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=1, isDeleted=0, name=01 Communique Laboratory Inc(OCQLF), description=01 Communique Laboratory Inc(OCQLF) Description}
+2024-06-05 18:47:08,340 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=2, isDeleted=0, name=1 800 Flowers.com Inc(FLWS), description=1 800 Flowers.com Inc(FLWS) Description}
+2024-06-05 18:47:08,340 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=3, isDeleted=0, name=141 Capital Inc(ONCP), description=141 Capital Inc(ONCP) Description}
+2024-06-05 18:47:08,340 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=4, isDeleted=0, name=1847 Holdings LLC(0955837D), description=1847 Holdings LLC(0955837D) Description}
+2024-06-05 18:47:08,340 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=5, isDeleted=0, name=1867 Western Financial Corp(WFCL), description=1867 Western Financial Corp(WFCL) Description}
+2024-06-05 18:47:08,340 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=6, isDeleted=0, name=1mage Software Inc(ISOL), description=1mage Software Inc(ISOL) Description}
+2024-06-05 18:47:08,340 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=7, isDeleted=0, name=1st Capital Bank(FISB), description=1st Capital Bank(FISB) Description}
+2024-06-05 18:47:08,340 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=8, isDeleted=0, name=1st Century Bancshares Inc(FCTY), description=1st Century Bancshares Inc(FCTY) Description}
+2024-06-05 18:47:08,340 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=9, isDeleted=0, name=1st Colonial Bancorp Inc(FCOB), description=1st Colonial Bancorp Inc(FCOB) Description}
+2024-06-05 18:47:08,340 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=10, isDeleted=0, name=1st Constitution Bancorp(FCCY), description=1st Constitution Bancorp(FCCY) Description}
+2024-06-05 18:47:08,340 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=11, isDeleted=0, name=Nitso Inegrations, description=Nitso Integration is client whose domain is integrations}
+2024-06-05 18:47:08,340 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=12, isDeleted=0, name=Test, description=Nitso Integration is client whose domain is integrations}
+2024-06-05 18:47:08,340 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-05 18:54:52,472 [main] INFO  utils.PropertiesUtil - Properties file 'config.properties' loaded successfully.
+2024-06-05 18:54:52,472 [main] INFO  utils.PropertiesUtil - Property key 'token.endpoint' retrieved with value 'https://api-sandbox.orangehrm.com/oauth/issueToken'.
+2024-06-05 18:54:52,472 [main] INFO  utils.PropertiesUtil - Property key 'client.id' retrieved with value 'api-client'.
+2024-06-05 18:54:52,472 [main] INFO  utils.PropertiesUtil - Property key 'client.secret' retrieved with value '942d36a36d6bf422a36f5871f905b6e5'.
+2024-06-05 18:54:52,472 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
+2024-06-05 18:54:52,472 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
+2024-06-05 18:54:55,844 [main] INFO  utils.PropertiesUtil - Property key 'api.customer.endpoint' retrieved with value 'https://api-sandbox.orangehrm.com/api/customers'.
+2024-06-05 18:54:56,655 [main] INFO  s.api.GetCustomerInfo - GET request executed
+2024-06-05 18:54:56,671 [main] INFO  s.api.GetCustomerInfo - Response status code verified successfully: 200
+2024-06-05 18:54:56,671 [main] INFO  s.api.GetCustomerInfo - Response body received: {"data":[{"customerId":"1","isDeleted":"0","name":"01 Communique Laboratory Inc(OCQLF)","description":"01 Communique Laboratory Inc(OCQLF) Description"},{"customerId":"2","isDeleted":"0","name":"1 800 Flowers.com Inc(FLWS)","description":"1 800 Flowers.com Inc(FLWS) Description"},{"customerId":"3","isDeleted":"0","name":"141 Capital Inc(ONCP)","description":"141 Capital Inc(ONCP) Description"},{"customerId":"4","isDeleted":"0","name":"1847 Holdings LLC(0955837D)","description":"1847 Holdings LLC(0955837D) Description"},{"customerId":"5","isDeleted":"0","name":"1867 Western Financial Corp(WFCL)","description":"1867 Western Financial Corp(WFCL) Description"},{"customerId":"6","isDeleted":"0","name":"1mage Software Inc(ISOL)","description":"1mage Software Inc(ISOL) Description"},{"customerId":"7","isDeleted":"0","name":"1st Capital Bank(FISB)","description":"1st Capital Bank(FISB) Description"},{"customerId":"8","isDeleted":"0","name":"1st Century Bancshares Inc(FCTY)","description":"1st Century Bancshares Inc(FCTY) Description"},{"customerId":"9","isDeleted":"0","name":"1st Colonial Bancorp Inc(FCOB)","description":"1st Colonial Bancorp Inc(FCOB) Description"},{"customerId":"10","isDeleted":"0","name":"1st Constitution Bancorp(FCCY)","description":"1st Constitution Bancorp(FCCY) Description"},{"customerId":"11","isDeleted":"0","name":"Nitso Inegrations","description":"Nitso Integration is client whose domain is integrations"},{"customerId":"12","isDeleted":"0","name":"Test","description":"Nitso Integration is client whose domain is integrations"}],"meta":{"total":12,"permissions":{"delete":["1","11","12"],"update":["1","2","3","4","5","6","7","8","9","10","11","12"]}}}
+2024-06-05 18:54:56,671 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=1, isDeleted=0, name=01 Communique Laboratory Inc(OCQLF), description=01 Communique Laboratory Inc(OCQLF) Description}
+2024-06-05 18:54:56,671 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=2, isDeleted=0, name=1 800 Flowers.com Inc(FLWS), description=1 800 Flowers.com Inc(FLWS) Description}
+2024-06-05 18:54:56,671 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=3, isDeleted=0, name=141 Capital Inc(ONCP), description=141 Capital Inc(ONCP) Description}
+2024-06-05 18:54:56,671 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=4, isDeleted=0, name=1847 Holdings LLC(0955837D), description=1847 Holdings LLC(0955837D) Description}
+2024-06-05 18:54:56,671 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=5, isDeleted=0, name=1867 Western Financial Corp(WFCL), description=1867 Western Financial Corp(WFCL) Description}
+2024-06-05 18:54:56,671 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=6, isDeleted=0, name=1mage Software Inc(ISOL), description=1mage Software Inc(ISOL) Description}
+2024-06-05 18:54:56,671 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=7, isDeleted=0, name=1st Capital Bank(FISB), description=1st Capital Bank(FISB) Description}
+2024-06-05 18:54:56,671 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=8, isDeleted=0, name=1st Century Bancshares Inc(FCTY), description=1st Century Bancshares Inc(FCTY) Description}
+2024-06-05 18:54:56,671 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=9, isDeleted=0, name=1st Colonial Bancorp Inc(FCOB), description=1st Colonial Bancorp Inc(FCOB) Description}
+2024-06-05 18:54:56,671 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=10, isDeleted=0, name=1st Constitution Bancorp(FCCY), description=1st Constitution Bancorp(FCCY) Description}
+2024-06-05 18:54:56,671 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=11, isDeleted=0, name=Nitso Inegrations, description=Nitso Integration is client whose domain is integrations}
+2024-06-05 18:54:56,671 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=12, isDeleted=0, name=Test, description=Nitso Integration is client whose domain is integrations}
+2024-06-05 18:54:56,671 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-06 14:38:12,327 [main] INFO  utils.PropertiesUtil - Properties file 'config.properties' loaded successfully.
+2024-06-06 14:38:12,327 [main] INFO  utils.PropertiesUtil - Property key 'token.endpoint' retrieved with value 'https://api-sandbox.orangehrm.com/oauth/issueToken'.
+2024-06-06 14:38:12,327 [main] INFO  utils.PropertiesUtil - Property key 'client.id' retrieved with value 'api-client'.
+2024-06-06 14:38:12,327 [main] INFO  utils.PropertiesUtil - Property key 'client.secret' retrieved with value '942d36a36d6bf422a36f5871f905b6e5'.
+2024-06-06 14:38:12,327 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
+2024-06-06 14:38:12,327 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
+2024-06-06 14:38:15,279 [main] INFO  utils.PropertiesUtil - Property key 'api.customer.endpoint' retrieved with value 'https://api-sandbox.orangehrm.com/api/customers'.
+2024-06-06 14:38:16,235 [main] INFO  s.api.GetCustomerInfo - GET request executed
+2024-06-06 14:38:16,236 [main] INFO  s.api.GetCustomerInfo - Response status code verified successfully: 200
+2024-06-06 14:38:16,236 [main] INFO  s.api.GetCustomerInfo - Response body received: {"data":[{"customerId":"1","isDeleted":"0","name":"01 Communique Laboratory Inc(OCQLF)","description":"01 Communique Laboratory Inc(OCQLF) Description"},{"customerId":"2","isDeleted":"0","name":"1 800 Flowers.com Inc(FLWS)","description":"1 800 Flowers.com Inc(FLWS) Description"},{"customerId":"3","isDeleted":"0","name":"141 Capital Inc(ONCP)","description":"141 Capital Inc(ONCP) Description"},{"customerId":"4","isDeleted":"0","name":"1847 Holdings LLC(0955837D)","description":"1847 Holdings LLC(0955837D) Description"},{"customerId":"5","isDeleted":"0","name":"1867 Western Financial Corp(WFCL)","description":"1867 Western Financial Corp(WFCL) Description"},{"customerId":"6","isDeleted":"0","name":"1mage Software Inc(ISOL)","description":"1mage Software Inc(ISOL) Description"},{"customerId":"7","isDeleted":"0","name":"1st Capital Bank(FISB)","description":"1st Capital Bank(FISB) Description"},{"customerId":"8","isDeleted":"0","name":"1st Century Bancshares Inc(FCTY)","description":"1st Century Bancshares Inc(FCTY) Description"},{"customerId":"9","isDeleted":"0","name":"1st Colonial Bancorp Inc(FCOB)","description":"1st Colonial Bancorp Inc(FCOB) Description"},{"customerId":"10","isDeleted":"0","name":"1st Constitution Bancorp(FCCY)","description":"1st Constitution Bancorp(FCCY) Description"},{"customerId":"11","isDeleted":"0","name":"Nitso Inegrations","description":"Nitso Integration is client whose domain is integrations"},{"customerId":"12","isDeleted":"0","name":"Test","description":"Nitso Integration is client whose domain is integrations"}],"meta":{"total":12,"permissions":{"delete":["1","11","12"],"update":["1","2","3","4","5","6","7","8","9","10","11","12"]}}}
+2024-06-06 14:38:16,236 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=1, isDeleted=0, name=01 Communique Laboratory Inc(OCQLF), description=01 Communique Laboratory Inc(OCQLF) Description}
+2024-06-06 14:38:16,236 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=2, isDeleted=0, name=1 800 Flowers.com Inc(FLWS), description=1 800 Flowers.com Inc(FLWS) Description}
+2024-06-06 14:38:16,236 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=3, isDeleted=0, name=141 Capital Inc(ONCP), description=141 Capital Inc(ONCP) Description}
+2024-06-06 14:38:16,236 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=4, isDeleted=0, name=1847 Holdings LLC(0955837D), description=1847 Holdings LLC(0955837D) Description}
+2024-06-06 14:38:16,236 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=5, isDeleted=0, name=1867 Western Financial Corp(WFCL), description=1867 Western Financial Corp(WFCL) Description}
+2024-06-06 14:38:16,236 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=6, isDeleted=0, name=1mage Software Inc(ISOL), description=1mage Software Inc(ISOL) Description}
+2024-06-06 14:38:16,236 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=7, isDeleted=0, name=1st Capital Bank(FISB), description=1st Capital Bank(FISB) Description}
+2024-06-06 14:38:16,236 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=8, isDeleted=0, name=1st Century Bancshares Inc(FCTY), description=1st Century Bancshares Inc(FCTY) Description}
+2024-06-06 14:38:16,236 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=9, isDeleted=0, name=1st Colonial Bancorp Inc(FCOB), description=1st Colonial Bancorp Inc(FCOB) Description}
+2024-06-06 14:38:16,236 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=10, isDeleted=0, name=1st Constitution Bancorp(FCCY), description=1st Constitution Bancorp(FCCY) Description}
+2024-06-06 14:38:16,236 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=11, isDeleted=0, name=Nitso Inegrations, description=Nitso Integration is client whose domain is integrations}
+2024-06-06 14:38:16,236 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=12, isDeleted=0, name=Test, description=Nitso Integration is client whose domain is integrations}
+2024-06-06 14:38:16,252 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-06 14:41:59,653 [main] INFO  utils.PropertiesUtil - Properties file 'config.properties' loaded successfully.
+2024-06-06 14:41:59,657 [main] INFO  utils.PropertiesUtil - Property key 'token.endpoint' retrieved with value 'https://api-sandbox.orangehrm.com/oauth/issueToken'.
+2024-06-06 14:41:59,657 [main] INFO  utils.PropertiesUtil - Property key 'client.id' retrieved with value 'api-client'.
+2024-06-06 14:41:59,657 [main] INFO  utils.PropertiesUtil - Property key 'client.secret' retrieved with value '942d36a36d6bf422a36f5871f905b6e5'.
+2024-06-06 14:41:59,657 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
+2024-06-06 14:41:59,657 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
+2024-06-06 14:42:02,552 [main] INFO  utils.PropertiesUtil - Property key 'api.holiday.endpoint' retrieved with value 'https://api-sandbox.orangehrm.com/api/holidays'.
+2024-06-06 14:42:04,680 [main] INFO  stepDefinitions.api.PostHolidayDay - Request body sent: {"date":"2024-10-02","operational_country_id":1,"length":0,"description":"trip outing","location":[1],"adjustLeave":true}
+2024-06-06 14:42:04,697 [main] INFO  stepDefinitions.api.PostHolidayDay - Response status code is 200
+2024-06-06 14:42:04,697 [main] INFO  stepDefinitions.api.PostHolidayDay - Request body for comparison: {"date":"2024-10-02","operational_country_id":1,"length":0,"description":"trip outing","location":[1],"adjustLeave":true}
+2024-06-06 14:42:04,697 [main] INFO  stepDefinitions.api.PostHolidayDay - Response body parameters match the request body:
+2024-06-06 14:42:04,697 [main] INFO  stepDefinitions.api.PostHolidayDay - date: 2024-10-02 (Request), 2024-10-02 (Response)
+2024-06-06 14:42:04,697 [main] INFO  stepDefinitions.api.PostHolidayDay - operational_country_id: 1 (Request), 1 (Response)
+2024-06-06 14:42:04,697 [main] INFO  stepDefinitions.api.PostHolidayDay - length: 0 (Request), 0 (Response)
+2024-06-06 14:42:04,697 [main] INFO  stepDefinitions.api.PostHolidayDay - description: trip outing (Request), trip outing (Response)
+2024-06-06 14:42:04,697 [main] INFO  stepDefinitions.api.PostHolidayDay - location: [1] (Request), mapped with location_id: 1 (Response)
+2024-06-06 14:42:04,697 [main] INFO  stepDefinitions.api.PostHolidayDay - adjustLeave: true (Request), mapped with editable: true (Response)
+2024-06-06 14:42:04,712 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-06 15:56:10.183 [main] INFO  utils.PropertiesUtil - Properties file 'config.properties' loaded successfully.
+2024-06-06 15:56:10.183 [main] INFO  utils.PropertiesUtil - Property key 'token.endpoint' retrieved with value 'https://api-sandbox.orangehrm.com/oauth/issueToken'.
+2024-06-06 15:56:10.183 [main] INFO  utils.PropertiesUtil - Property key 'client.id' retrieved with value 'api-client'.
+2024-06-06 15:56:10.183 [main] INFO  utils.PropertiesUtil - Property key 'client.secret' retrieved with value '942d36a36d6bf422a36f5871f905b6e5'.
+2024-06-06 15:56:10.183 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
+2024-06-06 15:56:10.183 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
+2024-06-06 15:56:13.557 [main] INFO  utils.PropertiesUtil - Property key 'api.customer.endpoint' retrieved with value 'https://api-sandbox.orangehrm.com/api/customers'.
+2024-06-06 15:56:14.506 [main] INFO  stepDefinitions.api.GetCustomerInfo - GET request executed
+2024-06-06 15:56:14.506 [main] INFO  stepDefinitions.api.GetCustomerInfo - Response status code verified successfully: 200
+2024-06-06 15:56:14.506 [main] INFO  stepDefinitions.api.GetCustomerInfo - Response body received: {"data":[{"customerId":"1","isDeleted":"0","name":"01 Communique Laboratory Inc(OCQLF)","description":"01 Communique Laboratory Inc(OCQLF) Description"},{"customerId":"2","isDeleted":"0","name":"1 800 Flowers.com Inc(FLWS)","description":"1 800 Flowers.com Inc(FLWS) Description"},{"customerId":"3","isDeleted":"0","name":"141 Capital Inc(ONCP)","description":"141 Capital Inc(ONCP) Description"},{"customerId":"4","isDeleted":"0","name":"1847 Holdings LLC(0955837D)","description":"1847 Holdings LLC(0955837D) Description"},{"customerId":"5","isDeleted":"0","name":"1867 Western Financial Corp(WFCL)","description":"1867 Western Financial Corp(WFCL) Description"},{"customerId":"6","isDeleted":"0","name":"1mage Software Inc(ISOL)","description":"1mage Software Inc(ISOL) Description"},{"customerId":"7","isDeleted":"0","name":"1st Capital Bank(FISB)","description":"1st Capital Bank(FISB) Description"},{"customerId":"8","isDeleted":"0","name":"1st Century Bancshares Inc(FCTY)","description":"1st Century Bancshares Inc(FCTY) Description"},{"customerId":"9","isDeleted":"0","name":"1st Colonial Bancorp Inc(FCOB)","description":"1st Colonial Bancorp Inc(FCOB) Description"},{"customerId":"10","isDeleted":"0","name":"1st Constitution Bancorp(FCCY)","description":"1st Constitution Bancorp(FCCY) Description"},{"customerId":"11","isDeleted":"0","name":"Nitso Inegrations","description":"Nitso Integration is client whose domain is integrations"},{"customerId":"12","isDeleted":"0","name":"Test","description":"Nitso Integration is client whose domain is integrations"}],"meta":{"total":12,"permissions":{"delete":["1","11","12"],"update":["1","2","3","4","5","6","7","8","9","10","11","12"]}}}
+2024-06-06 15:56:14.506 [main] INFO  stepDefinitions.api.GetCustomerInfo - Expected customer data found in response: {customerId=1, isDeleted=0, name=01 Communique Laboratory Inc(OCQLF), description=01 Communique Laboratory Inc(OCQLF) Description}
+2024-06-06 15:56:14.506 [main] INFO  stepDefinitions.api.GetCustomerInfo - Expected customer data found in response: {customerId=2, isDeleted=0, name=1 800 Flowers.com Inc(FLWS), description=1 800 Flowers.com Inc(FLWS) Description}
+2024-06-06 15:56:14.506 [main] INFO  stepDefinitions.api.GetCustomerInfo - Expected customer data found in response: {customerId=3, isDeleted=0, name=141 Capital Inc(ONCP), description=141 Capital Inc(ONCP) Description}
+2024-06-06 15:56:14.506 [main] INFO  stepDefinitions.api.GetCustomerInfo - Expected customer data found in response: {customerId=4, isDeleted=0, name=1847 Holdings LLC(0955837D), description=1847 Holdings LLC(0955837D) Description}
+2024-06-06 15:56:14.506 [main] INFO  stepDefinitions.api.GetCustomerInfo - Expected customer data found in response: {customerId=5, isDeleted=0, name=1867 Western Financial Corp(WFCL), description=1867 Western Financial Corp(WFCL) Description}
+2024-06-06 15:56:14.506 [main] INFO  stepDefinitions.api.GetCustomerInfo - Expected customer data found in response: {customerId=6, isDeleted=0, name=1mage Software Inc(ISOL), description=1mage Software Inc(ISOL) Description}
+2024-06-06 15:56:14.506 [main] INFO  stepDefinitions.api.GetCustomerInfo - Expected customer data found in response: {customerId=7, isDeleted=0, name=1st Capital Bank(FISB), description=1st Capital Bank(FISB) Description}
+2024-06-06 15:56:14.506 [main] INFO  stepDefinitions.api.GetCustomerInfo - Expected customer data found in response: {customerId=8, isDeleted=0, name=1st Century Bancshares Inc(FCTY), description=1st Century Bancshares Inc(FCTY) Description}
+2024-06-06 15:56:14.506 [main] INFO  stepDefinitions.api.GetCustomerInfo - Expected customer data found in response: {customerId=9, isDeleted=0, name=1st Colonial Bancorp Inc(FCOB), description=1st Colonial Bancorp Inc(FCOB) Description}
+2024-06-06 15:56:14.506 [main] INFO  stepDefinitions.api.GetCustomerInfo - Expected customer data found in response: {customerId=10, isDeleted=0, name=1st Constitution Bancorp(FCCY), description=1st Constitution Bancorp(FCCY) Description}
+2024-06-06 15:56:14.506 [main] INFO  stepDefinitions.api.GetCustomerInfo - Expected customer data found in response: {customerId=11, isDeleted=0, name=Nitso Inegrations, description=Nitso Integration is client whose domain is integrations}
+2024-06-06 15:56:14.506 [main] INFO  stepDefinitions.api.GetCustomerInfo - Expected customer data found in response: {customerId=12, isDeleted=0, name=Test, description=Nitso Integration is client whose domain is integrations}
+2024-06-06 15:56:14.521 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-06 16:01:54,253 [main] INFO  utils.PropertiesUtil - Properties file 'config.properties' loaded successfully.
+2024-06-06 16:01:54,253 [main] INFO  utils.PropertiesUtil - Properties file 'config.properties' loaded successfully.
+2024-06-06 16:01:54,255 [main] INFO  utils.PropertiesUtil - Property key 'token.endpoint' retrieved with value 'https://api-sandbox.orangehrm.com/oauth/issueToken'.
+2024-06-06 16:01:54,255 [main] INFO  utils.PropertiesUtil - Property key 'token.endpoint' retrieved with value 'https://api-sandbox.orangehrm.com/oauth/issueToken'.
+2024-06-06 16:01:54,255 [main] INFO  utils.PropertiesUtil - Property key 'client.id' retrieved with value 'api-client'.
+2024-06-06 16:01:54,255 [main] INFO  utils.PropertiesUtil - Property key 'client.id' retrieved with value 'api-client'.
+2024-06-06 16:01:54,255 [main] INFO  utils.PropertiesUtil - Property key 'client.secret' retrieved with value '942d36a36d6bf422a36f5871f905b6e5'.
+2024-06-06 16:01:54,255 [main] INFO  utils.PropertiesUtil - Property key 'client.secret' retrieved with value '942d36a36d6bf422a36f5871f905b6e5'.
+2024-06-06 16:01:54,255 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
+2024-06-06 16:01:54,255 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
+2024-06-06 16:01:54,256 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
+2024-06-06 16:01:54,256 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
+2024-06-06 16:01:55,521 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager - Get connection for route {s}->https://api-sandbox.orangehrm.com:443
+2024-06-06 16:01:55,615 [main] DEBUG o.a.h.i.c.DefaultClientConnectionOperator - Connecting to api-sandbox.orangehrm.com:443
+2024-06-06 16:01:56,070 [main] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+2024-06-06 16:01:56,070 [main] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+2024-06-06 16:01:56,070 [main] DEBUG o.a.h.c.p.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+2024-06-06 16:01:56,070 [main] DEBUG o.a.h.c.p.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+2024-06-06 16:01:56,070 [main] DEBUG o.a.h.impl.client.DefaultHttpClient - Attempt 1 to execute request
+2024-06-06 16:01:56,070 [main] DEBUG o.a.h.i.c.DefaultClientConnection - Sending request: POST /oauth/issueToken HTTP/1.1
+2024-06-06 16:01:56,070 [main] DEBUG org.apache.http.wire -  >> "POST /oauth/issueToken HTTP/1.1[\r][\n]"
+2024-06-06 16:01:56,085 [main] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+2024-06-06 16:01:56,085 [main] DEBUG org.apache.http.wire -  >> "Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1[\r][\n]"
+2024-06-06 16:01:56,085 [main] DEBUG org.apache.http.wire -  >> "Content-Length: 130[\r][\n]"
+2024-06-06 16:01:56,085 [main] DEBUG org.apache.http.wire -  >> "Host: api-sandbox.orangehrm.com[\r][\n]"
+2024-06-06 16:01:56,085 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+2024-06-06 16:01:56,085 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.1)[\r][\n]"
+2024-06-06 16:01:56,085 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2024-06-06 16:01:56,085 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+2024-06-06 16:01:56,085 [main] DEBUG org.apache.http.headers - >> POST /oauth/issueToken HTTP/1.1
+2024-06-06 16:01:56,085 [main] DEBUG org.apache.http.headers - >> Accept: */*
+2024-06-06 16:01:56,085 [main] DEBUG org.apache.http.headers - >> Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1
+2024-06-06 16:01:56,085 [main] DEBUG org.apache.http.headers - >> Content-Length: 130
+2024-06-06 16:01:56,085 [main] DEBUG org.apache.http.headers - >> Host: api-sandbox.orangehrm.com
+2024-06-06 16:01:56,085 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+2024-06-06 16:01:56,085 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.1)
+2024-06-06 16:01:56,085 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+2024-06-06 16:01:56,085 [main] DEBUG org.apache.http.wire -  >> "client_id=api-client&client_secret=942d36a36d6bf422a36f5871f905b6e5&grant_type=client_credentials&username=Admin&password=admin123"
+2024-06-06 16:01:56,783 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+2024-06-06 16:01:56,783 [main] DEBUG org.apache.http.wire -  << "Server: nginx[\r][\n]"
+2024-06-06 16:01:56,783 [main] DEBUG org.apache.http.wire -  << "Date: Thu, 06 Jun 2024 13:01:56 GMT[\r][\n]"
+2024-06-06 16:01:56,783 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json[\r][\n]"
+2024-06-06 16:01:56,783 [main] DEBUG org.apache.http.wire -  << "Content-Length: 121[\r][\n]"
+2024-06-06 16:01:56,783 [main] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+2024-06-06 16:01:56,783 [main] DEBUG org.apache.http.wire -  << "Set-Cookie: orangehrm=43agk1j103fa567tfud6l3cu0bs4p3c82gc4uflmfa03vmqm4e10pahpmksqr4649oangm63909ibodt9o1e5ci9rd45frjhssk6qrqqe6f87ntm1heimlq15715dp8a; path=/; secure; HttpOnly[\r][\n]"
+2024-06-06 16:01:56,783 [main] DEBUG org.apache.http.wire -  << "Expires: Thu, 19 Nov 1981 08:52:00 GMT[\r][\n]"
+2024-06-06 16:01:56,783 [main] DEBUG org.apache.http.wire -  << "Cache-Control: max-age=0, private, no-store, no-cache, must-revalidate[\r][\n]"
+2024-06-06 16:01:56,783 [main] DEBUG org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+2024-06-06 16:01:56,783 [main] DEBUG org.apache.http.wire -  << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+2024-06-06 16:01:56,783 [main] DEBUG org.apache.http.wire -  << "Vary: Accept-Encoding[\r][\n]"
+2024-06-06 16:01:56,783 [main] DEBUG org.apache.http.wire -  << "Content-Encoding: gzip[\r][\n]"
+2024-06-06 16:01:56,783 [main] DEBUG org.apache.http.wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
+2024-06-06 16:01:56,783 [main] DEBUG org.apache.http.wire -  << "X-XSS-Protection: 1; mode=block[\r][\n]"
+2024-06-06 16:01:56,783 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: https://api.orangehrm.com[\r][\n]"
+2024-06-06 16:01:56,783 [main] DEBUG org.apache.http.wire -  << "Vary: https://api.orangehrm.com[\r][\n]"
+2024-06-06 16:01:56,783 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Methods: GET, POST, DELETE, PATCH, PUT, OPTIONS[\r][\n]"
+2024-06-06 16:01:56,783 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Headers: DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization[\r][\n]"
+2024-06-06 16:01:56,783 [main] DEBUG org.apache.http.wire -  << "Access-Control-Expose-Headers: Content-Length,Content-Range[\r][\n]"
+2024-06-06 16:01:56,783 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2024-06-06 16:01:56,783 [main] DEBUG o.a.h.i.c.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+2024-06-06 16:01:56,783 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+2024-06-06 16:01:56,783 [main] DEBUG org.apache.http.headers - << Server: nginx
+2024-06-06 16:01:56,783 [main] DEBUG org.apache.http.headers - << Date: Thu, 06 Jun 2024 13:01:56 GMT
+2024-06-06 16:01:56,783 [main] DEBUG org.apache.http.headers - << Content-Type: application/json
+2024-06-06 16:01:56,783 [main] DEBUG org.apache.http.headers - << Content-Length: 121
+2024-06-06 16:01:56,783 [main] DEBUG org.apache.http.headers - << Connection: keep-alive
+2024-06-06 16:01:56,783 [main] DEBUG org.apache.http.headers - << Set-Cookie: orangehrm=43agk1j103fa567tfud6l3cu0bs4p3c82gc4uflmfa03vmqm4e10pahpmksqr4649oangm63909ibodt9o1e5ci9rd45frjhssk6qrqqe6f87ntm1heimlq15715dp8a; path=/; secure; HttpOnly
+2024-06-06 16:01:56,783 [main] DEBUG org.apache.http.headers - << Expires: Thu, 19 Nov 1981 08:52:00 GMT
+2024-06-06 16:01:56,783 [main] DEBUG org.apache.http.headers - << Cache-Control: max-age=0, private, no-store, no-cache, must-revalidate
+2024-06-06 16:01:56,783 [main] DEBUG org.apache.http.headers - << Pragma: no-cache
+2024-06-06 16:01:56,783 [main] DEBUG org.apache.http.headers - << X-Frame-Options: SAMEORIGIN
+2024-06-06 16:01:56,783 [main] DEBUG org.apache.http.headers - << Vary: Accept-Encoding
+2024-06-06 16:01:56,783 [main] DEBUG org.apache.http.headers - << Content-Encoding: gzip
+2024-06-06 16:01:56,783 [main] DEBUG org.apache.http.headers - << X-Content-Type-Options: nosniff
+2024-06-06 16:01:56,783 [main] DEBUG org.apache.http.headers - << X-XSS-Protection: 1; mode=block
+2024-06-06 16:01:56,783 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: https://api.orangehrm.com
+2024-06-06 16:01:56,783 [main] DEBUG org.apache.http.headers - << Vary: https://api.orangehrm.com
+2024-06-06 16:01:56,783 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Methods: GET, POST, DELETE, PATCH, PUT, OPTIONS
+2024-06-06 16:01:56,783 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Headers: DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization
+2024-06-06 16:01:56,783 [main] DEBUG org.apache.http.headers - << Access-Control-Expose-Headers: Content-Length,Content-Range
+2024-06-06 16:01:56,783 [main] DEBUG o.a.h.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+2024-06-06 16:01:56,799 [main] DEBUG i.r.internal.RestAssuredHttpBuilder - Parsing response as: application/json
+2024-06-06 16:01:56,799 [main] DEBUG org.apache.http.wire -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x1d][0x8c]A[\n]"
+2024-06-06 16:01:56,799 [main] DEBUG org.apache.http.wire -  << "[0xc3] [0x14][0x5][0xef][0xf2][0xd7]Y[0x18]c[0xaa]v[0x99][0x8b][0xc8][0xf7][0xfb][0x2][0xd2][0xd2][0x88]&[0xd0][0x12]r[0xf7]J[0xb6][0xc3][0xcc][0x9c][0xc4]"h-[0xec][0xdb][0xb][0x1f]z[0x92]Ym[0xe2][0x94][0x8c][0x8d][0xda][0xbb][0xd1][0xcf]N[0x8f][0x9e][0xbd][0x11][0xb8]Y[0xad]q[0x12][0x88]a[0xab][0xb5][0xa2][0x81][0xf0]-[0xb9][0xa2][0x85][0xdc][0xbb][0xe9][0xa1][0xd4]@[0xf7]$[0xec][0xbf][0x82]~Z[0xc0][0x15][0xb5]{M[0xb6][0x1b][0x94]#[0xbe][0xb3][0xd0][0xf5][0x7]S[0xa0][0x12][0xbf]t[0x0][0x0][0x0]"
+2024-06-06 16:01:56,799 [main] DEBUG i.r.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2024-06-06 16:01:56,884 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@43c87306
+2024-06-06 16:01:56,884 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager - Connection can be kept alive indefinitely
+2024-06-06 16:01:56,903 [main] INFO  utils.PropertiesUtil - Property key 'api.customer.endpoint' retrieved with value 'https://api-sandbox.orangehrm.com/api/customers'.
+2024-06-06 16:01:56,903 [main] INFO  utils.PropertiesUtil - Property key 'api.customer.endpoint' retrieved with value 'https://api-sandbox.orangehrm.com/api/customers'.
+2024-06-06 16:01:56,936 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager - Get connection for route {s}->https://api-sandbox.orangehrm.com:443
+2024-06-06 16:01:56,937 [main] DEBUG o.a.h.i.c.DefaultClientConnectionOperator - Connecting to api-sandbox.orangehrm.com:443
+2024-06-06 16:01:57,214 [main] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+2024-06-06 16:01:57,214 [main] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+2024-06-06 16:01:57,214 [main] DEBUG o.a.h.c.p.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+2024-06-06 16:01:57,214 [main] DEBUG o.a.h.impl.client.DefaultHttpClient - Attempt 1 to execute request
+2024-06-06 16:01:57,214 [main] DEBUG o.a.h.i.c.DefaultClientConnection - Sending request: GET /api/customers HTTP/1.1
+2024-06-06 16:01:57,214 [main] DEBUG org.apache.http.wire -  >> "GET /api/customers HTTP/1.1[\r][\n]"
+2024-06-06 16:01:57,214 [main] DEBUG org.apache.http.wire -  >> "Authorization: Bearer 4f7dadd47b2981958219a94ce850fb3cec4a7220[\r][\n]"
+2024-06-06 16:01:57,214 [main] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+2024-06-06 16:01:57,214 [main] DEBUG org.apache.http.wire -  >> "Host: api-sandbox.orangehrm.com[\r][\n]"
+2024-06-06 16:01:57,214 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+2024-06-06 16:01:57,214 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.1)[\r][\n]"
+2024-06-06 16:01:57,214 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2024-06-06 16:01:57,214 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+2024-06-06 16:01:57,214 [main] DEBUG org.apache.http.headers - >> GET /api/customers HTTP/1.1
+2024-06-06 16:01:57,214 [main] DEBUG org.apache.http.headers - >> Authorization: Bearer 4f7dadd47b2981958219a94ce850fb3cec4a7220
+2024-06-06 16:01:57,214 [main] DEBUG org.apache.http.headers - >> Accept: */*
+2024-06-06 16:01:57,214 [main] DEBUG org.apache.http.headers - >> Host: api-sandbox.orangehrm.com
+2024-06-06 16:01:57,214 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+2024-06-06 16:01:57,214 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.1)
+2024-06-06 16:01:57,214 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.wire -  << "Server: nginx[\r][\n]"
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.wire -  << "Date: Thu, 06 Jun 2024 13:01:57 GMT[\r][\n]"
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json[\r][\n]"
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.wire -  << "Content-Length: 477[\r][\n]"
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.wire -  << "Set-Cookie: orangehrm=fitmqq5r8snn8bpv16oagriuprdhf86oakt4bpmpebi8ajng1ohd2qh8n8itis7nv0pnqgmrp8q1071nr9mh5p0vtfu41h42klf51nj9dtpls0b4d531remnerlh4biv; path=/; secure; HttpOnly[\r][\n]"
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.wire -  << "Expires: Thu, 19 Nov 1981 08:52:00 GMT[\r][\n]"
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.wire -  << "Cache-Control: max-age=0, private, no-store, no-cache, must-revalidate[\r][\n]"
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.wire -  << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.wire -  << "Vary: Accept-Encoding[\r][\n]"
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.wire -  << "Content-Encoding: gzip[\r][\n]"
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.wire -  << "X-XSS-Protection: 1; mode=block[\r][\n]"
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: https://api.orangehrm.com[\r][\n]"
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Methods: GET, POST, DELETE, PATCH, PUT, OPTIONS[\r][\n]"
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Headers: DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization[\r][\n]"
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.wire -  << "Access-Control-Expose-Headers: Content-Length,Content-Range[\r][\n]"
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2024-06-06 16:01:57,820 [main] DEBUG o.a.h.i.c.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.headers - << Server: nginx
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.headers - << Date: Thu, 06 Jun 2024 13:01:57 GMT
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.headers - << Content-Type: application/json
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.headers - << Content-Length: 477
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.headers - << Connection: keep-alive
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.headers - << Set-Cookie: orangehrm=fitmqq5r8snn8bpv16oagriuprdhf86oakt4bpmpebi8ajng1ohd2qh8n8itis7nv0pnqgmrp8q1071nr9mh5p0vtfu41h42klf51nj9dtpls0b4d531remnerlh4biv; path=/; secure; HttpOnly
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.headers - << Expires: Thu, 19 Nov 1981 08:52:00 GMT
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.headers - << Cache-Control: max-age=0, private, no-store, no-cache, must-revalidate
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.headers - << Pragma: no-cache
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.headers - << X-Frame-Options: SAMEORIGIN
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.headers - << Vary: Accept-Encoding
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.headers - << Content-Encoding: gzip
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.headers - << X-Content-Type-Options: nosniff
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.headers - << X-XSS-Protection: 1; mode=block
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: https://api.orangehrm.com
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Methods: GET, POST, DELETE, PATCH, PUT, OPTIONS
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Headers: DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.headers - << Access-Control-Expose-Headers: Content-Length,Content-Range
+2024-06-06 16:01:57,820 [main] DEBUG o.a.h.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+2024-06-06 16:01:57,820 [main] DEBUG i.r.internal.RestAssuredHttpBuilder - Parsing response as: application/json
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.wire -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xad]UMk[0xe3]0[0x10][0xfd]+B[0xa7][0x14]B[0xb1][0xdb][0xa4][0xf9]8[0xd6][0xc1]l[0xc0]4]R[0x8][0xcb][0xd2][0x83]jOS[0xb1][0x96][0xe4]jdB[0x9][0xf9][0xef];r6[0xd9][0xd2][0xda]r[0xf][0xbd]Y[0xd6][0x9b]yo>4[0xb3][0xe7][0x85]p[0x82][0xcf][0xef]y^[0xa3]3[\n]"
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.wire -  << "[0xec][0xb2][0xe0]s[0x1e][0xf3]![0x97][0xb8][0x80][0x12][0x1c][0xf8]sDg-[0x14][0xf8][0xcf][0x98]%F[0xa9]Z[0xcb][0xd7][0x1a]X&[0x9e][0x8c][0x15][0xce][0xd8]7[0xb6][0xd4][0xf9]`[0x95][0xfc][0xcc][0xd2][0xb][0x2][0x17][0x80][0xb9][0x95][0x95][0x93]F[0xcd][0x86]-[0xde]Y[0x1c][0x86][0x1f][0xf4]\u[0xeb][0x89][0xd9]4[0x8a]XZ[0x9a][0x1d]X[0xbc][0xcc][0x8d]j[0x9c][0xa6][0xd9]f[0xfd]YG[0x0][0x1b][0xe6][0xbf][0xe][0xf0][0x8f](8QI'[0xca]c8w[0xc9]}[0xb]s[0x1b]*[0xcc]9[\n]"
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.wire -  << "pNG[0x13][0xf6][0xc3][0x94][0x85][0xd4][dY[0x96][0xc][0xa2][0xd9]x<[0xbd][0x9e],Z[0x98][0xbb][0xb1]a[0xfe]q[0x88][0xff]f[0xc2]6[0x80][0xe][0xac]f[0xa9][0xd4]B[0xe7][0x92][0x2]K[0x8c][0xad][0x6][0x9b]4[0xc9][0xda]T[0xf4]X[0x84][0xb5][0xdc][0x4][0xb4]([0xb1][0x5][0xb6]6[0xcf]n',4[0xc9]][0xae]Wm[0x12]:[0x80]a[0xe6]I[0x80][0x19][0xdd][0xb9][0xa6][0xb7]B[0xff][0x19][0xa4][0xcb][0xf5]m[0xb]o+,[0xcc]:[0xed]a[0x5][0xed]jz>[0xe4].[0xc7][0x17][0x8a][0x6][0x8f][0x8d][0x9c]<[0xfc][0xea][0xe0][0xf][0x18][0x84][0x95][0xcc]z[0x94][0x98][0xd2]hy[0x8c],[0xa7]b[0xfe]s[0xbb][0xea][0xca]C'<[0xac]"[0x8e][0xfa]dht[0xd2][0xd5][0xde][0xfa][0xe4][0x9b][0xfc]&][0xe9][0xe8][0x84][0xf7][0xc8][0x8][0xcc][0xc5];[0xe9][0xd0]P<[0xb0][0xa5][0xd9]F[0xd6][0xf8][0x89][0xf9][0x84]p'[0x8][0x93][0xc8][0xf2]RRm[0xd8][0xee][0xc5] [0xb0][0xc2](![0x9b][0xdf][0xf2]?[\n]"
+2024-06-06 16:01:57,820 [main] DEBUG org.apache.http.wire -  << "[t[0x4][0xe6][0xe1][0x3]=[0xb2]o[0xa4]~[0x1c]r[0x5]~E[0xec][0xb9]3[0xd4][0xc2]|[0x1e]_[\r]y[0x5]VI[0xc4][0x6]B7E#[0x84][0xd6]H[0xb3]8[0x9a],[0x91]D2[0xad]+[0xda]/[0xe7][0xb][0xaf][0xda]OR?[0xd9][0xfc]t[0xf1][0xaf][0xda][0xbf]/[0xdf][0xed][0xbe][0xcf][0x9a]*[0x9f][0xad][0xf][0x87][0xc3]_6[0xad]g[0xde][0x9f][0x6][0x0][0x0]"
+2024-06-06 16:01:57,820 [main] DEBUG i.r.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2024-06-06 16:01:57,820 [main] INFO  s.api.GetCustomerInfo - GET request executed
+2024-06-06 16:01:57,820 [main] INFO  s.api.GetCustomerInfo - GET request executed
+2024-06-06 16:01:57,820 [main] INFO  s.api.GetCustomerInfo - Response status code verified successfully: 200
+2024-06-06 16:01:57,820 [main] INFO  s.api.GetCustomerInfo - Response status code verified successfully: 200
+2024-06-06 16:01:57,820 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@3d1f558a
+2024-06-06 16:01:57,820 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager - Connection can be kept alive indefinitely
+2024-06-06 16:01:57,820 [main] INFO  s.api.GetCustomerInfo - Response body received: {"data":[{"customerId":"1","isDeleted":"0","name":"01 Communique Laboratory Inc(OCQLF)","description":"01 Communique Laboratory Inc(OCQLF) Description"},{"customerId":"2","isDeleted":"0","name":"1 800 Flowers.com Inc(FLWS)","description":"1 800 Flowers.com Inc(FLWS) Description"},{"customerId":"3","isDeleted":"0","name":"141 Capital Inc(ONCP)","description":"141 Capital Inc(ONCP) Description"},{"customerId":"4","isDeleted":"0","name":"1847 Holdings LLC(0955837D)","description":"1847 Holdings LLC(0955837D) Description"},{"customerId":"5","isDeleted":"0","name":"1867 Western Financial Corp(WFCL)","description":"1867 Western Financial Corp(WFCL) Description"},{"customerId":"6","isDeleted":"0","name":"1mage Software Inc(ISOL)","description":"1mage Software Inc(ISOL) Description"},{"customerId":"7","isDeleted":"0","name":"1st Capital Bank(FISB)","description":"1st Capital Bank(FISB) Description"},{"customerId":"8","isDeleted":"0","name":"1st Century Bancshares Inc(FCTY)","description":"1st Century Bancshares Inc(FCTY) Description"},{"customerId":"9","isDeleted":"0","name":"1st Colonial Bancorp Inc(FCOB)","description":"1st Colonial Bancorp Inc(FCOB) Description"},{"customerId":"10","isDeleted":"0","name":"1st Constitution Bancorp(FCCY)","description":"1st Constitution Bancorp(FCCY) Description"},{"customerId":"11","isDeleted":"0","name":"Nitso Inegrations","description":"Nitso Integration is client whose domain is integrations"},{"customerId":"12","isDeleted":"0","name":"Test","description":"Nitso Integration is client whose domain is integrations"}],"meta":{"total":12,"permissions":{"delete":["1","11","12"],"update":["1","2","3","4","5","6","7","8","9","10","11","12"]}}}
+2024-06-06 16:01:57,820 [main] INFO  s.api.GetCustomerInfo - Response body received: {"data":[{"customerId":"1","isDeleted":"0","name":"01 Communique Laboratory Inc(OCQLF)","description":"01 Communique Laboratory Inc(OCQLF) Description"},{"customerId":"2","isDeleted":"0","name":"1 800 Flowers.com Inc(FLWS)","description":"1 800 Flowers.com Inc(FLWS) Description"},{"customerId":"3","isDeleted":"0","name":"141 Capital Inc(ONCP)","description":"141 Capital Inc(ONCP) Description"},{"customerId":"4","isDeleted":"0","name":"1847 Holdings LLC(0955837D)","description":"1847 Holdings LLC(0955837D) Description"},{"customerId":"5","isDeleted":"0","name":"1867 Western Financial Corp(WFCL)","description":"1867 Western Financial Corp(WFCL) Description"},{"customerId":"6","isDeleted":"0","name":"1mage Software Inc(ISOL)","description":"1mage Software Inc(ISOL) Description"},{"customerId":"7","isDeleted":"0","name":"1st Capital Bank(FISB)","description":"1st Capital Bank(FISB) Description"},{"customerId":"8","isDeleted":"0","name":"1st Century Bancshares Inc(FCTY)","description":"1st Century Bancshares Inc(FCTY) Description"},{"customerId":"9","isDeleted":"0","name":"1st Colonial Bancorp Inc(FCOB)","description":"1st Colonial Bancorp Inc(FCOB) Description"},{"customerId":"10","isDeleted":"0","name":"1st Constitution Bancorp(FCCY)","description":"1st Constitution Bancorp(FCCY) Description"},{"customerId":"11","isDeleted":"0","name":"Nitso Inegrations","description":"Nitso Integration is client whose domain is integrations"},{"customerId":"12","isDeleted":"0","name":"Test","description":"Nitso Integration is client whose domain is integrations"}],"meta":{"total":12,"permissions":{"delete":["1","11","12"],"update":["1","2","3","4","5","6","7","8","9","10","11","12"]}}}
+2024-06-06 16:01:57,836 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=1, isDeleted=0, name=01 Communique Laboratory Inc(OCQLF), description=01 Communique Laboratory Inc(OCQLF) Description}
+2024-06-06 16:01:57,836 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=1, isDeleted=0, name=01 Communique Laboratory Inc(OCQLF), description=01 Communique Laboratory Inc(OCQLF) Description}
+2024-06-06 16:01:57,836 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=2, isDeleted=0, name=1 800 Flowers.com Inc(FLWS), description=1 800 Flowers.com Inc(FLWS) Description}
+2024-06-06 16:01:57,836 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=2, isDeleted=0, name=1 800 Flowers.com Inc(FLWS), description=1 800 Flowers.com Inc(FLWS) Description}
+2024-06-06 16:01:57,836 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=3, isDeleted=0, name=141 Capital Inc(ONCP), description=141 Capital Inc(ONCP) Description}
+2024-06-06 16:01:57,836 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=3, isDeleted=0, name=141 Capital Inc(ONCP), description=141 Capital Inc(ONCP) Description}
+2024-06-06 16:01:57,836 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=4, isDeleted=0, name=1847 Holdings LLC(0955837D), description=1847 Holdings LLC(0955837D) Description}
+2024-06-06 16:01:57,836 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=4, isDeleted=0, name=1847 Holdings LLC(0955837D), description=1847 Holdings LLC(0955837D) Description}
+2024-06-06 16:01:57,836 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=5, isDeleted=0, name=1867 Western Financial Corp(WFCL), description=1867 Western Financial Corp(WFCL) Description}
+2024-06-06 16:01:57,836 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=5, isDeleted=0, name=1867 Western Financial Corp(WFCL), description=1867 Western Financial Corp(WFCL) Description}
+2024-06-06 16:01:57,836 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=6, isDeleted=0, name=1mage Software Inc(ISOL), description=1mage Software Inc(ISOL) Description}
+2024-06-06 16:01:57,836 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=6, isDeleted=0, name=1mage Software Inc(ISOL), description=1mage Software Inc(ISOL) Description}
+2024-06-06 16:01:57,836 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=7, isDeleted=0, name=1st Capital Bank(FISB), description=1st Capital Bank(FISB) Description}
+2024-06-06 16:01:57,836 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=7, isDeleted=0, name=1st Capital Bank(FISB), description=1st Capital Bank(FISB) Description}
+2024-06-06 16:01:57,836 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=8, isDeleted=0, name=1st Century Bancshares Inc(FCTY), description=1st Century Bancshares Inc(FCTY) Description}
+2024-06-06 16:01:57,836 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=8, isDeleted=0, name=1st Century Bancshares Inc(FCTY), description=1st Century Bancshares Inc(FCTY) Description}
+2024-06-06 16:01:57,836 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=9, isDeleted=0, name=1st Colonial Bancorp Inc(FCOB), description=1st Colonial Bancorp Inc(FCOB) Description}
+2024-06-06 16:01:57,836 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=9, isDeleted=0, name=1st Colonial Bancorp Inc(FCOB), description=1st Colonial Bancorp Inc(FCOB) Description}
+2024-06-06 16:01:57,836 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=10, isDeleted=0, name=1st Constitution Bancorp(FCCY), description=1st Constitution Bancorp(FCCY) Description}
+2024-06-06 16:01:57,836 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=10, isDeleted=0, name=1st Constitution Bancorp(FCCY), description=1st Constitution Bancorp(FCCY) Description}
+2024-06-06 16:01:57,836 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=11, isDeleted=0, name=Nitso Inegrations, description=Nitso Integration is client whose domain is integrations}
+2024-06-06 16:01:57,836 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=11, isDeleted=0, name=Nitso Inegrations, description=Nitso Integration is client whose domain is integrations}
+2024-06-06 16:01:57,836 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=12, isDeleted=0, name=Test, description=Nitso Integration is client whose domain is integrations}
+2024-06-06 16:01:57,836 [main] INFO  s.api.GetCustomerInfo - Expected customer data found in response: {customerId=12, isDeleted=0, name=Test, description=Nitso Integration is client whose domain is integrations}
+2024-06-06 16:01:57,852 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-06 16:01:57,852 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-06 16:03:41,904 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-06 16:03:41,904 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-06 16:03:41,904 [main] INFO  utils.PropertiesUtil - Properties file 'config.properties' loaded successfully.
+2024-06-06 16:03:41,904 [main] INFO  utils.PropertiesUtil - Properties file 'config.properties' loaded successfully.
+2024-06-06 16:03:41,904 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-06 16:03:41,904 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-06 16:03:41,904 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-06 16:03:41,904 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-06 16:03:41,904 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-06 16:03:41,904 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-06 16:03:41,912 [main] INFO  config.DriverManager - Starting Chrome browser
+2024-06-06 16:03:46,005 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-06 16:03:46,005 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-06 16:03:47,466 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-06 16:03:47,466 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-06 16:03:47,519 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-06 16:03:47,519 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-06 16:03:47,524 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
+2024-06-06 16:03:47,524 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
+2024-06-06 16:03:47,524 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
+2024-06-06 16:03:47,524 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
+2024-06-06 16:03:48,197 [main] INFO  actions.UIActions - Entering text 'Admin' into element '[[ChromeDriver: chrome on windows (cfef9e17a515e7fa0f39e8a01be95fec)] -> name: username]' with field name 'Username'
+2024-06-06 16:03:48,359 [main] INFO  actions.UIActions - Entering text 'admin123' into element '[[ChromeDriver: chrome on windows (cfef9e17a515e7fa0f39e8a01be95fec)] -> name: password]' with field name 'Password'
+2024-06-06 16:03:48,460 [main] INFO  pages.LoginPage - Logged in with credentials
+2024-06-06 16:03:48,460 [main] INFO  pages.LoginPage - Logged in with credentials
+2024-06-06 16:03:48,460 [main] INFO  pages.LoginPage - Default tab is displayed
+2024-06-06 16:03:48,460 [main] INFO  pages.LoginPage - Default tab is displayed
+2024-06-06 16:03:49,877 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: User logs in successfully with valid credentials
+2024-06-06 16:03:49,877 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: User logs in successfully with valid credentials
+2024-06-06 16:03:50,163 [main] INFO  utils.ScreenshotUtils - Screenshot saved to file: C:\Users\icalugher\IdeaProjects\IC_Project 1stATF\target\screenshots\User logs in successfully with valid credentials_20240606-160350.png
+2024-06-06 16:03:50,163 [main] INFO  utils.ScreenshotUtils - Screenshot saved to file: C:\Users\icalugher\IdeaProjects\IC_Project 1stATF\target\screenshots\User logs in successfully with valid credentials_20240606-160350.png
+2024-06-06 16:03:50,163 [main] INFO  utils.ScreenshotUtils - Screenshot taken for scenario: User logs in successfully with valid credentials
+2024-06-06 16:03:50,163 [main] INFO  utils.ScreenshotUtils - Screenshot taken for scenario: User logs in successfully with valid credentials
+2024-06-06 16:03:50,440 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-06 16:03:50,440 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared
+2024-06-06 16:09:01,928 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-06 16:09:01,928 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-06 16:09:01,928 [main] INFO  utils.PropertiesUtil - Properties file 'config.properties' loaded successfully.
+2024-06-06 16:09:01,928 [main] INFO  utils.PropertiesUtil - Properties file 'config.properties' loaded successfully.
+2024-06-06 16:09:01,928 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-06 16:09:01,928 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-06 16:09:01,928 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-06 16:09:01,928 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-06 16:09:01,928 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-06 16:09:01,928 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-06 16:09:01,928 [main] INFO  config.DriverManager - Starting Chrome browser
+2024-06-06 16:09:03,807 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-06 16:09:03,807 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-06 16:09:05,115 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-06 16:09:05,115 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-06 16:19:40,274 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-06 16:19:40,274 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-06 16:19:40,293 [main] INFO  utils.PropertiesUtil - Properties file 'config.properties' loaded successfully.
+2024-06-06 16:19:40,293 [main] INFO  utils.PropertiesUtil - Properties file 'config.properties' loaded successfully.
+2024-06-06 16:19:40,295 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-06 16:19:40,295 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-06 16:19:40,295 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-06 16:19:40,295 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-06 16:19:40,295 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-06 16:19:40,295 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-06 16:19:40,299 [main] INFO  config.DriverManager - Starting Chrome browser
+2024-06-06 16:19:42,548 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-06 16:19:42,548 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-06 16:19:43,920 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-06 16:19:43,920 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-06 16:24:09,069 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-06 16:24:09,069 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-06 16:24:09,072 [main] INFO  utils.PropertiesUtil - Properties file 'config.properties' loaded successfully.
+2024-06-06 16:24:09,072 [main] INFO  utils.PropertiesUtil - Properties file 'config.properties' loaded successfully.
+2024-06-06 16:24:09,074 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-06 16:24:09,074 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-06 16:24:09,074 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-06 16:24:09,074 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-06 16:24:09,075 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-06 16:24:09,075 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-06 16:24:09,082 [main] INFO  config.DriverManager - Starting Chrome browser
+2024-06-06 16:24:11,077 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-06 16:24:11,077 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-06 16:24:12,356 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-06 16:24:12,356 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-06 16:34:36,052 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-06 16:34:36,052 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-06 16:34:36,068 [main] INFO  utils.PropertiesUtil - Properties file 'config.properties' loaded successfully.
+2024-06-06 16:34:36,068 [main] INFO  utils.PropertiesUtil - Properties file 'config.properties' loaded successfully.
+2024-06-06 16:34:36,068 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-06 16:34:36,068 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-06 16:34:36,068 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-06 16:34:36,068 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-06 16:34:36,068 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-06 16:34:36,068 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-06 16:34:36,068 [main] INFO  config.DriverManager - Starting Chrome browser
+2024-06-06 16:34:38,147 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-06 16:34:38,147 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-06 16:34:39,621 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-06 16:34:39,621 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-06 17:15:22,621 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-06 17:15:22,621 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-06 17:15:22,648 [main] INFO  utils.PropertiesUtil - Properties file 'config.properties' loaded successfully.
+2024-06-06 17:15:22,648 [main] INFO  utils.PropertiesUtil - Properties file 'config.properties' loaded successfully.
+2024-06-06 17:15:22,650 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-06 17:15:22,650 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-06 17:15:22,650 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-06 17:15:22,650 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-06 17:15:22,650 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-06 17:15:22,650 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-06 17:15:22,656 [main] INFO  config.DriverManager - Starting Chrome browser
+2024-06-06 17:15:25,860 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-06 17:15:25,860 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-06 17:15:30,674 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-06 17:15:30,674 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-06 17:25:23,701 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-06 17:25:23,701 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-06 17:25:23,717 [main] INFO  utils.PropertiesUtil - Properties file 'config.properties' loaded successfully.
+2024-06-06 17:25:23,717 [main] INFO  utils.PropertiesUtil - Properties file 'config.properties' loaded successfully.
+2024-06-06 17:25:23,717 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-06 17:25:23,717 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-06 17:25:23,717 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-06 17:25:23,717 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-06 17:25:23,717 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-06 17:25:23,717 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-06 17:25:23,717 [main] INFO  config.DriverManager - Starting Chrome browser
+2024-06-06 17:25:25,833 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-06 17:25:25,833 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-06 17:25:27,448 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-06 17:25:27,448 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-11 15:27:41,543 [main] INFO  Hooks.Hooks - Initializing WebDriver for UI testing
+2024-06-11 15:27:41,572 [main] INFO  utils.PropertiesUtil - Properties file 'config.properties' loaded successfully.
+2024-06-11 15:27:41,575 [main] INFO  utils.PropertiesUtil - Property key 'baseUrl' retrieved with value 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.
+2024-06-11 15:27:41,575 [main] INFO  utils.PropertiesUtil - Property key 'browser.type' retrieved with value 'CHROME'.
+2024-06-11 15:27:41,575 [main] INFO  utils.PropertiesUtil - Property key 'browser.headless' retrieved with value 'false'.
+2024-06-11 15:27:45,414 [main] INFO  Hooks.Hooks - WebDriver initialized and browser window maximized successfully
+2024-06-11 15:27:47,561 [main] INFO  Hooks.Hooks - Navigated to the login page. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2024-06-11 15:27:47,641 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-11 15:27:47,642 [main] INFO  utils.PropertiesUtil - Property key 'username' retrieved with value 'Admin'.
+2024-06-11 15:27:47,642 [main] INFO  utils.PropertiesUtil - Property key 'password' retrieved with value 'admin123'.
+2024-06-11 15:27:49,683 [main] INFO  pages.LoginPage - Logged in with credentials
+2024-06-11 15:27:49,702 [main] INFO  utils.PropertiesUtil - Property key 'timeout.seconds' retrieved with value '30'.
+2024-06-11 15:27:51,069 [main] INFO  pages.BuzzPage - Clicked on Buzz menu item
+2024-06-11 15:27:51,763 [main] INFO  pages.BuzzPage - Populated 'What's on your mind' field with text: Reprehenderit molestiae voluptas exercitationem quas.
+2024-06-11 15:27:51,856 [main] INFO  pages.BuzzPage - Clicked on the post button
+2024-06-11 15:27:51,857 [main] INFO  pages.BuzzPage - New Post is present on the page
+2024-06-11 15:28:12,160 [main] INFO  Hooks.Hooks - Taking screenshot before closing the browser for scenario: Verify Post functionality
+2024-06-11 15:28:12,351 [main] INFO  utils.ScreenshotUtils - Screenshot saved to file: C:\Users\icalugher\IdeaProjects\IC_Project 1stATF\target\screenshots\Verify Post functionality_20240611-152812.png
+2024-06-11 15:28:12,351 [main] INFO  utils.ScreenshotUtils - Screenshot taken for scenario: Verify Post functionality
+2024-06-11 15:28:13,434 [main] INFO  Hooks.Hooks - Scenario Context successfully cleared

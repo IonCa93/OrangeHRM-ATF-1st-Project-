@@ -1,8 +1,0 @@
-2024-05-07 14:36:59.901 [main] INFO  stepDefinitions.UILoginSteps - Opened OrangeHRM home page
-2024-05-07 14:37:00.574 [main] INFO  stepDefinitions.UILoginSteps - Entered username and password from config file
-2024-05-07 14:37:01.736 [main] INFO  stepDefinitions.UILoginSteps - Clicked on the login button
-2024-05-07 14:37:02.308 [main] INFO  stepDefinitions.UILoginSteps - Dashboard tab is displayed
-2024-05-07 14:37:03.137 [main] INFO  stepDefinitions.BuzzPageSteps - Buzz tab is displayed
-2024-05-07 14:37:04.605 [main] INFO  stepDefinitions.BuzzPageSteps - Random post text added: Sit cumque alias.
-2024-05-07 14:37:04.917 [main] INFO  stepDefinitions.BuzzPageSteps - Post button clicked
-2024-05-07 14:37:05.447 [main] INFO  stepDefinitions.BuzzPageSteps - New Post is present on the page

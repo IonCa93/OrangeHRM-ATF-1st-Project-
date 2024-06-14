@@ -1,4 +1,0 @@
-2024-04-29 14:00:17.575 [main] INFO  stepDefinitions.BaseDefine - Opened OrangeHRM home page
-2024-04-29 14:00:47.685 [main] INFO  stepDefinitions.BaseDefine - Taking screenshot before closing the browser for scenario: User is logged in successfully
-2024-04-29 14:00:47.717 [main] INFO  stepDefinitions.BaseDefine - UI test failed. Attempting to take a screenshot...
-2024-04-29 14:00:47.717 [main] INFO  stepDefinitions.BaseDefine - Screenshot taken for failed scenario: User is logged in successfully

@@ -1,4 +1,0 @@
-2024-03-26 14:10:11.707 [main] INFO  stepDefinitions.BaseDefine - Opened OrangeHRM home page
-2024-03-26 14:10:12.429 [main] INFO  stepDefinitions.BaseDefine - Entered username and password from config file
-2024-03-26 14:10:13.486 [main] INFO  stepDefinitions.BaseDefine - Clicked on the login button
-2024-03-26 14:10:14.177 [main] INFO  stepDefinitions.BaseDefine - Dashboard tab is displayed

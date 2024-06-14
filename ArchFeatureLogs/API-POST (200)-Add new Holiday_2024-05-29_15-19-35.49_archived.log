@@ -1,3 +1,0 @@
-2024-05-29 15:19:38.744 [main] INFO  s.UpdateHolidayCalendarAPI - POST request performed successfully
-2024-05-29 15:19:38.744 [main] INFO  s.UpdateHolidayCalendarAPI - Request body sent: {"date":"2024-05-27","operational_country_id":1,"length":0,"description":"Test holiday","location":[1],"adjustLeave":true}
-2024-05-29 15:19:38.760 [main] INFO  s.UpdateHolidayCalendarAPI - Response status code is 200

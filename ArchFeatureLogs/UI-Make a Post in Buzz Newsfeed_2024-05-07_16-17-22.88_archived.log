@@ -1,5 +1,0 @@
-2024-05-07 16:17:24.604 [main] INFO  stepDefinitions.UILoginSteps - Opened OrangeHRM home page
-2024-05-07 16:17:25.302 [main] INFO  stepDefinitions.UILoginSteps - Entered username and password from config file
-2024-05-07 16:17:26.344 [main] INFO  stepDefinitions.UILoginSteps - Clicked on the login button
-2024-05-07 16:17:26.917 [main] INFO  stepDefinitions.UILoginSteps - Dashboard tab is displayed
-2024-05-07 16:17:29.191 [main] INFO  stepDefinitions.BuzzPageSteps - Random post text added: Aut omnis commodi minus nisi nulla non eligendi.

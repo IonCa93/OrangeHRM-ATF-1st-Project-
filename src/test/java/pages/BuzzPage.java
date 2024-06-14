@@ -8,10 +8,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import utils.PropertiesUtil;
+
 import java.time.Duration;
 
 public class BuzzPage extends BasePage {
-    private static final Logger LOGGER = LoggerFactory.getLogger(BuzzPage.class); // Logger
+    private static final Logger logger = LoggerFactory.getLogger(BuzzPage.class); // Logger
 
     @FindBy(xpath = "//span[normalize-space()='Buzz']")
     private WebElement buzzMenuItem;
@@ -28,33 +30,38 @@ public class BuzzPage extends BasePage {
 
     public void clickBuzzMenuItem() {
         browserActions.clickElement(buzzMenuItem);
-        LOGGER.info("Clicked on Buzz menu item");
+        logger.info("Clicked on Buzz menu item");
     }
 
-    public void populateWhatsOnYourMindField(String text) {
+    public void populatePostField(String text) {
         browserActions.inputTextWithRetry(whatsOnYourMindField, text);
-        LOGGER.info("Populated 'What's on your mind' field with text: {}", text);
+        logger.info(String.format("Populated 'What's on your mind' field with text: %s", text));
     }
 
     public void clickPostButton() {
         browserActions.clickElement(postButton);
-        LOGGER.info("Clicked on the post button");
+        logger.info("Clicked on the post button");
     }
 
-
     public boolean getNewPostText(String expectedText) {
-        // Build XPath dynamically to locate the post with the specified text
+        int timeoutSeconds = Integer.parseInt(PropertiesUtil.getProperty("timeout.seconds"));
         String xpath = "//p[normalize-space()='" + expectedText + "']";
-        LOGGER.info("New Post is present on the page");
+        logger.info(String.format("Checking if new post with text '%s' is present on the page", expectedText));
+
         try {
-            // Wait for the presence of the post element with increased wait time
-            WebElement postElement = new WebDriverWait(driver, Duration.ofSeconds(20))
+            // Wait for the presence of the post element with the configured wait time
+            WebElement postElement = new WebDriverWait(driver, Duration.ofSeconds(timeoutSeconds))
                     .until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)));
+
             // Wait for the element to be visible
-            wait.until(ExpectedConditions.visibilityOf(postElement));
+            new WebDriverWait(driver, Duration.ofSeconds(timeoutSeconds))
+                    .until(ExpectedConditions.visibilityOf(postElement));
+
             return true;
         } catch (org.openqa.selenium.TimeoutException e) {
+            logger.warn(String.format("Timeout waiting for new post with text '%s' to be visible", expectedText));
             return false;
         }
     }
+
 }
