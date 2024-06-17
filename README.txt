@@ -7,7 +7,7 @@ V4.0
 5. Login - moved OpenHomePage into Hooks class;
 6. Background step for UI-Login feature (To be revised)
 
--------------------------------------------------------------->>>PRE-assessment #1 observations:<<<---------------------------------------------------------
+--------------->>>PRE-assessment #1 observations:<<<---------------------------------------------------------
 
 -TODO remove comments on assessment
 -Inform about Appender -configLog
