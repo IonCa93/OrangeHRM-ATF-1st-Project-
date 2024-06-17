@@ -115,9 +115,9 @@ V4.0
  - navigateToLoginPage(WebDriver driver, String baseUrl) {//TODO move to browserActions   -- DONE+++
  - Logger - replace {} with %s; DONE++
 
--------------------------------------------------------------->>>PRE-assessment #1 observations:<<<---------------------------------------------------------
+--------------->>>PRE-assessment #1 observations:<<<---------------------------------------------------------
 
--------------------------------------------------------------->>>PRE-assessment #2 observations:<<<---------------------------------------------------------
+--------------->>>PRE-assessment #2 observations:<<<---------------------------------------------------------
 -Hooks class - TBD
  - optional: move extractFeatureName to utils. consider beforeScenario method
 
@@ -173,5 +173,4 @@ V4.0
 - getProperty("timeout.seconds"));//TODO as variable
 - screenshotDirectory.mkdirs(); // TODO correct save/notSave dir logic
 
-
--------------------------------------------------------------->>>PRE-assessment #2 observations:<<<---------------------------------------------------------
+--------------->>>PRE-assessment #2 observations:<<<---------------------------------------------------------
