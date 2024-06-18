@@ -7,7 +7,7 @@ V4.0
 5. Login - moved OpenHomePage into Hooks class;
 6. Background step for UI-Login feature (To be revised)
 
--------------------------------------------------------------->>>PRE-assessment #2 observations:<<<---------------------------------------------------------
+-------v6.0-------->>>PRE-assessment #2 observations:<<<---------------------------------------------------------
 -Hooks class   -- DONE +++
  - optional: move extractFeatureName to utils. consider beforeScenario method -UNCHANGED
  - added logic for Logs to be attached into cucumber reports   -- DONE +++
@@ -68,4 +68,4 @@ V4.0
 - screenshotDirectory.mkdirs(); // TODO correct save/notSave dir logic   -- DONE+++
 
 
--------------------------------------------------------------->>>PRE-assessment #2 observations:<<<---------------------------------------------------------
+-------v6.0-------->>>PRE-assessment #2 observations:<<<---------------------------------------------------------
