@@ -36,3 +36,6 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+### Custom ###
+target/Evidence/logs/   # Ignore logs directory under target/Evidence
