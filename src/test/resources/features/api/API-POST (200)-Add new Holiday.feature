@@ -1,11 +1,8 @@
 @API @Run
 Feature: Update holiday calendar
 
-  Background: Authentication with Bearer token
-    Given Bearer token is generated
-
   Scenario: Create a new holiday
-
+    Given Bearer token is generated
     When POST request is performed with following request body:
       | description            | <dynamic_description> |
       | date                   | <dynamic_date>        |

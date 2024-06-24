@@ -1,37 +1,42 @@
 package api;
 
-import enums.ApiPropertyValues;
+import enums.ApiProperties;
 import enums.ErrorMessages;
-import enums.FormParams;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.json.JSONObject;
 
 public class ApiTokenGenerator {
 
-    private static final String TOKEN_ENDPOINT = ApiPropertyValues.TOKEN_ENDPOINT.getValue();
-    private static final String CLIENT_ID = ApiPropertyValues.CLIENT_ID.getValue();
-    private static final String CLIENT_SECRET = ApiPropertyValues.CLIENT_SECRET.getValue();
-    private static final String USERNAME = ApiPropertyValues.USERNAME.getValue();
-    private static final String PASSWORD = ApiPropertyValues.PASSWORD.getValue();
+    private static final String TOKEN_ENDPOINT = ApiProperties.TOKEN_ENDPOINT.getValue();
+
+    private static final String CLIENT_ID = ApiProperties.CLIENT_ID.getValue();
+
+    private static final String CLIENT_SECRET = ApiProperties.CLIENT_SECRET.getValue();
+
+    private static final String USERNAME = ApiProperties.USERNAME.getValue();
+
+    private static final String PASSWORD = ApiProperties.PASSWORD.getValue();
+
+    private static final String GRANT_TYPE = "client_credentials";
+
+    private static final int SUCCESS_STATUS_CODE = 200;
 
     public static String generateBearerToken() {
-        // Send POST request to get token
         Response response = RestAssured
                 .given()
-                .formParam(FormParams.CLIENT_ID.getParam(), CLIENT_ID)
-                .formParam(FormParams.CLIENT_SECRET.getParam(), CLIENT_SECRET)
-                .formParam(FormParams.GRANT_TYPE.getParam(), "client_credentials")
-                .formParam(FormParams.USERNAME.getParam(), USERNAME)
-                .formParam(FormParams.PASSWORD.getParam(), PASSWORD)
+                .formParam("client_id", CLIENT_ID)
+                .formParam("client_secret", CLIENT_SECRET)
+                .formParam("grant_type", GRANT_TYPE)
+                .formParam("username", USERNAME)
+                .formParam("password", PASSWORD)
                 .post(TOKEN_ENDPOINT);
 
-        if (response.getStatusCode() != 200) {
+        if (response.getStatusCode() != SUCCESS_STATUS_CODE) {
             throw new RuntimeException(ErrorMessages.TOKEN_GENERATION_FAILED.getMessage());
         }
 
-        // Parse the response to get the token
         JSONObject jsonResponse = new JSONObject(response.getBody().asString());
-        return jsonResponse.getString("access_token");
+        return jsonResponse.getString(ApiProperties.ACCESS_TOKEN.getKey());
     }
 }

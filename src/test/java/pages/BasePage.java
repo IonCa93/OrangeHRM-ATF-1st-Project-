@@ -10,27 +10,18 @@ import java.time.Duration;
 
 public abstract class BasePage {
 
-    protected final WebDriver driver; //TODO dif btw public/protected/default
-    protected final UIActions browserActions;
+    protected final WebDriver driver;
+
+    protected final UIActions UIActions;
+
     protected final WebDriverWait wait;
+
+    private static final int TIMEOUT_SECONDS = Integer.parseInt(PropertiesUtil.getProperty("timeout.seconds"));
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
-        this.browserActions = new UIActions(driver);
+        this.UIActions = new UIActions(driver);
         PageFactory.initElements(driver, this);
-        long timeoutSeconds = getTimeoutFromConfig();
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutSeconds));
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(TIMEOUT_SECONDS));
     }
-
-    private long getTimeoutFromConfig() {
-        try {
-            String timeoutString = PropertiesUtil.getProperty("timeout.seconds");
-            return Long.parseLong(timeoutString);
-        } catch (NumberFormatException ex) {
-            // Handle exceptions gracefully, maybe fallback to a default value
-            ex.printStackTrace();
-            return 30; // Default to 30 seconds if reading from config fails
-        }
-    }
-
 }

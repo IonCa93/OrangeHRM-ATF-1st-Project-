@@ -41,7 +41,6 @@ public class UILoginSteps {
         assertEquals("Error message text does not match", actualErrorMessage, expectedErrorMessage);
     }
 
-    // Custom GIVEN step as pre-req for Feature #2
     @Given("user is logged in OrangeHRM system")
     public void userLogsInHRM () {
         loginPage.logInWithCreds(Credentials.ADMIN);

@@ -14,7 +14,7 @@ import java.time.Duration;
 
 
 public class LoginPage extends BasePage {
-    private static final Logger logger = LoggerFactory.getLogger(LoginPage.class); // Logger
+    private static final Logger logger = LoggerFactory.getLogger(LoginPage.class);
 
     @FindBy(name = "username")
     private WebElement usernameField;
@@ -31,21 +31,23 @@ public class LoginPage extends BasePage {
     @FindBy(css = ".oxd-alert.oxd-alert--error")
     private WebElement errorMessage;
 
+    private final int TIMEOUT_SECONDS = Integer.parseInt(PropertiesUtil.getProperty("timeout.seconds"));
+
     public LoginPage(WebDriver driver) {
         super(driver);
-    } //intialize constructor of parent class
+    }
 
     public void logInWithCreds(Credentials credentials) {
-        browserActions.inputText(usernameField, credentials.getUsername(), "Username");
-        browserActions.inputText(passwordField, credentials.getPassword(), "Password");
-        browserActions.clickElement(loginButton);
+        UIActions.inputText(usernameField, credentials.getUsername(), "Username");
+        UIActions.inputText(passwordField, credentials.getPassword(), "Password");
+        UIActions.clickElement(loginButton);
         logger.info("Logged in with ADMIN credentials");
     }
 
     public void logInCustomCreds(String username, String password) {
-        browserActions.inputText(usernameField, username, "Username");
-        browserActions.inputText(passwordField, password, "Password");
-        browserActions.clickElement(loginButton);
+        UIActions.inputText(usernameField, username, "Username");
+        UIActions.inputText(passwordField, password, "Password");
+        UIActions.clickElement(loginButton);
         logger.info("Logged in with custom credentials");
     }
 
@@ -53,19 +55,14 @@ public class LoginPage extends BasePage {
 
     public boolean isDefaultTabDisplayed() {
         logger.info("Default tab is displayed");
-        return browserActions.isElementDisplayed(dashboardLabel);
+        return UIActions.waitForElementVisibility(dashboardLabel);
     }
 
     public WebElement getErrorMessage() {
         try {
-            // Retrieve the wait timeout from the configuration
-            int timeoutSeconds = Integer.parseInt(PropertiesUtil.getProperty("timeout.seconds"));
-
-            // Use the retrieved timeout for WebDriverWait
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutSeconds));
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(TIMEOUT_SECONDS));
             wait.until(ExpectedConditions.visibilityOf(errorMessage));
 
-            // Log if the error message is "Invalid credentials"
             String errorMessageText = errorMessage.getText();
             if (errorMessageText.contains("Invalid credentials")) {
                 logger.warn(String.format("Unsuccessful login attempt: %s", errorMessageText));
@@ -76,5 +73,4 @@ public class LoginPage extends BasePage {
             throw e;
         }
     }
-
 }

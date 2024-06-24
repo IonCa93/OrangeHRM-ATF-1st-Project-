@@ -11,11 +11,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
         features = "src/test/resources/features",
         glue = {"stepDefinitions", "Hooks"},
         monochrome = true,
-        tags = "@UI or @sdsd and not @ignore", //TODO add StepNotifications
+        tags = "@UI or @dsdsd and not @ignore",
         plugin = {
                 "pretty",
-                "html:target/reports/Reports.html", //TODO add logs in reports
-                "json:target/reports/Cucumber.json" } //TODO add git ignore for target folder!!! Why required all evidence in target, but not in project
+                "html:target/reports/Reports.html",
+                "json:target/reports/Cucumber.json"}
 )
 public class TestRunner {
 }

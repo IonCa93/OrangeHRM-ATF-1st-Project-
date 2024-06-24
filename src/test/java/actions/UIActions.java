@@ -1,6 +1,7 @@
 package actions;
 
-import exceptions.FieldPopulationException;
+import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -12,16 +13,19 @@ import utils.PropertiesUtil;
 import java.time.Duration;
 
 public class UIActions {
+
     private final WebDriverWait wait;
-    private static final Logger logger = LoggerFactory.getLogger(UIActions.class); // Logger
+
+    private static final Logger logger = LoggerFactory.getLogger(UIActions.class);
+
+    private static final int TIMEOUT_SECONDS = Integer.parseInt(PropertiesUtil.getProperty("timeout.seconds"));
 
     public UIActions(WebDriver driver) {
-        int timeoutSeconds = Integer.parseInt(PropertiesUtil.getProperty("timeout.seconds"));
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutSeconds));
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(TIMEOUT_SECONDS));
     }
 
     public void clickElement(WebElement element) {
-        wait.until(ExpectedConditions.elementToBeClickable(element)).click();
+        retryOnStaleElement(() -> wait.until(ExpectedConditions.elementToBeClickable(element)).click());
         logger.info(String.format("Clicked on element: %s", element));
     }
 
@@ -33,7 +37,7 @@ public class UIActions {
 
     public void inputTextWithRetry(WebElement element, String text) {
         int attempts = 0;
-        while (attempts < 3) { // Retry up to 3 times
+        while (attempts < 3) {
             try {
                 logger.info(String.format("Attempt %s: Waiting for element to be clickable", attempts + 1));
                 WebElement field = wait.until(ExpectedConditions.elementToBeClickable(element));
@@ -41,39 +45,68 @@ public class UIActions {
                 logger.info(String.format("Attempt %s: Clearing the field", attempts + 1));
                 field.clear();
 
-                // Wait until the "value" attribute of the element is empty to ensure it's cleared
                 wait.until(ExpectedConditions.attributeToBe(field, "value", ""));
-
-                // Wait until the field is enabled and interactable
-                wait.until(ExpectedConditions.elementToBeClickable(field));
 
                 logger.info(String.format("Attempt %s: Sending keys to the field", attempts + 1));
                 field.sendKeys(text);
 
-                // Wait until the text is present in the element's "value" attribute
                 boolean textPresent = wait.until(ExpectedConditions.textToBePresentInElementValue(field, text));
                 if (textPresent) {
                     logger.info(String.format("Attempt %s: Successfully populated the field with text", attempts + 1));
-                    return; // Exit from while loop after successful input
+                    return;
                 } else {
                     logger.warn(String.format("Attempt %s: Text was not present in the field after sending keys", attempts + 1));
                 }
+            } catch (StaleElementReferenceException e) {
+                logger.warn(String.format("Attempt %s: StaleElementReferenceException encountered. Retrying...", attempts + 1), e);
             } catch (Exception e) {
                 logger.error(String.format("Attempt %s: Exception occurred while populating the field. Retrying...", attempts + 1), e);
+            }
+            attempts++;
+        }
+    }
+
+    private void retryOnStaleElement(Runnable action) {
+        int attempts = 0;
+        while (attempts < 3) {
+            try {
+                action.run();
+                return;
+            } catch (StaleElementReferenceException e) {
+                logger.warn("StaleElementReferenceException encountered. Retrying...", e);
                 attempts++;
-                if (attempts == 3) {
-                    throw new FieldPopulationException(String.format("Failed to populate field after %s attempts", attempts), e);
-                }
             }
         }
     }
 
-    public boolean isElementDisplayed(WebElement element) {
+    public boolean waitForElementPresence(By locator) {
         try {
-            return wait.until(ExpectedConditions.visibilityOf(element)).isDisplayed();
+            wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+            logger.info(String.format("Element located successfully: %s", locator));
+            return true;
         } catch (org.openqa.selenium.TimeoutException e) {
+            logger.warn(String.format("Timeout waiting for presence of element: %s", locator));
             return false;
         }
+    }
+
+    public boolean waitForElementVisibility(WebElement element) {
+        boolean isElementVisible = false;
+        int attempts = 0;
+        while (attempts < 3) {
+            try {
+                wait.until(ExpectedConditions.visibilityOf(element));
+                isElementVisible = true;
+                break;
+            } catch (org.openqa.selenium.TimeoutException e) {
+                logger.warn(String.format("Attempt %d: Timeout waiting for element visibility: %s", attempts + 1, element));
+            }
+            attempts++;
+        }
+        if (!isElementVisible) {
+            logger.warn(String.format("Element %s is not visible after %d attempts", element, attempts));
+        }
+        return isElementVisible;
     }
 
     public static void navigateToLoginPage(WebDriver driver, String baseUrl) {

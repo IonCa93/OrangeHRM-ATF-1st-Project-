@@ -1,10 +1,8 @@
 @API @Run
 Feature: Retrieve Customer Information from OrangeHRM
 
-  Background: Authentication with Bearer token
-    Given Bearer token is generated
-
   Scenario: Fetch client information
+    Given Bearer token is generated
     When user sends a GET request
     Then the response status code should be 200
     And the response body should contain the following customer data:

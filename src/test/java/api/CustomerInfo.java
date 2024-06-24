@@ -12,7 +12,7 @@ public class CustomerInfo {
     private String isDeleted;
 
     @JsonProperty("name")
-    private String name; // Adjusted to match JSON field
+    private String name;
 
     @JsonProperty("description")
     private String description;
@@ -22,31 +22,15 @@ public class CustomerInfo {
         return customerId;
     }
 
-    public void setCustomerId(String customerId) {
-        this.customerId = customerId;
-    }
-
     public String getIsDeleted() {
         return isDeleted;
-    }
-
-    public void setIsDeleted(String isDeleted) {
-        this.isDeleted = isDeleted;
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getDescription() {
         return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
     }
 }

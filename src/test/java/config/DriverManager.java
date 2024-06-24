@@ -10,20 +10,23 @@ import org.slf4j.LoggerFactory;
 import utils.PropertiesUtil;
 
 public class DriverManager {
+
     private static final Logger logger = LoggerFactory.getLogger(DriverManager.class);
+
     public static WebDriver driver;
 
-    // private constructor to prevent instantiation from other classes
+    private static final String BROWSER_TYPE_PROPERTY = "browser.type";
+
+    private static final String BROWSER_HEADLESS_PROPERTY = "browser.headless";
+
     private DriverManager() { }
 
-    // Method to get the browser type from properties
     private static String getBrowserType() {
-        return PropertiesUtil.getProperty("browser.type").toUpperCase();
+        return PropertiesUtil.getProperty(BROWSER_TYPE_PROPERTY).toUpperCase();
     }
 
-    // Method to determine if the browser should run in headless mode
     private static boolean isHeadless() {
-        return Boolean.parseBoolean(PropertiesUtil.getProperty("browser.headless"));
+        return Boolean.parseBoolean(PropertiesUtil.getProperty(BROWSER_HEADLESS_PROPERTY));
     }
 
     public static WebDriver getDriver() {
@@ -31,11 +34,11 @@ public class DriverManager {
             String browserType = getBrowserType();
             boolean headless = isHeadless();
 
-            driver = switch (browserType) {
+            driver = switch (browserType.toUpperCase()) {
                 case "CHROME" -> initChromeDriver(headless);
                 case "FIREFOX" -> initFirefoxDriver(headless);
                 default -> {
-                    logger.error("Unsupported browser type: {}", browserType);
+                    logger.error(String.format("Unsupported browser type: %s", browserType));
                     throw new IllegalArgumentException("Unsupported browser type: " + browserType);
                 }
             };
