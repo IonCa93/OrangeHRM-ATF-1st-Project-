@@ -1,8 +1,0 @@
-2024-03-27 17:14:20.231 [main] INFO  stepDefinitions.BaseDefine - Opened OrangeHRM home page
-2024-03-27 17:14:20.932 [main] INFO  stepDefinitions.BaseDefine - Entered username and password from config file
-2024-03-27 17:14:22.019 [main] INFO  stepDefinitions.BaseDefine - Clicked on the login button
-2024-03-27 17:14:22.694 [main] INFO  stepDefinitions.BaseDefine - Dashboard tab is displayed
-2024-03-27 17:14:23.526 [main] INFO  stepDefinitions.BaseDefine - Buzz tab is displayed
-2024-03-27 17:14:24.154 [main] INFO  stepDefinitions.BaseDefine - Post text added
-2024-03-27 17:14:24.609 [main] INFO  stepDefinitions.BaseDefine - Post button clicked
-2024-03-27 17:14:24.640 [main] INFO  stepDefinitions.BaseDefine - New Post is present on the page

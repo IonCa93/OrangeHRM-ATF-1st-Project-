@@ -1,4 +1,0 @@
-2024-05-02 15:26:02.444 [main] INFO  stepDefinitions.UILoginSteps - Opened OrangeHRM home page
-2024-05-02 15:26:03.139 [main] INFO  stepDefinitions.UILoginSteps - Entered username and password from config file
-2024-05-02 15:26:04.332 [main] INFO  stepDefinitions.UILoginSteps - Clicked on the login button
-2024-05-02 15:26:04.928 [main] INFO  stepDefinitions.UILoginSteps - Dashboard tab is displayed

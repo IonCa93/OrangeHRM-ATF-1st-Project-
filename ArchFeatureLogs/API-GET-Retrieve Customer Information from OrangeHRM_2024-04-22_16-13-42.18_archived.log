@@ -1,3 +1,0 @@
-2024-04-22 16:13:43.819 [main] INFO  stepDefinitions.BaseDefine - Bearer token is generated
-2024-04-22 16:13:44.566 [main] INFO  stepDefinitions.BaseDefine - GET request performed
-2024-04-22 16:13:44.581 [main] INFO  stepDefinitions.BaseDefine - Response status code is 200

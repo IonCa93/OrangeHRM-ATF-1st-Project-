@@ -1,5 +1,0 @@
-2024-04-10 14:32:56.986 [main] INFO  stepDefinitions.BaseDefine - Bearer token is generated
-2024-04-10 14:32:57.928 [main] INFO  stepDefinitions.BaseDefine - POST request performed
-2024-04-10 14:32:57.928 [main] INFO  stepDefinitions.BaseDefine - Request body sent: {"firstName":"Qmdctvau","lastName":"Xxkbfqvn","locationId":"5","middleName":"Tctwetxh","employeeId":"4838","joinedDate":"2024-05-07"}
-2024-04-10 14:32:57.930 [main] INFO  stepDefinitions.BaseDefine - Response status code is 201
-2024-04-10 14:32:57.935 [main] ERROR stepDefinitions.BaseDefine - Parameter 'joinedDate' in request body not found in response body

@@ -1,3 +1,0 @@
-2024-04-22 16:42:36.908 [main] INFO  stepDefinitions.BaseDefine - Bearer token is generated
-2024-04-22 16:42:37.478 [main] INFO  stepDefinitions.BaseDefine - POST request performed
-2024-04-22 16:42:37.478 [main] INFO  stepDefinitions.BaseDefine - Request body sent: {"firstName":"Johnny","lastName":"Cash","locationId":"3","middleName":"Dorian","employeeId":"2179","joinedDate":"2024-11-14"}

@@ -1,4 +1,0 @@
-2024-04-09 17:58:44.440 [main] INFO  stepDefinitions.BaseDefine - Bearer token is generated
-2024-04-09 17:58:45.683 [main] INFO  stepDefinitions.BaseDefine - POST request performed
-2024-04-09 17:58:45.684 [main] INFO  stepDefinitions.BaseDefine - Request body sent: {"firstName":"Jean","lastName":"Jeunet","locationId":"2","chkLogin":false,"autoGenerateEmployeeId":false,"middleName":"Pierre","employeeId":"3868","joinedDate":"2024-02-09"}
-2024-04-09 17:58:45.688 [main] INFO  stepDefinitions.BaseDefine - Response status code is 201
