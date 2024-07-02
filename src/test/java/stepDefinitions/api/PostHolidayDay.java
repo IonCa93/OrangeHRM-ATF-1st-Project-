@@ -20,9 +20,6 @@ public class PostHolidayDay {
     private final Logger logger = LoggerFactory.getLogger(PostHolidayDay.class);
     private static final String HOLIDAY_API_ENDPOINT = PropertiesUtil.getProperty("api.holiday.endpoint");
 
-    private Response lastResponse;
-    private String requestBodySent;
-
     @When("POST request is performed with following request body:")
     public void sendHolidayData(DataTable dataTable) throws Exception {
         Map<String, String> holidayData = new HashMap<>(dataTable.asMap(String.class, String.class));
@@ -33,30 +30,38 @@ public class PostHolidayDay {
         String requestBodyJson = objectMapper.writeValueAsString(holidayRequest);
         logger.info(String.format("Request body JSON: %s", requestBodyJson));
 
-        lastResponse = ApiActions.sendPostRequest(HOLIDAY_API_ENDPOINT, requestBodyJson);
+        // Send POST request and store response in scenario context
+        Response lastResponse = ApiActions.sendPostRequest(HOLIDAY_API_ENDPOINT, requestBodyJson);
+        ScenarioContext.getInstance().saveContext(ContextKey.LAST_RESPONSE, lastResponse);
+        ScenarioContext.getInstance().saveContext(ContextKey.RESPONSE_STATUS_CODE, lastResponse);
 
-        requestBodySent = requestBodyJson;
-        ScenarioContext.getInstance().saveContext(ContextKey.REQUEST_BODY_SENT, requestBodySent);
+        // Store request body in scenario context
+        ScenarioContext.getInstance().saveContext(ContextKey.REQUEST_BODY_SENT, requestBodyJson);
     }
 
     @Then("the status code received in the response is {int}")
     public void checkStatusCode(int expectedStatusCode) throws Exception {
+        // Retrieve last response from scenario context
+        Response lastResponse = ScenarioContext.getInstance().getContext(ContextKey.RESPONSE_STATUS_CODE, Response.class);
         if (lastResponse == null) {
             throw new Exception("No previous response to verify status code");
         }
+
+        // Verify status code
         int actualStatusCode = lastResponse.getStatusCode();
-        String responseBody = lastResponse.getBody().asString();
-        logger.info(String.format("Response body: %s", responseBody));
+        logger.info(String.format("Response status code: %s", actualStatusCode));
         Assert.assertEquals("Response status code does not match expected", expectedStatusCode, actualStatusCode);
-        logger.info(String.format("Response status code is %s", expectedStatusCode));
     }
 
     @Then("the response body parameters match the request body")
     public void verifyResponseBodyMatchesRequest() throws Exception {
+        // Retrieve last response from scenario context
+        Response lastResponse = ScenarioContext.getInstance().getContext(ContextKey.LAST_RESPONSE, Response.class);
         if (lastResponse == null) {
             throw new Exception("Response body is null or empty");
         }
 
+        // Retrieve request body from scenario context
         String requestBodyString = ScenarioContext.getInstance().<String>getContext(ContextKey.REQUEST_BODY_SENT, String.class);
 
         JsonPath responseJson = lastResponse.jsonPath();

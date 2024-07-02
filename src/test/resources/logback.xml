@@ -17,7 +17,7 @@
             <pattern>%date [%thread] %-5level %logger{35} - %msg%n</pattern>
         </encoder>
     </appender>
-    <root level="DEBUG">
+    <root level="INFO">
         <appender-ref ref="CONSOLE" />
         <appender-ref ref="FEATURE_FILE" />
     </root>

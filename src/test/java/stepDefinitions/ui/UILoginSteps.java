@@ -22,9 +22,10 @@ public class UILoginSteps {
         loginPage.logInWithCreds(Credentials.ADMIN);
     }
 
-    @Then("the [Default] tab is displayed")
-    public void checkDefaultTab() {
-        assertTrue("Dashboard tab is not displayed", loginPage.isDefaultTabDisplayed());
+    @Then("the {string} tab is displayed")
+    public void checkTabDisplayed(String tabName) {
+        boolean isDisplayed = loginPage.isTabDisplayed(tabName);
+        assertTrue(tabName + " tab is not displayed", isDisplayed);
     }
 
     @When("the user initiates the login process with invalid credentials {string} and {string}")

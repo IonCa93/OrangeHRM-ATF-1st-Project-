@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
         features = "src/test/resources/features",
         glue = {"stepDefinitions", "Hooks"},
         monochrome = true,
-        tags = "@UI or @dsdsd and not @ignore",
+        tags = "@UI or @API and not @ignore",
         plugin = {
                 "pretty",
                 "html:target/reports/Reports.html",

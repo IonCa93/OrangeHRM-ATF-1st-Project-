@@ -39,7 +39,7 @@ public class Logging {
         featureLogAppender = setupLogging(FEATURE_LOG_DIRECTORY_PATH, featureLogFileName);
     }
 
-    private FileAppender<ILoggingEvent> setupLogging(String logDirectoryPath, String logFileName) {
+    private FileAppender<ILoggingEvent> setupLogging(String logDirectoryPath, String logFileName) {//TODO sort by tmstmp
         LoggerContext loggerContext = (LoggerContext) LoggerFactory.getILoggerFactory();
 
         PatternLayout layout = new PatternLayout();

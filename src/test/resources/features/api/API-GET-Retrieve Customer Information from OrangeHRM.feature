@@ -1,4 +1,4 @@
-@API @Run
+@API @Run @test
 Feature: Retrieve Customer Information from OrangeHRM
 
   Scenario: Fetch client information

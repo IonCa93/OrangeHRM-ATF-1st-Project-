@@ -53,9 +53,14 @@ public class LoginPage extends BasePage {
 
 
 
-    public boolean isDefaultTabDisplayed() {
-        logger.info("Default tab is displayed");
-        return UIActions.waitForElementVisibility(dashboardLabel);
+    public boolean isTabDisplayed(String tabName) {
+        if ("Dashboard".equals(tabName)) {
+            logger.info("Dashboard tab is displayed");
+            return UIActions.waitForElementVisibility(dashboardLabel);
+        } else {
+            logger.warn(tabName + " tab is not defined");
+            return false;
+        }
     }
 
     public WebElement getErrorMessage() {

@@ -9,7 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import utils.PropertiesUtil;
 
-public class DriverManager {
+public class DriverManager {//TODO move in utils
 
     private static final Logger logger = LoggerFactory.getLogger(DriverManager.class);
 

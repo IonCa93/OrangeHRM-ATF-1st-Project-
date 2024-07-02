@@ -26,7 +26,7 @@ public class Hooks {
 
     @Before
     public void beforeScenario(Scenario scenario) {
-        String featureName = extractFeatureName(scenario);
+        String featureName = LogNameUtils.extractFeatureName(scenario);
         String scenarioName = scenario.getName();
         logging.startLogging(featureName, scenarioName);
     }
@@ -44,13 +44,12 @@ public class Hooks {
 
     @After(value = "@UI")
     public void tearDown(Scenario scenario) {
-        if (scenario.getSourceTagNames().contains("@UI")) {
-            logger.info(String.format("Taking screenshot before closing the browser for scenario: %s", scenario.getName()));
-            WebDriver driver = ScenarioContext.getInstance().getContext(ContextKey.WEB_DRIVER_INSTANCE, WebDriver.class);
-            ScreenshotUtils.takeScreenshot(driver, scenario);
-            DriverManager.quitDriver();
-        }
+        logger.info(String.format("Taking screenshot before closing the browser for scenario: %s", scenario.getName()));
+        WebDriver driver = ScenarioContext.getInstance().getContext(ContextKey.WEB_DRIVER_INSTANCE, WebDriver.class);
+        ScreenshotUtils.takeScreenshot(driver, scenario);
+        DriverManager.quitDriver();
     }
+
 
     @After
     public void clearScenarioContext() {
@@ -76,10 +75,5 @@ public class Hooks {
             logger.error("Failed to read log file: " + logFilePath, e);
             logger.warn("Logs will not be attached to the report due to the error.");
         }
-    }
-
-    private String extractFeatureName(Scenario scenario) {
-        String featureName = scenario.getUri().getPath();
-        return featureName.substring(featureName.lastIndexOf('/') + 1).replace(".feature", "");
     }
 }
