@@ -1,3 +1,23 @@
+V6.3 [jun-2026] - API token and GET customer refactor:
+
+- Updated OAuth bearer token generation for the OrangeHRM sandbox issueToken endpoint.
+- Token request now uses client_id, client_secret, and grant_type=client_credentials only.
+- Removed username/password token parameters from ApiTokenGenerator and ApiProperties.
+- Updated customer GET BDD expected data to match the current API response with 13 customers.
+- Added explicit description markers in customer validation: <blank> for empty string and <null> for JSON null.
+- Refactored customer comparison to handle null, blank, and trailing whitespace in API descriptions.
+- Changed missing customer validation from NoPreviousResponseException to Assert.fail for clearer QA failure reporting.
+- Updated API sandbox client secret in config.properties without documenting the secret value in README.
+
+
+V6.2 - FINAL (after Assessment, with last observations implemented):
+
+•	extractFeatureName() method move to 'Utils' package.   -- DONE+++
+•	the [Default] tab is displayed -> more generic.   -- DONE+++
+•	Hook `@After("@UI")` contains `if (scenario.getSourceTagNames().contains("@UI")` <- this is redundant   -- DONE+++
+•	'private Response lastResponse` should not be a class level variable. Use scenario context. - POST_api   -- DONE+++
+
+
 V4.0
 
 1. Consolidated Hooks in 1 class;
@@ -6,13 +26,6 @@ V4.0
 4. BrowserActions - detailed logging with specification of fieldName+value inserted;
 5. Login - moved OpenHomePage into Hooks class;
 6. Background step for UI-Login feature (To be revised)
-
-V6.2 - FINAL (after Assessment, with last observations implemented):
-
-•	extractFeatureName() method move to 'Utils' package.   -- DONE+++
-•	the [Default] tab is displayed -> more generic.   -- DONE+++
-•	Hook `@After("@UI")` contains `if (scenario.getSourceTagNames().contains("@UI")` <- this is redundant   -- DONE+++
-•	'private Response lastResponse` should not be a class level variable. Use scenario context. - POST_api   -- DONE+++
 
 
    --------------------------------->>>>>>>>>>>>Earlier changes:
@@ -190,16 +203,4 @@ V6.2 - FINAL (after Assessment, with last observations implemented):
 - screenshotDirectory.mkdirs(); // TODO correct save/notSave dir logic   -- DONE+++
 
 ----------------------->>>PRE-assessment #2 observations:<<<---------------------------------------------------------
-
-
-V6.3 - API token and GET customer refactor:
-
-- Updated OAuth bearer token generation for the OrangeHRM sandbox issueToken endpoint.
-- Token request now uses client_id, client_secret, and grant_type=client_credentials only.
-- Removed username/password token parameters from ApiTokenGenerator and ApiProperties.
-- Updated customer GET BDD expected data to match the current API response with 13 customers.
-- Added explicit description markers in customer validation: <blank> for empty string and <null> for JSON null.
-- Refactored customer comparison to handle null, blank, and trailing whitespace in API descriptions.
-- Changed missing customer validation from NoPreviousResponseException to Assert.fail for clearer QA failure reporting.
-- Updated API sandbox client secret in config.properties without documenting the secret value in README.
 - Updated Faker dependency usage from javafaker to datafaker and bumped Logback versions.
