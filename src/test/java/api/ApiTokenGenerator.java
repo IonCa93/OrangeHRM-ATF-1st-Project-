@@ -14,9 +14,6 @@ public class ApiTokenGenerator {
 
     private static final String CLIENT_SECRET = ApiProperties.CLIENT_SECRET.getValue();
 
-    private static final String USERNAME = ApiProperties.USERNAME.getValue();
-
-    private static final String PASSWORD = ApiProperties.PASSWORD.getValue();
 
     private static final String GRANT_TYPE = "client_credentials";
 
@@ -28,8 +25,6 @@ public class ApiTokenGenerator {
                 .formParam("client_id", CLIENT_ID)
                 .formParam("client_secret", CLIENT_SECRET)
                 .formParam("grant_type", GRANT_TYPE)
-                .formParam("username", USERNAME)
-                .formParam("password", PASSWORD)
                 .post(TOKEN_ENDPOINT);
 
         if (response.getStatusCode() != SUCCESS_STATUS_CODE) {

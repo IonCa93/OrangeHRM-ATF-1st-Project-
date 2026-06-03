@@ -191,3 +191,15 @@ V6.2 - FINAL (after Assessment, with last observations implemented):
 
 ----------------------->>>PRE-assessment #2 observations:<<<---------------------------------------------------------
 
+
+V6.3 - API token and GET customer refactor:
+
+- Updated OAuth bearer token generation for the OrangeHRM sandbox issueToken endpoint.
+- Token request now uses client_id, client_secret, and grant_type=client_credentials only.
+- Removed username/password token parameters from ApiTokenGenerator and ApiProperties.
+- Updated customer GET BDD expected data to match the current API response with 13 customers.
+- Added explicit description markers in customer validation: <blank> for empty string and <null> for JSON null.
+- Refactored customer comparison to handle null, blank, and trailing whitespace in API descriptions.
+- Changed missing customer validation from NoPreviousResponseException to Assert.fail for clearer QA failure reporting.
+- Updated API sandbox client secret in config.properties without documenting the secret value in README.
+- Updated Faker dependency usage from javafaker to datafaker and bumped Logback versions.

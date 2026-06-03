@@ -37,15 +37,26 @@ public class ApiActions {
     }
 
     public static boolean compareCustomerData(CustomerInfo customer, Map<String, String> expectedCustomer) {
-        String customerId = expectedCustomer.get("customerId");
-        String isDeleted = expectedCustomer.get("isDeleted");
-        String name = expectedCustomer.get("name");
-        String description = expectedCustomer.get("description");
+        return Objects.equals(customer.getCustomerId(), expectedCustomer.get("customerId"))
+                && Objects.equals(customer.getIsDeleted(), expectedCustomer.get("isDeleted"))
+                && Objects.equals(customer.getName(), expectedCustomer.get("name"))
+                && isDescriptionMatching(customer.getDescription(), expectedCustomer.get("description"));
+    }
 
-        return customer.getCustomerId().equals(customerId)
-                && customer.getIsDeleted().equals(isDeleted)
-                && customer.getName().equals(name)
-                && customer.getDescription().equals(description);
+    private static boolean isDescriptionMatching(String actualDescription, String expectedDescription) {
+        if ("<null>".equalsIgnoreCase(expectedDescription)) {
+            return actualDescription == null;
+        }
+
+        if ("<blank>".equalsIgnoreCase(expectedDescription)) {
+            return "".equals(actualDescription);
+        }
+
+        if (actualDescription == null || expectedDescription == null) {
+            return Objects.equals(actualDescription, expectedDescription);
+        }
+
+        return actualDescription.trim().equals(expectedDescription.trim());
     }
 
     public static void replaceDynamicFields(Map<String, String> holidayData) {

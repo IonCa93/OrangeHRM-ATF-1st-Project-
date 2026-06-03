@@ -63,7 +63,7 @@ public class GetCustomerInfo {
                 }
             }
             if (!found) {
-                throw new NoPreviousResponseException("Customer data not found in response: " + expectedCustomer);
+                Assert.fail("Customer data not found in response: " + expectedCustomer);
             }
         }
     }

@@ -6,16 +6,17 @@ Feature: Retrieve Customer Information from OrangeHRM
     When user sends a GET request
     Then the response status code should be 200
     And the response body should contain the following customer data:
-      | customerId | isDeleted | name                                | description                                              |
-      | 1          | 0         | 01 Communique Laboratory Inc(OCQLF) | 01 Communique Laboratory Inc(OCQLF) Description          |
-      | 2          | 0         | 1 800 Flowers.com Inc(FLWS)         | 1 800 Flowers.com Inc(FLWS) Description                  |
-      | 3          | 0         | 141 Capital Inc(ONCP)               | 141 Capital Inc(ONCP) Description                        |
-      | 4          | 0         | 1847 Holdings LLC(0955837D)         | 1847 Holdings LLC(0955837D) Description                  |
-      | 5          | 0         | 1867 Western Financial Corp(WFCL)   | 1867 Western Financial Corp(WFCL) Description            |
-      | 6          | 0         | 1mage Software Inc(ISOL)            | 1mage Software Inc(ISOL) Description                     |
-      | 7          | 0         | 1st Capital Bank(FISB)              | 1st Capital Bank(FISB) Description                       |
-      | 8          | 0         | 1st Century Bancshares Inc(FCTY)    | 1st Century Bancshares Inc(FCTY) Description             |
-      | 9          | 0         | 1st Colonial Bancorp Inc(FCOB)      | 1st Colonial Bancorp Inc(FCOB) Description               |
-      | 10         | 0         | 1st Constitution Bancorp(FCCY)      | 1st Constitution Bancorp(FCCY) Description               |
-      | 11         | 0         | Nitso Inegrations                   | Nitso Integration is client whose domain is integrations |
-      | 12         | 0         | Test                                | Nitso Integration is client whose domain is integrations |
+      | customerId | isDeleted | name                                      | description                                                                |
+      | 1          | 0         | Apache Software Foundation                | non-profit corporation to support Apache software projects                 |
+      | 2          | 0         | Discovery Communications, Inc.            | Global mass media and entertainment company                                |
+      | 3          | 0         | The Priceline Group                       | American-based provider of travel and related online services to consumers |
+      | 4          | 0         | HR administrator                          | <blank>                                                                    |
+      | 5          | 0         | Technical Support                         | <blank>                                                                    |
+      | 6          | 0         | Dhiavakar Software Foundation             | Multinational beverage corporation and manufacturer                        |
+      | 7          | 0         | Nitso Inegrations                         | Nitso Integration is client whose domain is integrations                   |
+      | 8          | 0         | Dhiva Software Foundation                 | Multinational beverage corporation and manufacturer                        |
+      | 9          | 0         | Dhivakar Software Foundation              | <null>                                                                     |
+      | 10         | 0         | Updated customer-test                     | <blank>                                                                    |
+      | 11         | 0         | Dhiva Software Foundation for api testing | Multinational beverage corporation and manufacturer                        |
+      | 12         | 0         | new one customer                          | new test                                                                   |
+      | 13         | 0         | Zoro corporation                          | Nitso Integration is client whose domain is integrations                   |
