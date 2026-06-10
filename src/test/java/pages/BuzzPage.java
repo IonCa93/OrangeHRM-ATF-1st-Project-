@@ -16,8 +16,7 @@ public class BuzzPage extends BasePage {
     @FindBy(xpath = "//textarea[@placeholder=\"What's on your mind?\"]")
     private WebElement whatsOnYourMindField;
 
-    @FindBy(xpath = "//button[@type='submit']")
-    private WebElement postButton;
+    private static final By POST_BUTTON = By.xpath("//button[@type='submit']");
 
     public BuzzPage(WebDriver driver) {
         super(driver);
@@ -34,7 +33,7 @@ public class BuzzPage extends BasePage {
     }
 
     public void clickPostButton() {
-        UIActions.clickElement(postButton);
+        UIActions.clickElement(POST_BUTTON);
         logger.info("Clicked on the post button");
     }
 

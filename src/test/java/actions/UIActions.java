@@ -29,6 +29,11 @@ public class UIActions {
         logger.info(String.format("Clicked on element: %s", element));
     }
 
+    public void clickElement(By locator) {
+        retryOnStaleElement(() -> wait.until(ExpectedConditions.elementToBeClickable(locator)).click());
+        logger.info(String.format("Clicked on element located by: %s", locator));
+    }
+
     public void inputText(WebElement element, String text, String fieldName) {
         wait.until(ExpectedConditions.elementToBeClickable(element)).clear();
         element.sendKeys(text);
@@ -100,15 +105,20 @@ public class UIActions {
 
     private void retryOnStaleElement(Runnable action) {
         int attempts = 0;
+        StaleElementReferenceException lastException = null;
+
         while (attempts < 3) {
             try {
                 action.run();
                 return;
             } catch (StaleElementReferenceException e) {
+                lastException = e;
                 logger.warn("StaleElementReferenceException encountered. Retrying...", e);
                 attempts++;
             }
         }
+
+        throw new IllegalStateException("Element stayed stale after " + attempts + " attempts", lastException);
     }
 
     public boolean waitForElementPresence(By locator) {

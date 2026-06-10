@@ -7,6 +7,7 @@ V6.4 - POM vulnerability cleanup, UI driver setup, and Buzz post stability:
 - Fixed ChromeDriver startup after Selenium 4.44 upgrade by using WebDriverManager instead of Selenium Manager.
 - Added project-local WebDriver cache path: target/webdriver-cache, avoiding Windows access issues from the user-level Selenium cache.
 - Updated Buzz post text input retry validation to treat null field value as empty, verify inserted text using DOM property/attribute/text fallback, and fail at the real input step if text is not inserted.
+- Updated Buzz Post button click to re-locate the submit button during stale-element retries after the editor re-renders.
 - API tests were confirmed working after dependency updates.
 - Maven test-compile was executed successfully after the POM, DriverManager, and UIActions changes.
 
