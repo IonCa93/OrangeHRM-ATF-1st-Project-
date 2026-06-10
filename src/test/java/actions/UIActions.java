@@ -37,6 +37,9 @@ public class UIActions {
 
     public void inputTextWithRetry(WebElement element, String text) {
         int attempts = 0;
+        Exception lastException = null;
+        String lastObservedValue = null;
+
         while (attempts < 3) {
             try {
                 logger.info(String.format("Attempt %s: Waiting for element to be clickable", attempts + 1));
@@ -45,25 +48,54 @@ public class UIActions {
                 logger.info(String.format("Attempt %s: Clearing the field", attempts + 1));
                 field.clear();
 
-                wait.until(ExpectedConditions.attributeToBe(field, "value", ""));
+                wait.until(driver -> isFieldEmpty(field));
 
                 logger.info(String.format("Attempt %s: Sending keys to the field", attempts + 1));
                 field.sendKeys(text);
 
-                boolean textPresent = wait.until(ExpectedConditions.textToBePresentInElementValue(field, text));
+                boolean textPresent = wait.until(driver -> isTextPresentInField(field, text));
                 if (textPresent) {
                     logger.info(String.format("Attempt %s: Successfully populated the field with text", attempts + 1));
                     return;
-                } else {
-                    logger.warn(String.format("Attempt %s: Text was not present in the field after sending keys", attempts + 1));
                 }
+
+                lastObservedValue = getInputValue(field);
+                logger.warn(String.format("Attempt %s: Text was not present in the field after sending keys. Current value: '%s'",
+                        attempts + 1, lastObservedValue));
             } catch (StaleElementReferenceException e) {
+                lastException = e;
                 logger.warn(String.format("Attempt %s: StaleElementReferenceException encountered. Retrying...", attempts + 1), e);
             } catch (Exception e) {
+                lastException = e;
                 logger.error(String.format("Attempt %s: Exception occurred while populating the field. Retrying...", attempts + 1), e);
             }
             attempts++;
         }
+
+        String errorMessage = String.format("Failed to populate field with text '%s' after %s attempts. Last observed value: '%s'",
+                text, attempts, lastObservedValue);
+        logger.error(errorMessage, lastException);
+        throw new IllegalStateException(errorMessage, lastException);
+    }
+
+    private boolean isFieldEmpty(WebElement element) {
+        String value = getInputValue(element);
+        return value == null || value.isEmpty();
+    }
+
+    private boolean isTextPresentInField(WebElement element, String expectedText) {
+        return expectedText.equals(getInputValue(element));
+    }
+
+    private String getInputValue(WebElement element) {
+        String value = element.getDomProperty("value");
+        if (value == null) {
+            value = element.getAttribute("value");
+        }
+        if (value == null || value.isEmpty()) {
+            value = element.getText();
+        }
+        return value;
     }
 
     private void retryOnStaleElement(Runnable action) {

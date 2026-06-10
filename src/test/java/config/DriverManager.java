@@ -1,5 +1,6 @@
 package config;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -18,6 +19,8 @@ public class DriverManager {//TODO move in utils
     private static final String BROWSER_TYPE_PROPERTY = "browser.type";
 
     private static final String BROWSER_HEADLESS_PROPERTY = "browser.headless";
+
+    private static final String DRIVER_CACHE_PATH = "target/webdriver-cache";
 
     private DriverManager() { }
 
@@ -47,6 +50,7 @@ public class DriverManager {//TODO move in utils
     }
 
     private static WebDriver initChromeDriver(boolean headless) {
+        WebDriverManager.chromedriver().cachePath(DRIVER_CACHE_PATH).setup();
         ChromeOptions options = new ChromeOptions();
         if (headless) {
             options.addArguments("--headless");
@@ -56,6 +60,7 @@ public class DriverManager {//TODO move in utils
     }
 
     private static WebDriver initFirefoxDriver(boolean headless) {
+        WebDriverManager.firefoxdriver().cachePath(DRIVER_CACHE_PATH).setup();
         FirefoxOptions options = new FirefoxOptions();
         if (headless) {
             options.addArguments("--headless");

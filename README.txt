@@ -1,3 +1,14 @@
+V6.4 - POM vulnerability cleanup, UI driver setup, and Buzz post stability:
+
+- Updated vulnerable/outdated Maven dependencies: Selenium, WebDriverManager, Cucumber, org.json, Rest Assured, Logback, SLF4J, and Datafaker.
+- Added dependencyManagement overrides for vulnerable/old transitive libraries: Apache HttpClient/Core/Mime, Commons IO, Commons Logging, Guava, Rhino, Joda-Time, JavaMail API, and jcl-over-slf4j.
+- Moved automation libraries to test scope where applicable and pinned Maven Compiler/Surefire plugins for Java 21.
+- Fixed ChromeDriver startup after Selenium 4.44 upgrade by using WebDriverManager instead of Selenium Manager.
+- Added project-local WebDriver cache path: target/webdriver-cache, avoiding Windows access issues from the user-level Selenium cache.
+- Updated Buzz post text input retry validation to treat null field value as empty, verify inserted text using DOM property/attribute/text fallback, and fail at the real input step if text is not inserted.
+- API tests were confirmed working after dependency updates.
+- Maven test-compile was executed successfully after the POM, DriverManager, and UIActions changes.
+
 V4.0
 
 1. Consolidated Hooks in 1 class;
