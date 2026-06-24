@@ -21,8 +21,7 @@ public class BuzzPageSteps {
     public void userMakesPost() {
         buzzPage.clickBuzzMenuItem();
         String randomText = faker.lorem().sentence();
-        buzzPage.populatePostField(randomText);
-        buzzPage.clickPostButton();
+        buzzPage.createPost(randomText);
         scenarioContext.saveContext(ContextKey.RANDOM_POST_TEXT, randomText);
     }
 
