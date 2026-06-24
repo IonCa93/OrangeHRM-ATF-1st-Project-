@@ -8,6 +8,7 @@ import enums.ContextKey;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,6 +25,8 @@ public class Hooks {
 
     private static final String LOG_FILE_PATH = "target/Evidence/logs/featureLogs";
 
+    private static final Dimension DESKTOP_WINDOW_SIZE = new Dimension(1920, 1080);
+
     @Before
     public void beforeScenario(Scenario scenario) {
         String featureName = LogNameUtils.extractFeatureName(scenario);
@@ -36,9 +39,13 @@ public class Hooks {
         logger.info("Initializing WebDriver for UI testing");
         String baseUrl = PropertiesUtil.getProperty("baseUrl");
         WebDriver driver = DriverManager.getDriver();
-        driver.manage().window().maximize();
+        if (DriverManager.isHeadless()) {
+            driver.manage().window().setSize(DESKTOP_WINDOW_SIZE);
+        } else {
+            driver.manage().window().maximize();
+        }
         ScenarioContext.getInstance().saveContext(ContextKey.WEB_DRIVER_INSTANCE, driver);
-        logger.info("WebDriver initialized and browser window maximized successfully");
+        logger.info("WebDriver initialized and browser window configured successfully");
         UIActions.navigateToLoginPage(driver, baseUrl);
     }
 

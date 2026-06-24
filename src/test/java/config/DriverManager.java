@@ -22,13 +22,19 @@ public class DriverManager {//TODO move in utils
 
     private static final String DRIVER_CACHE_PATH = "target/webdriver-cache";
 
+    private static final String HEADLESS_WINDOW_SIZE = "--window-size=1920,1080";
+
+    private static final String HEADLESS_WIDTH = "--width=1920";
+
+    private static final String HEADLESS_HEIGHT = "--height=1080";
+
     private DriverManager() { }
 
     private static String getBrowserType() {
         return PropertiesUtil.getProperty(BROWSER_TYPE_PROPERTY).toUpperCase();
     }
 
-    private static boolean isHeadless() {
+    public static boolean isHeadless() {
         return Boolean.parseBoolean(PropertiesUtil.getProperty(BROWSER_HEADLESS_PROPERTY));
     }
 
@@ -53,7 +59,8 @@ public class DriverManager {//TODO move in utils
         WebDriverManager.chromedriver().cachePath(DRIVER_CACHE_PATH).setup();
         ChromeOptions options = new ChromeOptions();
         if (headless) {
-            options.addArguments("--headless");
+            options.addArguments("--headless=new");
+            options.addArguments(HEADLESS_WINDOW_SIZE);
         }
         logger.info("Starting Chrome browser");
         return new ChromeDriver(options);
@@ -64,6 +71,8 @@ public class DriverManager {//TODO move in utils
         FirefoxOptions options = new FirefoxOptions();
         if (headless) {
             options.addArguments("--headless");
+            options.addArguments(HEADLESS_WIDTH);
+            options.addArguments(HEADLESS_HEIGHT);
         }
         logger.info("Starting Firefox browser");
         return new FirefoxDriver(options);

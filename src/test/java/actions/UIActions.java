@@ -72,7 +72,7 @@ public class UIActions {
                 logger.warn(String.format("Attempt %s: StaleElementReferenceException encountered. Retrying...", attempts + 1), e);
             } catch (Exception e) {
                 lastException = e;
-                logger.error(String.format("Attempt %s: Exception occurred while populating the field. Retrying...", attempts + 1), e);
+                logger.warn(String.format("Attempt %s: Exception occurred while populating the field. Retrying...", attempts + 1), e);
             }
             attempts++;
         }
