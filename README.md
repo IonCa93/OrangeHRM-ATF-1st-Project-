@@ -1,5 +1,22 @@
---------
-V6.4 - POM vulnerability cleanup, UI driver setup, and Buzz post stability:
+# OrangeHRM ATF 1st Project
+
+## V6.4.1 - Fix Buzz UI feature in headless mode
+
+- Fixed headless Chrome viewport behavior for UI tests by using modern headless mode and explicit desktop sizing.
+- Added explicit headless window sizing for Firefox as well, keeping browser behavior consistent across configured browser types.
+- Updated UI setup so headless runs use a fixed `1920x1080` window size, while non-headless runs continue to maximize the browser window.
+- Fixed the Buzz menu click failure in headless mode caused by OrangeHRM rendering the compact layout at a small default viewport.
+- Scoped the Buzz `Post` button locator to the Buzz composer instead of using a generic submit-button locator.
+- Added Buzz post creation verification and retry logic so the flow retries when a submit click does not result in the expected post becoming visible.
+- Made Buzz post text assertion safer by building XPath literals correctly for generated text containing quotes.
+- Consolidated UI teardown into one deterministic flow: screenshot capture, driver quit, scenario context clear, log stop, and log attachment.
+- Fixed intermittent screenshot loss caused by independent `@After` hooks running in an unsafe order.
+- Updated screenshot handling so a missing WebDriver is reported clearly instead of being logged as an unsupported screenshot driver.
+- Reduced noisy retry logging by keeping recoverable retry attempts at `WARN` and final failures at `ERROR`.
+- Verified all UI features in headless mode: Login and Buzz scenarios passed.
+- Verified screenshot teardown in non-headless mode with a headed Login scenario.
+
+## V6.4 - POM vulnerability cleanup, UI driver setup, and Buzz post stability
 
 - Updated vulnerable/outdated Maven dependencies: Selenium, WebDriverManager, Cucumber, org.json, Rest Assured, Logback, SLF4J, and Datafaker.
 - Added dependencyManagement overrides for vulnerable/old transitive libraries: Apache HttpClient/Core/Mime, Commons IO, Commons Logging, Guava, Rhino, Joda-Time, JavaMail API, and jcl-over-slf4j.
@@ -12,8 +29,7 @@ V6.4 - POM vulnerability cleanup, UI driver setup, and Buzz post stability:
 - Maven test-compile was executed successfully after the POM, DriverManager, and UIActions changes.
 
 
---------
-V6.3 - API token and GET customer refactor:
+## V6.3 - API token and GET customer refactor
 
 - Updated OAuth bearer token generation for the OrangeHRM sandbox issueToken endpoint.
 - Token request now uses client_id, client_secret, and grant_type=client_credentials only.
@@ -26,8 +42,7 @@ V6.3 - API token and GET customer refactor:
 - Updated Faker dependency usage from javafaker to datafaker and bumped Logback versions.
 
 
---------
-V6.2 - FINAL (after Assessment, with last observations implemented):
+## V6.2 - FINAL (after Assessment, with last observations implemented)
 
 •	extractFeatureName() method move to 'Utils' package.   -- DONE+++
 •	the [Default] tab is displayed -> more generic.   -- DONE+++
@@ -35,8 +50,7 @@ V6.2 - FINAL (after Assessment, with last observations implemented):
 •	'private Response lastResponse` should not be a class level variable. Use scenario context. - POST_api   -- DONE+++
 
 
---------
-V4.0
+## V4.0
 
 1. Consolidated Hooks in 1 class;
 2. Updated naming for scenarios in UILogin feature;
@@ -44,9 +58,7 @@ V4.0
 4. BrowserActions - detailed logging with specification of fieldName+value inserted;
 5. Login - moved OpenHomePage into Hooks class;
 6. Background step for UI-Login feature (To be revised)
-
-
-   --------------------------------->>>>>>>>>>>>Earlier changes:
+## Earlier changes
 
 ----------------------->>>PRE-assessment #1 observations:<<<---------------------------------------------------------
 

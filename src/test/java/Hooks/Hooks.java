@@ -49,25 +49,37 @@ public class Hooks {
         UIActions.navigateToLoginPage(driver, baseUrl);
     }
 
-    @After(value = "@UI")
-    public void tearDown(Scenario scenario) {
-        logger.info(String.format("Taking screenshot before closing the browser for scenario: %s", scenario.getName()));
+    @After
+    public void afterScenario(Scenario scenario) {
+        try {
+            tearDownDriver(scenario);
+        } finally {
+            try {
+                clearScenarioContext();
+            } finally {
+                logging.stopLogging();
+                attachLogsToReport(scenario);
+            }
+        }
+    }
+
+    private void tearDownDriver(Scenario scenario) {
         WebDriver driver = ScenarioContext.getInstance().getContext(ContextKey.WEB_DRIVER_INSTANCE, WebDriver.class);
-        ScreenshotUtils.takeScreenshot(driver, scenario);
+        if (driver == null) {
+            driver = DriverManager.driver;
+        }
+
+        if (driver != null) {
+            logger.info(String.format("Taking screenshot before closing the browser for scenario: %s", scenario.getName()));
+            ScreenshotUtils.takeScreenshot(driver, scenario);
+        }
+
         DriverManager.quitDriver();
     }
 
-
-    @After
-    public void clearScenarioContext() {
+    private void clearScenarioContext() {
         ScenarioContext.getInstance().clearContext();
         logger.info("Scenario Context successfully cleared");
-    }
-
-    @After
-    public void afterScenario(Scenario scenario) {
-        logging.stopLogging();
-        attachLogsToReport(scenario);
     }
 
     private void attachLogsToReport(Scenario scenario) {

@@ -32,25 +32,31 @@ public class ScreenshotUtils {
     private static final Duration TIMEOUT_DURATION = Duration.ofSeconds(Integer.parseInt(PropertiesUtil.getProperty("timeout.seconds")));
 
     public static void takeScreenshot(WebDriver driver, Scenario scenario) {
-        if (driver instanceof TakesScreenshot) {
-            try {
-                WebDriverWait wait = new WebDriverWait(driver, TIMEOUT_DURATION);;
-                wait.until(ExpectedConditions.visibilityOfElementLocated(By.tagName("body")));
+        if (driver == null) {
+            logger.warn("Screenshot skipped because WebDriver is not available.");
+            return;
+        }
 
-                byte[] screenshotBytes = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-                scenario.attach(screenshotBytes, ATTACHMENT_TYPE, ATTACHMENT_DESCRIPTION);
+        if (!(driver instanceof TakesScreenshot)) {
+            logger.warn(String.format("Driver does not support taking screenshots: %s", driver.getClass().getName()));
+            return;
+        }
 
-                String scenarioName = scenario.getName();
-                String timestamp = dateFormat.format(new Date());
-                String screenshotFilename = scenarioName + "_" + timestamp + ".png";
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, TIMEOUT_DURATION);
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.tagName("body")));
 
-                saveScreenshotToLocalFile(screenshotBytes, screenshotFilename);
-                logger.info(String.format("Screenshot taken for scenario: %s", scenarioName));
-            } catch (Exception e) {
-                logger.error("Failed to capture screenshot or save to file.", e);
-            }
-        } else {
-            logger.warn("Driver does not support taking screenshots.");
+            byte[] screenshotBytes = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+            scenario.attach(screenshotBytes, ATTACHMENT_TYPE, ATTACHMENT_DESCRIPTION);
+
+            String scenarioName = scenario.getName();
+            String timestamp = dateFormat.format(new Date());
+            String screenshotFilename = scenarioName + "_" + timestamp + ".png";
+
+            saveScreenshotToLocalFile(screenshotBytes, screenshotFilename);
+            logger.info(String.format("Screenshot taken for scenario: %s", scenarioName));
+        } catch (Exception e) {
+            logger.error("Failed to capture screenshot or save to file.", e);
         }
     }
 
