@@ -2,18 +2,22 @@
 
 ## V6.4.1 - Fix Buzz UI feature in headless mode
 
-- Fixed headless Chrome viewport behavior for UI tests by using modern headless mode and explicit desktop sizing.
-- Added explicit headless window sizing for Firefox as well, keeping browser behavior consistent across configured browser types.
-- Updated UI setup so headless runs use a fixed `1920x1080` window size, while non-headless runs continue to maximize the browser window.
-- Fixed the Buzz menu click failure in headless mode caused by OrangeHRM rendering the compact layout at a small default viewport.
-- Scoped the Buzz `Post` button locator to the Buzz composer instead of using a generic submit-button locator.
-- Added Buzz post creation verification and retry logic so the flow retries when a submit click does not result in the expected post becoming visible.
-- Made Buzz post text assertion safer by building XPath literals correctly for generated text containing quotes.
-- Consolidated UI teardown into one deterministic flow: screenshot capture, driver quit, scenario context clear, log stop, and log attachment.
+- Fixed headless UI execution by using modern Chrome headless mode, explicit `1920x1080` sizing for headless runs, Firefox headless window sizing, and normal browser maximize behavior for non-headless runs.
+- Kept headless execution controlled by `browser.headless` in `config.properties`.
+- Fixed the Buzz Newsfeed menu failure in headless mode, where OrangeHRM rendered a compact layout when the default headless viewport was too small.
+- Stabilized the Buzz post workflow by scoping the `Post` button to the Buzz composer, retrying post creation until the expected post is visible, and safely building XPath text literals for generated post text.
+- Consolidated UI teardown into a deterministic evidence flow: screenshot capture, driver quit, scenario context clear, log stop, and log attachment.
 - Fixed intermittent screenshot loss caused by independent `@After` hooks running in an unsafe order.
 - Updated screenshot handling so a missing WebDriver is reported clearly instead of being logged as an unsupported screenshot driver.
 - Reduced noisy retry logging by keeping recoverable retry attempts at `WARN` and final failures at `ERROR`.
-- Verified all UI features in headless mode: Login and Buzz scenarios passed.
+- Fixed OSV-reported vulnerable transitive Maven dependencies introduced through `io.github.bonigarcia:webdrivermanager` / Docker Java:
+- `com.fasterxml.jackson.core:jackson-core` from `2.20.1` to `2.22.0`.
+- `com.fasterxml.jackson.core:jackson-databind` from `2.20.1` to `2.22.0`.
+- `com.fasterxml.jackson.core:jackson-annotations` to `2.22`, matching Maven Central availability for the Jackson annotations artifact.
+- `org.apache.httpcomponents.client5:httpclient5` from `5.6` to `5.6.1`.
+- Confirmed no current OSV findings for direct Rest Assured dependencies `io.rest-assured:rest-assured:6.0.0` and `io.rest-assured:json-schema-validator:6.0.0`.
+- Verified the post-fix OSV scan result: `116` resolved test dependencies checked, `0` vulnerable dependencies reported.
+- Verified all configured Cucumber features through `runner.TestRunner`: `7` scenarios passed, `0` failed, `0` skipped.
 - Verified screenshot teardown in non-headless mode with a headed Login scenario.
 
 ## V6.4 - POM vulnerability cleanup, UI driver setup, and Buzz post stability
