@@ -11,6 +11,7 @@ import org.slf4j.LoggerFactory;
 import utils.PropertiesUtil;
 
 import java.time.Duration;
+import java.util.Locale;
 
 public class UIActions {
 
@@ -37,7 +38,12 @@ public class UIActions {
     public void inputText(WebElement element, String text, String fieldName) {
         wait.until(ExpectedConditions.elementToBeClickable(element)).clear();
         element.sendKeys(text);
-        logger.info(String.format("Entering text '%s' into element '%s' with field name '%s'", text, element, fieldName));
+        logger.info(String.format(
+                "Entering text '%s' into element '%s' with field name '%s'",
+                getLogSafeInputText(fieldName, text),
+                element,
+                fieldName
+        ));
     }
 
     public void inputTextWithRetry(WebElement element, String text) {
@@ -155,5 +161,18 @@ public class UIActions {
         driver.get(baseUrl);
         String currentUrl = driver.getCurrentUrl();
         logger.info(String.format("Navigated to the login page. Current URL: %s", currentUrl));
+    }
+
+    private String getLogSafeInputText(String fieldName, String text) {
+        if (fieldName == null) {
+            return text;
+        }
+
+        String normalizedFieldName = fieldName.toLowerCase(Locale.ROOT);
+        if (normalizedFieldName.contains("password") || normalizedFieldName.contains("username")) {
+            return "<masked>";
+        }
+
+        return text;
     }
 }

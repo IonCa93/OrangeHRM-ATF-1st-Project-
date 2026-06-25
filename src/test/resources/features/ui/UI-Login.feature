@@ -15,6 +15,6 @@ Feature: Login functionality
 
     Examples:
       | user        | pass         |
-      | AdminBLAbla | admin123     |
-      | Admin       | admin123*/*/ |
+      | invalidUserOne | wrongPassOne |
+      | invalidUserTwo | wrongPassTwo |
       | testABC     | pass2658     |

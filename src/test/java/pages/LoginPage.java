@@ -41,7 +41,7 @@ public class LoginPage extends BasePage {
         UIActions.inputText(usernameField, credentials.getUsername(), "Username");
         UIActions.inputText(passwordField, credentials.getPassword(), "Password");
         UIActions.clickElement(loginButton);
-        logger.info("Logged in with ADMIN credentials");
+        logger.info("Logged in with configured credentials");
     }
 
     public void logInCustomCreds(String username, String password) {

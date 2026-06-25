@@ -4,6 +4,11 @@
 
 - Fixed headless UI execution by using modern Chrome headless mode, explicit `1920x1080` sizing for headless runs, Firefox headless window sizing, and normal browser maximize behavior for non-headless runs.
 - Kept headless execution controlled by `browser.headless` in `config.properties`.
+- Added a non-headless browser setup fallback: if Selenium `maximize()` fails because Chrome/Windows reports the window as minimized, the test applies a `1920x1080` desktop window size and continues.
+- Added safe config logging so sensitive values are masked in evidence logs and reports for `username`, `password`, `client.id`, and `client.secret`.
+- Added optional environment-variable overrides for config values, using the `ORANGEHRM_` prefix while keeping `config.properties` as the default fallback source.
+- Masked username/password values in UI text-input logs and replaced account-identifying login wording with generic configured-credentials wording.
+- Updated invalid Login feature examples so generated Cucumber report source data no longer reuses valid credential fragments.
 - Fixed the Buzz Newsfeed menu failure in headless mode, where OrangeHRM rendered a compact layout when the default headless viewport was too small.
 - Stabilized the Buzz post workflow by scoping the `Post` button to the Buzz composer, retrying post creation until the expected post is visible, and safely building XPath text literals for generated post text.
 - Consolidated UI teardown into a deterministic evidence flow: screenshot capture, driver quit, scenario context clear, log stop, and log attachment.
@@ -19,6 +24,9 @@
 - Verified the post-fix OSV scan result: `116` resolved test dependencies checked, `0` vulnerable dependencies reported.
 - Verified all configured Cucumber features through `runner.TestRunner`: `7` scenarios passed, `0` failed, `0` skipped.
 - Verified screenshot teardown in non-headless mode with a headed Login scenario.
+- Verified headed Login scenarios with `ORANGEHRM_BROWSER_HEADLESS=false`.
+- Verified headless Buzz post scenario with `ORANGEHRM_BROWSER_HEADLESS=true`.
+- Verified generated evidence and report files contain `0` raw occurrences for configured `username`, `password`, `client.id`, and `client.secret`.
 
 ## V6.4 - POM vulnerability cleanup, UI driver setup, and Buzz post stability
 

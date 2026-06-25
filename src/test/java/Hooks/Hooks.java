@@ -10,6 +10,7 @@ import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import utils.*;
@@ -39,14 +40,27 @@ public class Hooks {
         logger.info("Initializing WebDriver for UI testing");
         String baseUrl = PropertiesUtil.getProperty("baseUrl");
         WebDriver driver = DriverManager.getDriver();
-        if (DriverManager.isHeadless()) {
-            driver.manage().window().setSize(DESKTOP_WINDOW_SIZE);
-        } else {
-            driver.manage().window().maximize();
-        }
+        configureBrowserWindow(driver);
         ScenarioContext.getInstance().saveContext(ContextKey.WEB_DRIVER_INSTANCE, driver);
         logger.info("WebDriver initialized and browser window configured successfully");
         UIActions.navigateToLoginPage(driver, baseUrl);
+    }
+
+    private void configureBrowserWindow(WebDriver driver) {
+        if (DriverManager.isHeadless()) {
+            driver.manage().window().setSize(DESKTOP_WINDOW_SIZE);
+        } else {
+            maximizeBrowserWindow(driver);
+        }
+    }
+
+    private void maximizeBrowserWindow(WebDriver driver) {
+        try {
+            driver.manage().window().maximize();
+        } catch (WebDriverException e) {
+            logger.warn("Browser window maximize failed. Applying desktop window size fallback.", e);
+            driver.manage().window().setSize(DESKTOP_WINDOW_SIZE);
+        }
     }
 
     @After
