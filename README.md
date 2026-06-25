@@ -1,6 +1,6 @@
 # OrangeHRM ATF 1st Project
 
-## V6.4.1 - Fix Buzz UI feature in headless mode
+## V6.4.1 - Fix Buzz UI feature in headless mode, Log masking, POM vulnerabilities
 
 - Fixed headless UI execution by using modern Chrome headless mode, explicit `1920x1080` sizing for headless runs, Firefox headless window sizing, and normal browser maximize behavior for non-headless runs.
 - Kept headless execution controlled by `browser.headless` in `config.properties`.
