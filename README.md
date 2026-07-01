@@ -20,6 +20,8 @@
 - `com.fasterxml.jackson.core:jackson-databind` from `2.20.1` to `2.22.0`.
 - `com.fasterxml.jackson.core:jackson-annotations` to `2.22`, matching Maven Central availability for the Jackson annotations artifact.
 - `org.apache.httpcomponents.client5:httpclient5` from `5.6` to `5.6.1`.
+- Confirmed GitHub dependency alert thresholds are satisfied by current pinned versions: `ch.qos.logback:logback-core` uses `1.5.34` (> `1.3.15`), `ch.qos.logback:logback-classic` uses `1.5.34` (> `1.3.12`), and `io.github.bonigarcia:webdrivermanager` uses `6.3.4` (> `6.1.0`).
+- No additional POM version bump was required for these three GitHub notifications because the current pinned versions already meet the CVE remediation thresholds.
 - Confirmed no current OSV findings for direct Rest Assured dependencies `io.rest-assured:rest-assured:6.0.0` and `io.rest-assured:json-schema-validator:6.0.0`.
 - Verified the post-fix OSV scan result: `116` resolved test dependencies checked, `0` vulnerable dependencies reported.
 - Verified all configured Cucumber features through `runner.TestRunner`: `7` scenarios passed, `0` failed, `0` skipped.
