@@ -47,9 +47,7 @@ public class Hooks {
     }
 
     private void configureBrowserWindow(WebDriver driver) {
-        if (DriverManager.isHeadless()) {
-            driver.manage().window().setSize(DESKTOP_WINDOW_SIZE);
-        } else {
+        if (!DriverManager.isHeadless()) {
             maximizeBrowserWindow(driver);
         }
     }

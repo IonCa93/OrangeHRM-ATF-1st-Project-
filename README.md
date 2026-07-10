@@ -1,5 +1,11 @@
 # OrangeHRM ATF 1st Project
 
+## V6.4.3 - Fix headless Chrome black window artifact
+
+- Removed the redundant Selenium runtime window resize for `browser.headless=true`; headless viewport sizing remains controlled by Chrome/Firefox driver options.
+- Preserved headed execution behavior for `browser.headless=false`, including browser maximize and the existing desktop-size fallback.
+- Fixed the Windows-specific blank black foreground window artifact seen during Chrome headless UI runs while keeping screenshot evidence generation unchanged.
+
 ## V6.4.2 - Fix Jackson Databind and Logback vulnerability alerts
 
 - Updated `com.fasterxml.jackson.core:jackson-databind` from `2.22.0` to `2.22.1` through the shared `jackson.version` property to address `CVE-2026-54515` / `GHSA-5jmj-h7xm-6q6v`.
