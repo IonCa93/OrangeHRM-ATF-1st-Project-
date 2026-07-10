@@ -1,5 +1,11 @@
 # OrangeHRM ATF 1st Project
 
+## V6.4.2 - Fix Jackson Databind and Logback vulnerability alerts
+
+- Updated `com.fasterxml.jackson.core:jackson-databind` from `2.22.0` to `2.22.1` through the shared `jackson.version` property to address `CVE-2026-54515` / `GHSA-5jmj-h7xm-6q6v`.
+- Updated `ch.qos.logback:logback-classic` and `ch.qos.logback:logback-core` from `1.5.34` to `1.5.38` through the shared `logback.version` property to clear the current Logback vulnerability scanner findings, including the `CVE-2026-13006` range affecting Logback versions up to `1.5.36`.
+- Kept this release scoped to dependency remediation and documentation only; no TestRunner, config, feature, or automation flow changes are included.
+
 ## V6.4.1 - Fix Buzz UI feature in headless mode, Log masking, POM vulnerabilities
 
 - Fixed headless UI execution by using modern Chrome headless mode, explicit `1920x1080` sizing for headless runs, Firefox headless window sizing, and normal browser maximize behavior for non-headless runs.
