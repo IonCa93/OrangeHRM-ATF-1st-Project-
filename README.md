@@ -1,10 +1,12 @@
 # OrangeHRM ATF 1st Project
 
-## V6.4.3 - Fix headless Chrome black window artifact
+## V6.4.3 - Fix headless Chrome stale runner artifact
 
 - Removed the redundant Selenium runtime window resize for `browser.headless=true`; headless viewport sizing remains controlled by Chrome/Firefox driver options.
 - Preserved headed execution behavior for `browser.headless=false`, including browser maximize and the existing desktop-size fallback.
-- Fixed the Windows-specific blank black foreground window artifact seen during Chrome headless UI runs while keeping screenshot evidence generation unchanged.
+- Root-caused the Windows-specific blank black foreground window seen after Chrome headless UI runs to stale IntelliJ/Cucumber runner and orphan Chrome/ChromeDriver processes left from previous executions.
+- Verified cleanup by terminating stale `java`, `chrome`, and `chromedriver` processes, rerunning the Buzz post feature, and then executing all UI tests without the black window reappearing.
+- Kept Chrome headless options minimal and browser-specific; no `TestRunner`, config, or feature-file experiment changes are included.
 
 ## V6.4.2 - Fix Jackson Databind and Logback vulnerability alerts
 
